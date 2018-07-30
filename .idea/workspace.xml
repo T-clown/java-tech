@@ -2,116 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d13071d-3c84-4364-9bb0-5b36166d21f6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/mockitoDemo.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/res/bg.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/res/default_headimg.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/image/ImageCut.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/image/ImageHelper2.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/image/ImageHepler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/image/ImageUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/image/ImgUtil2.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/image/QRCode.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/image/generateQRCode.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/qrcode/BufferedImageLuminanceSource.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/qrcode/MatrixToBgImageConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/qrcode/MatrixToImageWriter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/qrcode/MatrixToLogoImageConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/qrcode/QrcodeUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/rocketmq/SyncProducer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/utils/DateUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/utils/HttpRequester.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/utils/ImageUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/apache/Demo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/compare/Compare.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/entity/Student.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/feature/FeatureDate.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/feature/FeatureOne.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/feature/FeatureTwo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/feature/JodaDate.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/feature/ListOperation.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/iterator/IteratorTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/lang3/DateUtilsTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/lang3/StringUtilsTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/qrcode/QrcodeUtilsTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/sort/BubbleSort.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/sort/Demo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/sort/FastSort.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/spring/proxy/cglib/CglibProxy.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/spring/proxy/cglib/Client.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/spring/proxy/cglib/Run.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/spring/proxy/jdk/Client.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/spring/proxy/jdk/DynamicProxy.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/spring/proxy/jdk/Invocation.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/spring/proxy/jdk/RealInvocation.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/trycatch/TryCatchFinally.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/utils/DateComparator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java8/utils/TestReadMemoryImage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/mockito/Test01.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/mockito/Test02.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/mockito/demo/Person.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/mockito/demo/PersonDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/mockito/demo/PersonService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/mockito/demo/PersonServiceTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/image/ImageCut.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/image/ImageHelper2.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/image/ImageHepler.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/image/ImageUtil.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/image/ImgUtil2.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/image/QRCode.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/image/generateQRCode.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/qrcode/BufferedImageLuminanceSource.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/qrcode/MatrixToBgImageConfig.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/qrcode/MatrixToImageWriter.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/qrcode/MatrixToLogoImageConfig.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/qrcode/QrcodeUtils.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/rocketmq/SyncProducer.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/utils/DateUtil.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/utils/HttpRequester$Method.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/utils/HttpRequester.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/utils/ImageUtil.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/mockitoDemo-1.0-SNAPSHOT.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/apache/Demo.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/compare/Compare$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/compare/Compare.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/entity/Student.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/feature/FeatureDate.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/feature/FeatureOne.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/feature/FeatureTwo$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/feature/FeatureTwo.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/feature/JodaDate.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/feature/ListOperation.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/iterator/IteratorTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/lang3/DateUtilsTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/lang3/StringUtilsTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/qrcode/QrcodeUtilsTest.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/sort/BubbleSort.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/sort/Demo.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/sort/FastSort.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/spring/proxy/cglib/CglibProxy.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/spring/proxy/cglib/Client.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/spring/proxy/cglib/Run.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/spring/proxy/jdk/Client.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/spring/proxy/jdk/DynamicProxy.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/spring/proxy/jdk/Invocation.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/spring/proxy/jdk/RealInvocation.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/trycatch/TryCatchFinally.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/utils/DateComparator.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/java8/utils/TestReadMemoryImage.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/mockito/Test01$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/mockito/Test01.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/mockito/Test02$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/mockito/Test02$2.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/mockito/Test02.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/mockito/demo/Person.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/mockito/demo/PersonDao.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/mockito/demo/PersonService.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/mockito/demo/PersonServiceTest.class" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mockito/Test02.java" afterPath="$PROJECT_DIR$/src/test/java/mockito/Test02.java" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mockito/Test02$1.class" afterPath="$PROJECT_DIR$/target/test-classes/mockito/Test02$1.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mockito/Test02$2.class" afterPath="$PROJECT_DIR$/target/test-classes/mockito/Test02$2.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mockito/Test02.class" afterPath="$PROJECT_DIR$/target/test-classes/mockito/Test02.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -136,14 +31,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QrcodeUtils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QrcodeUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/qrcode/QrcodeUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
+            <state relative-caret-position="3781">
               <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test02.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mockito/Test02.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="151" column="33" lean-forward="false" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stream.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="606" column="6" lean-forward="false" selection-start-line="606" selection-start-column="6" selection-end-line="606" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BigDecimal.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="329" column="35" lean-forward="false" selection-start-line="329" selection-start-column="35" selection-end-line="329" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -242,10 +167,10 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/ImageUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/DateUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/mockito/Test01.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mockito/Test02.java" />
         <option value="$PROJECT_DIR$/src/main/java/qrcode/MatrixToImageWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/qrcode/QrcodeUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/java8/qrcode/QrcodeUtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mockito/Test02.java" />
       </list>
     </option>
   </component>
@@ -497,6 +422,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -517,16 +443,39 @@
             </path>
             <path>
               <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mockito" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,51 +508,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig">
+  <component name="RunManager" selected="JUnit.Test02.aa">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="ImageCut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="image.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="image.ImageCut" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="mockitoDemo" />
-      <envs />
-    </configuration>
-    <configuration name="ImgUtil2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="image.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="image.ImgUtil2" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="mockitoDemo" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -619,57 +530,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="java8.qrcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="mockitoDemo" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="java8.qrcode" />
-      <option name="MAIN_CLASS_NAME" value="java8.qrcode.QrcodeUtilsTest" />
-      <option name="METHOD_NAME" value="testCreateQrcodeMatrixToBgImageConfig" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="Test01.demoo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="mockito.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="mockitoDemo" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="mockito" />
-      <option name="MAIN_CLASS_NAME" value="mockito.Test01" />
-      <option name="METHOD_NAME" value="demoo" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="Test02.demo06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test02.aa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="mockito.*" />
@@ -681,7 +542,107 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="mockito" />
       <option name="MAIN_CLASS_NAME" value="mockito.Test02" />
-      <option name="METHOD_NAME" value="demo06" />
+      <option name="METHOD_NAME" value="aa" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Test02.demo05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="mockito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mockitoDemo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mockito" />
+      <option name="MAIN_CLASS_NAME" value="mockito.Test02" />
+      <option name="METHOD_NAME" value="demo05" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Test02.demo3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="mockito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mockitoDemo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mockito" />
+      <option name="MAIN_CLASS_NAME" value="mockito.Test02" />
+      <option name="METHOD_NAME" value="demo3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Test02.demo4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="mockito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mockitoDemo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mockito" />
+      <option name="MAIN_CLASS_NAME" value="mockito.Test02" />
+      <option name="METHOD_NAME" value="demo4" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Test02.demooo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="mockito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="mockitoDemo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mockito" />
+      <option name="MAIN_CLASS_NAME" value="mockito.Test02" />
+      <option name="METHOD_NAME" value="demooo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -755,19 +716,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ImgUtil2" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ImageCut" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Test01.demoo" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Test02.demo06" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Test02.demooo" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Test02.demo3" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Test02.demo4" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Test02.demo05" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Test02.aa" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Test02.demo06" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Test01.demoo" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ImageCut" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ImgUtil2" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Test02.aa" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Test02.demo05" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Test02.demooo" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Test02.demo4" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Test02.demo3" />
       </list>
     </recent_temporary>
   </component>
@@ -822,77 +783,81 @@
       <workItem from="1531101034923" duration="9303000" />
       <workItem from="1531299413944" duration="1535000" />
       <workItem from="1531377285153" duration="7639000" />
-      <workItem from="1531796147962" duration="336000" />
+      <workItem from="1531796147962" duration="642000" />
+      <workItem from="1531812485942" duration="1215000" />
+      <workItem from="1532142391437" duration="1189000" />
+      <workItem from="1532412787338" duration="610000" />
+      <workItem from="1532571160911" duration="1997000" />
+      <workItem from="1532676430889" duration="1426000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QrcodeUtilsTest_testCreateQrcodeMatrixToBgImageConfig - 2018.07.16 at 18h 48m 44s.xml">
-      <configuration name="QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig" configurationId="JUnit" />
+    <history-entry file="Test02_aa - 2018.07.27 at 15h 29m 14s.xml">
+      <configuration name="Test02.aa" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrcodeUtilsTest_testCreateQrcodeMatrixToBgImageConfig - 2018.07.16 at 18h 50m 48s.xml">
-      <configuration name="QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig" configurationId="JUnit" />
+    <history-entry file="Test02_aa - 2018.07.27 at 15h 30m 43s.xml">
+      <configuration name="Test02.aa" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrcodeUtilsTest_testCreateQrcodeMatrixToBgImageConfig - 2018.07.16 at 18h 52m 02s.xml">
-      <configuration name="QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig" configurationId="JUnit" />
+    <history-entry file="Test02_aa - 2018.07.27 at 15h 31m 22s.xml">
+      <configuration name="Test02.aa" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrcodeUtilsTest_testCreateQrcodeMatrixToBgImageConfig - 2018.07.16 at 18h 53m 05s.xml">
-      <configuration name="QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig" configurationId="JUnit" />
+    <history-entry file="Test02_demooo - 2018.07.17 at 15h 28m 37s.xml">
+      <configuration name="Test02.demooo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrcodeUtilsTest_testCreateQrcodeMatrixToBgImageConfig - 2018.07.16 at 18h 55m 28s.xml">
-      <configuration name="QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig" configurationId="JUnit" />
+    <history-entry file="Test02_demooo - 2018.07.18 at 14h 37m 48s.xml">
+      <configuration name="Test02.demooo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrcodeUtilsTest_testCreateQrcodeMatrixToBgImageConfig - 2018.07.16 at 18h 56m 19s.xml">
-      <configuration name="QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig" configurationId="JUnit" />
+    <history-entry file="Test02_demooo - 2018.07.18 at 14h 38m 25s.xml">
+      <configuration name="Test02.demooo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrcodeUtilsTest_testCreateQrcodeMatrixToBgImageConfig - 2018.07.16 at 19h 01m 45s.xml">
-      <configuration name="QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig" configurationId="JUnit" />
+    <history-entry file="Test02_demooo - 2018.07.18 at 14h 39m 44s.xml">
+      <configuration name="Test02.demooo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrcodeUtilsTest_testCreateQrcodeMatrixToBgImageConfig - 2018.07.16 at 19h 02m 39s.xml">
-      <configuration name="QrcodeUtilsTest.testCreateQrcodeMatrixToBgImageConfig" configurationId="JUnit" />
+    <history-entry file="Test02_demooo - 2018.07.26 at 10h 13m 13s.xml">
+      <configuration name="Test02.demooo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test01_demoo - 2018.07.13 at 15h 06m 23s.xml">
-      <configuration name="Test01.demoo" configurationId="JUnit" />
+    <history-entry file="Test02_demooo - 2018.07.26 at 10h 14m 16s.xml">
+      <configuration name="Test02.demooo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test02_demo06 - 2018.07.13 at 15h 25m 50s.xml">
-      <configuration name="Test02.demo06" configurationId="JUnit" />
+    <history-entry file="Test02_demooo - 2018.07.26 at 10h 14m 26s.xml">
+      <configuration name="Test02.demooo" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112857000" />
+    <option name="totallyTimeSpent" value="119600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30042315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.348378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6368159" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31218904" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6094527" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29041487" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3118741" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1881259" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2877292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3432836" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30042315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21393035" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -961,33 +926,18 @@
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/mockito/Test02.java</url>
+          <line>125</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/time/temporal/TemporalAdjusters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1786">
-          <caret line="164" column="35" lean-forward="false" selection-start-line="164" selection-start-column="35" selection-end-line="164" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/time/LocalDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="764" column="17" lean-forward="false" selection-start-line="764" selection-start-column="17" selection-end-line="764" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/time/LocalDateTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="160" column="28" lean-forward="false" selection-start-line="160" selection-start-column="28" selection-end-line="160" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java8/feature/FeatureDate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-855">
@@ -1006,13 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1596">
           <caret line="94" column="16" lean-forward="false" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="2593" column="22" lean-forward="false" selection-start-line="2593" selection-start-column="22" selection-end-line="2593" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1265,13 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mockito/Test02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/qrcode/MatrixToImageWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1284,7 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1292,7 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1300,7 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="891" column="23" lean-forward="false" selection-start-line="891" selection-start-column="23" selection-end-line="891" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1318,20 +1251,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <element signature="e#1252#1253#0" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/qrcode/QrcodeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
+        <state relative-caret-position="3781">
           <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="329" column="35" lean-forward="false" selection-start-line="329" selection-start-column="35" selection-end-line="329" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="606" column="6" lean-forward="false" selection-start-line="606" selection-start-column="6" selection-end-line="606" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mockito/Test02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="151" column="33" lean-forward="false" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
