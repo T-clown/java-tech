@@ -137,20 +137,42 @@ public class Test02 {
 
     @Test
     public void demo4() throws UnknownHostException {
-        String phone = "18516312310";
-        System.out.println(phone.substring(0, 3) + "****" + phone.substring(
-            7, phone.length()));
+        BigDecimal bg = new BigDecimal(2.333);
+        BigDecimal b = bg.setScale(2, BigDecimal.ROUND_DOWN);
+        // bg.setScale(2, RoundingMode.UNNECESSARY);
+        System.out.println(b);
+
     }
 
     @Test
-    public void aa(){
-        List<BigDecimal> list=new ArrayList<>();
+    public void aa() {
+        List<BigDecimal> list = new ArrayList<>();
         list.add(BigDecimal.TEN);
         list.add(BigDecimal.ONE);
         //list.add(null);
         // 将user对象的mongey取出来map为Bigdecimal
-       BigDecimal a= list.stream().reduce(BigDecimal.TEN,BigDecimal::add);
+        BigDecimal a = list.stream().reduce(BigDecimal.TEN, BigDecimal::add);
         System.out.println(a);
+    }
+
+    @Test
+    public void demoddd() {
+        System.out.println(1/2f);
+    }
+
+    @Test
+    public void dem2oddd() {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(0);
+        list2.add(9);
+
+        list.addAll(list2);
+        list.forEach(System.out::println);
+        list2.addAll(list);
+        list2.forEach(System.out::println);
     }
 
 }

@@ -78,12 +78,4 @@ public class Demo {
         ids.forEach(System.out::println);
     }
 
-
-    @Test
-    public void demo33(){
-        List<String> list=new ArrayList<>();
-        list.add("a");
-        System.out.println(list.contains("a"));
-    }
-
 }

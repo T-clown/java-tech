@@ -1,6 +1,7 @@
 package utils;
 
 import java.awt.*;
+import java.awt.geom.RoundRectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -126,5 +127,45 @@ public class ImageUtil {
             }
         }
         return imgUrl;
+    }
+
+    public static byte[] getBufferedImage(byte[] bytes, String suffix) {
+        ByteArrayInputStream inputStream = null;
+        BufferedImage result = null;
+        try {
+            inputStream = new ByteArrayInputStream(bytes);
+            result = ImageIO.read(inputStream);
+            result = setClip(result, 30);
+        } catch (IOException e) {
+            logger.error("getBufferedImage failed! ", e);
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    logger.error("close failed!", e);
+                }
+            }
+        }
+        return transferImageToBytes(result,suffix);
+    }
+
+    /**
+     * 图片切圆角
+     *
+     * @param srcImage
+     * @param radius
+     * @return
+     */
+    public static BufferedImage setClip(BufferedImage srcImage, int radius) {
+        int width = srcImage.getWidth();
+        int height = srcImage.getHeight();
+        BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D gs = image.createGraphics();
+        gs.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        gs.setClip(new RoundRectangle2D.Double(0, 0, width, height, radius, radius));
+        gs.drawImage(srcImage, 0, 0, null);
+        gs.dispose();
+        return image;
     }
 }
