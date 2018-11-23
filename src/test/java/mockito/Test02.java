@@ -6,16 +6,24 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
+import com.alibaba.fastjson.JSON;
+
 import java8.entity.Student;
+import org.apache.commons.lang.time.FastDateFormat;
 import org.apache.commons.lang3.time.DateUtils;
+import org.joda.time.DateTime;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -136,7 +144,7 @@ public class Test02 {
     }
 
     @Test
-    public void demo4() throws UnknownHostException {
+    public void demo4() {
         BigDecimal bg = new BigDecimal(2.333);
         BigDecimal b = bg.setScale(2, BigDecimal.ROUND_DOWN);
         // bg.setScale(2, RoundingMode.UNNECESSARY);
@@ -157,22 +165,24 @@ public class Test02 {
 
     @Test
     public void demoddd() {
-        System.out.println(1/2f);
+        Map<String, List<String>> map = new HashMap<>();
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        list1.add("1");
+        list1.add("6");
+        list2.add("2");
+        map.put("a", list1);
+        map.put("b", list2);
+        map.put("c", null);
+        List<String> list = new ArrayList<>();
+        map.values().forEach(list::addAll);
+        list.forEach(System.out::println);
     }
 
     @Test
     public void dem2oddd() {
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        List<Integer> list2 = new ArrayList<>();
-        list2.add(0);
-        list2.add(9);
+        System.out.println(new DateTime(new Date()).minus(1));
 
-        list.addAll(list2);
-        list.forEach(System.out::println);
-        list2.addAll(list);
-        list2.forEach(System.out::println);
     }
 
 }

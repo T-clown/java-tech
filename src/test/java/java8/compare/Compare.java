@@ -36,11 +36,6 @@ public class Compare {
 
     @Test
     public void sort() {
-        Collections.sort(list, new Comparator<Student>() {
-            @Override
-            public int compare(Student o1, Student o2) {
-                return Integer.compare(o1.id, o2.id);
-            }
-        });
+        list.sort(Comparator.comparingInt(o -> o.id));
     }
 }

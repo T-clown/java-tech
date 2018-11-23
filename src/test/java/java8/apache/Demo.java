@@ -2,6 +2,10 @@ package java8.apache;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -77,5 +81,37 @@ public class Demo {
             .collect(Collectors.toList());
         ids.forEach(System.out::println);
     }
+
+    @Test
+    public void demo6(){
+        LocalDate localDate = LocalDate.now();
+        LocalDateTime minTime = localDate.atTime(LocalTime.MIN);
+        LocalDateTime maxTime = localDate.atTime(LocalTime.MAX);
+        System.out.println(localDate.toString());
+        System.out.println(minTime.toString());
+        System.out.println(maxTime.toString());
+
+
+        LocalDateTime localDateTime = LocalDateTime.now();
+        LocalDateTime minTime1 = localDateTime.with(LocalTime.MIN);
+        LocalDateTime maxTime1 = localDateTime.with(LocalTime.MAX);
+        System.out.println(minTime1.toString());
+        System.out.println(maxTime1.toString());
+    }
+
+
+    @Test
+    public void demo7(){
+        LocalDate now = LocalDate.now();
+        LocalDate localDate = LocalDate.now().plusDays(3);
+
+        LocalDateTime localDateTime=LocalDateTime.now();
+        LocalDateTime localDateTime2=LocalDateTime.now().plusDays(3);
+
+        System.out.println(now.until(localDate, ChronoUnit.DAYS));
+        System.out.println(ChronoUnit.DAYS.between(now,localDate));
+        System.out.println(ChronoUnit.DAYS.between(localDateTime,localDateTime2));
+    }
+
 
 }

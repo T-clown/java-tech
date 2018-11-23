@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import java8.entity.Student;
@@ -38,6 +39,14 @@ public class Demo {
         System.out.println(b.setScale(0, RoundingMode.HALF_UP) );
         System.out.println(a);
         System.out.println(bigDecimals);
+    }
+
+    @Test
+    public void aVoid(){
+        String a="abc ";
+        String c="abc  ";
+        char b[] =a.toCharArray();
+        System.out.println(a.length());
     }
 
 }

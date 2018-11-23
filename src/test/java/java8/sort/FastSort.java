@@ -6,7 +6,6 @@ public class FastSort {
     public static void main(String[] args) {
         System.out.println("Hello World");
         int[] a = {12, 20, 5, 16, 15, 1, 30, 45, 23, 9};
-        //int[] a = get();
         int start = 0;
         int end = a.length - 1;
         long startTime = System.currentTimeMillis();
@@ -18,7 +17,7 @@ public class FastSort {
 
     }
 
-    public static void sort(int[] a, int low, int high) {
+    private static void sort(int[] a, int low, int high) {
         int start = low;
         int end = high;
         int key = a[low];
@@ -49,14 +48,5 @@ public class FastSort {
         if (end < high) {
             sort(a, end + 1, high);//右边序列。从关键值索引+1到最后一个
         }
-    }
-
-    public static int[] get() {
-        int[] a = new int[1000];
-        Random r = new Random(1000);
-        for (int i = 0; i < a.length; i++) {
-            a[i] = r.nextInt();
-        }
-        return a;
     }
 }
