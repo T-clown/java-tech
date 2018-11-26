@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d13071d-3c84-4364-9bb0-5b36166d21f6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/MD/Git.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/MD/Linux.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/MD/java基础.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/java8/FunctionUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/utils/CacheUtil.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+    <list default="true" id="7d13071d-3c84-4364-9bb0-5b36166d21f6" name="Default" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/MD/JVM.md" afterPath="$PROJECT_DIR$/MD/JVM.md" />
-      <change beforePath="$PROJECT_DIR$/MD/SQL.md" afterPath="$PROJECT_DIR$/MD/SQL.md" />
-      <change beforePath="$PROJECT_DIR$/MD/cache.md" afterPath="$PROJECT_DIR$/MD/cache.md" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/java8/FunctionDemo.java" afterPath="$PROJECT_DIR$/src/main/java/java8/FunctionDemo.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mockito/Test01.java" afterPath="$PROJECT_DIR$/src/test/java/mockito/Test01.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,43 +26,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CacheUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/CacheUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Git.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MD/Git.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="304">
-                <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test01.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/mockito/Test01.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -980,7 +933,7 @@
       <workItem from="1541665965898" duration="5914000" />
       <workItem from="1542180131467" duration="9476000" />
       <workItem from="1542851932739" duration="16434000" />
-      <workItem from="1543196713169" duration="745000" />
+      <workItem from="1543196713169" duration="922000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1532930683176</created>
@@ -1003,7 +956,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542943451267</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1">
+      <created>1543201617252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543201617252</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1039,7 +999,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203299000" />
+    <option name="totallyTimeSpent" value="203476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1479,6 +1439,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1487,6 +1448,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1505,6 +1467,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="38">
             <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1512,6 +1475,7 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1520,6 +1484,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="19">
             <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1530,6 +1495,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="76">
             <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1540,6 +1506,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="19">
             <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1549,6 +1516,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1556,6 +1524,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1588,6 +1559,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MD/Git.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="304">
+            <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mockito/Test01.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -1603,17 +1585,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/Git.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
