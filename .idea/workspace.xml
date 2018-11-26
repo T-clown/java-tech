@@ -26,7 +26,39 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31545">
+              <caret line="1665" column="14" lean-forward="true" selection-start-line="1665" selection-start-column="14" selection-end-line="1665" selection-end-column="14" />
+              <folding>
+                <element signature="e#9445#9449#0" expanded="true" />
+                <element signature="e#9455#9459#0" expanded="true" />
+                <element signature="e#9540#9544#0" expanded="true" />
+                <element signature="e#9550#9554#0" expanded="true" />
+                <element signature="e#9633#9637#0" expanded="true" />
+                <element signature="e#9643#9647#0" expanded="true" />
+                <element signature="e#9660#9664#0" expanded="true" />
+                <element signature="e#9740#9744#0" expanded="true" />
+                <element signature="e#9750#9754#0" expanded="true" />
+                <element signature="e#9842#9846#0" expanded="true" />
+                <element signature="e#9852#9856#0" expanded="true" />
+                <element signature="e#9928#9932#0" expanded="true" />
+                <element signature="e#9938#9942#0" expanded="true" />
+                <element signature="e#10021#10025#0" expanded="true" />
+                <element signature="e#10031#10035#0" expanded="true" />
+                <element signature="e#10111#10115#0" expanded="true" />
+                <element signature="e#10121#10125#0" expanded="true" />
+                <element signature="e#10202#10206#0" expanded="true" />
+                <element signature="e#10212#10216#0" expanded="true" />
+                <element signature="e#10227#10231#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -370,71 +402,12 @@
             <path>
               <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="MD" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java8" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mockitoDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockitoDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mockito" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1006,7 +979,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203557000" />
+    <option name="totallyTimeSpent" value="203584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1157,13 +1130,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Jedis.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="1321" column="30" lean-forward="false" selection-start-line="1321" selection-start-column="30" selection-end-line="1321" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Connection.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1591,6 +1557,35 @@
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31545">
+          <caret line="1665" column="14" lean-forward="true" selection-start-line="1665" selection-start-column="14" selection-end-line="1665" selection-end-column="14" />
+          <folding>
+            <element signature="e#9445#9449#0" expanded="true" />
+            <element signature="e#9455#9459#0" expanded="true" />
+            <element signature="e#9540#9544#0" expanded="true" />
+            <element signature="e#9550#9554#0" expanded="true" />
+            <element signature="e#9633#9637#0" expanded="true" />
+            <element signature="e#9643#9647#0" expanded="true" />
+            <element signature="e#9660#9664#0" expanded="true" />
+            <element signature="e#9740#9744#0" expanded="true" />
+            <element signature="e#9750#9754#0" expanded="true" />
+            <element signature="e#9842#9846#0" expanded="true" />
+            <element signature="e#9852#9856#0" expanded="true" />
+            <element signature="e#9928#9932#0" expanded="true" />
+            <element signature="e#9938#9942#0" expanded="true" />
+            <element signature="e#10021#10025#0" expanded="true" />
+            <element signature="e#10031#10035#0" expanded="true" />
+            <element signature="e#10111#10115#0" expanded="true" />
+            <element signature="e#10121#10125#0" expanded="true" />
+            <element signature="e#10202#10206#0" expanded="true" />
+            <element signature="e#10212#10216#0" expanded="true" />
+            <element signature="e#10227#10231#0" expanded="true" />
           </folding>
         </state>
       </provider>
