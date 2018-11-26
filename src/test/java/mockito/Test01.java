@@ -4,6 +4,7 @@ import java8.entity.Student;
 import org.apache.commons.lang.math.RandomUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.InOrder;
 import org.mockito.Mockito;
@@ -244,6 +245,7 @@ public class Test01 {
 
     @Test
     public void demoo(){
+
         System.out.println(DateUtil.DATE_FORMAT_TOOL.format(new Date()));
         System.out.println(RandomUtils.nextInt());
     }

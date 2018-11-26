@@ -1,3 +1,7 @@
+https://mp.weixin.qq.com/s/YfcRjHhbStm2T7Yheif7ug
+
+https://mp.weixin.qq.com/s/RaD3SqZ9ytYTwCgz3HpEsg
+
 1.程序计数器
     为了线程切换后能恢复到正确的执行位置，就要求每个线程都需要有个独立的程序计数器，各条线程之间的计数器互不影响，独立存储。所以程序计数器是线程私有的。
     另外，程序计数器是唯一一个在Java虚拟机规范中没有规定任何OutOfMemoryError情况的区域。
