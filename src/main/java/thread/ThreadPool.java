@@ -1,6 +1,8 @@
 package thread;
 
 import java.util.Random;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -42,9 +44,20 @@ public class ThreadPool {
 
     public static void main(String[] args) {
 
-        EXECUTOR.execute(()->print("hahha "));
+        EXECUTOR.execute(() -> print("hahha "));
 
-        EXECUTOR.submit(()->print("aaa"));
+        Future<String> future = EXECUTOR.submit(() -> task("bbb"));
+        try {
+            System.out.println(future.get());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
+    }
+
+    private static String task(String str) {
+        return "参数：" + str;
     }
 }

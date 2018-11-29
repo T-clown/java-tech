@@ -1,10 +1,13 @@
 package java8;
 
+import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+
+import entity.Product;
 
 /**
  * Supplier<T>: 数据提供器，可以提供 T 类型对象；无参的构造器，提供了 get 方法；

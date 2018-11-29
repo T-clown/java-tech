@@ -5,8 +5,6 @@ mockito/demo/Person.class
 java8/spring/proxy/jdk/Invocation.class
 java8/trycatch/TryCatchFinally.class
 mockito/Test01.class
-java8/apache/StringUtilsDemo.class
-java8/feature/Instance.class
 java8/sort/FastSort.class
 java8/compare/Compare.class
 java8/feature/ListOperation.class
@@ -17,7 +15,6 @@ java8/utils/DateComparator.class
 java8/spring/proxy/cglib/Run.class
 java8/spring/proxy/cglib/Client.class
 java8/apache/Demo.class
-java8/compare/Compare$1.class
 mockito/demo/PersonDao.class
 java8/feature/FeatureTwo$1.class
 java8/spring/proxy/jdk/DynamicProxy.class

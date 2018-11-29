@@ -20,6 +20,7 @@ import java.util.stream.Collectors;
 
 import com.alibaba.fastjson.JSON;
 
+import com.google.common.collect.Lists;
 import java8.entity.Student;
 import org.apache.commons.lang.time.FastDateFormat;
 import org.apache.commons.lang3.time.DateUtils;
@@ -183,6 +184,16 @@ public class Test02 {
     public void dem2oddd() {
         System.out.println(new DateTime(new Date()).minus(1));
 
+    }
+
+    @Test
+    public void demo12() {
+        List<String> strList = Lists.newArrayList();
+        strList.add("aaa");
+        strList.add("1");
+        String[] strings = strList.toArray(new String[0]);
+        System.out.println(strings.length);
+        System.out.println(strings[0]);
     }
 
 }
