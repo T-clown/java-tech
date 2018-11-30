@@ -12,6 +12,8 @@ import com.google.common.collect.Lists;
 import entity.Product;
 
 import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.mapping;
+import static java.util.stream.Collectors.toList;
 
 public class StreamDemo {
     public static List<Product> productList;
@@ -27,7 +29,7 @@ public class StreamDemo {
 
     public static void main(String[] args) {
         Map<Integer, List<String>> groupList = productList.stream().collect(
-            groupingBy(x -> x.stock, Collectors.mapping(x -> x.name, Collectors.toList())));
+            groupingBy(x -> x.stock, mapping(x -> x.name, toList())));
         System.out.println(groupList.size());
     }
 
@@ -36,15 +38,18 @@ public class StreamDemo {
         /**
          * 根据某一属性聚合另一个属性
          */
+        productList.stream().collect(
+            groupingBy(x -> x.stock, mapping(x -> x.name, toList())));
+
         Map<Integer, List<String>> groupList = productList.stream().collect(
-            groupingBy(x -> x.stock, Collectors.mapping(x -> x.name, Collectors.toList())));
+            groupingBy(x -> x.stock, Collectors.mapping(x -> x.name, toList())));
         /**
          * 根据某一属性排序
          */
         productList.sort(Comparator.comparing(x -> x.stock));
 
         List<Product> products = productList.stream().sorted(Comparator.comparingInt(x -> x.stock)).collect(
-            Collectors.toList());
+            toList());
 
         /**
          * 根据最大属性值获取
@@ -59,7 +64,7 @@ public class StreamDemo {
         /**
          * id聚合
          */
-        List<Integer> idList = productList.stream().map(x -> x.id).collect(Collectors.toList());
+        List<Integer> idList = productList.stream().map(x -> x.id).collect(toList());
         /**
          * 聚合成map，集合中无重复
          */
