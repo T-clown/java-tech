@@ -29,7 +29,7 @@ public class StreamDemo {
 
     public static void main(String[] args) {
         Map<Integer, List<String>> groupList = productList.stream().collect(
-            groupingBy(x -> x.stock, mapping(x -> x.name, toList())));
+            groupingBy(x -> x.id, mapping(x -> x.name, toList())));
         System.out.println(groupList.size());
     }
 
