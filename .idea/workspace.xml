@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7d13071d-3c84-4364-9bb0-5b36166d21f6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/java8/StreamDemo.java" afterPath="$PROJECT_DIR$/src/main/java/java8/StreamDemo.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java8/StreamDemo.class" afterPath="$PROJECT_DIR$/target/classes/java8/StreamDemo.class" />
+      <change beforePath="$PROJECT_DIR$/MD/Git.md" afterPath="$PROJECT_DIR$/MD/Git.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,8 +42,8 @@
         <entry file="file://$PROJECT_DIR$/MD/Git.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="285">
-                <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <first_editor relative-caret-position="380">
+                <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -154,7 +153,6 @@
         <option value="$PROJECT_DIR$/MD/cache.md" />
         <option value="$PROJECT_DIR$/src/test/java/mockito/Test01.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/CacheUtil.java" />
-        <option value="$PROJECT_DIR$/MD/Git.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/java8/OptionDemo.java" />
@@ -165,6 +163,7 @@
         <option value="$PROJECT_DIR$/MD/开源项目.md" />
         <option value="$PROJECT_DIR$/src/test/java/mockito/Test02.java" />
         <option value="$PROJECT_DIR$/src/main/java/java8/StreamDemo.java" />
+        <option value="$PROJECT_DIR$/MD/Git.md" />
       </list>
     </option>
   </component>
@@ -980,7 +979,7 @@
       <workItem from="1543461198988" duration="52000" />
       <workItem from="1543462029984" duration="428000" />
       <workItem from="1543476438005" duration="631000" />
-      <workItem from="1543480251815" duration="4238000" />
+      <workItem from="1543480251815" duration="4490000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1532930683176</created>
@@ -1060,7 +1059,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220788000" />
+    <option name="totallyTimeSpent" value="221040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1654,8 +1653,8 @@
     <entry file="file://$PROJECT_DIR$/MD/Git.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <first_editor relative-caret-position="380">
+            <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
             <folding />
           </first_editor>
           <second_editor />
