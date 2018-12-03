@@ -46,3 +46,14 @@ git reset --hard HEAD //撤销本地修改
 echo $HOME //查看git config的HOME路径
 export $HOME=/c/gitconfig //配置git config的HOME路径
 
+
+本地项目推送到github步骤
+Git init
+Git add .
+git commit -m "提交文件"
+关联github仓库
+git remote add origin https://github.com/hanyuntao/text.git
+上传本地代码
+git push -u origin master
+git pull --rebase origin master
+
