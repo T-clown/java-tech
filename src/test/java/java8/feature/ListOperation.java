@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import com.google.common.primitives.Ints;
 import org.junit.Test;
 
 public class ListOperation {
@@ -18,6 +19,8 @@ public class ListOperation {
          */
         List<Integer> list=Collections.singletonList(1);
         int [] arr=list.stream().mapToInt(Integer::intValue).toArray();
+        Ints.toArray(list);
+        Ints.asList(arr);
         /**
          * 数组转集合
          */

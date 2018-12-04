@@ -1,4 +1,4 @@
-package java8.spring.proxy.cglib;
+package proxy.cglib;
 
 import net.sf.cglib.proxy.Enhancer;
 

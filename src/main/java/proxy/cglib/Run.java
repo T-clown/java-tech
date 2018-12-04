@@ -1,4 +1,4 @@
-package java8.spring.proxy.cglib;
+package proxy.cglib;
 
 public class Run {
     public void run() {

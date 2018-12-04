@@ -1,4 +1,4 @@
-package java8.spring.proxy.jdk;
+package proxy.jdk;
 
 public interface Invocation {
     public void run();

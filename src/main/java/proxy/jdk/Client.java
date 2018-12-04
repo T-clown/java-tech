@@ -1,4 +1,4 @@
-package java8.spring.proxy.jdk;
+package proxy.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

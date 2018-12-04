@@ -1,4 +1,4 @@
-package java8.trycatch;
+package basics;
 
 public class TryCatchFinally {
     public static void main(String[] args) {

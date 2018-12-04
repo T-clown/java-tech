@@ -1,14 +1,12 @@
 package java8.feature;
 
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import com.google.common.collect.Lists;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,16 +15,8 @@ public class FeatureTwo {
 
     @Before
     public void setup() {
-        list = new ArrayList() {{
-            add(12);
-            add(20);
-            add(12);
-            add(22);
-            add(22);
-            add(23);
-            add(159);
-            add(12);
-        }};
+        list= Lists.newArrayList(12,20,12,22,22,23,155,123);
+        //list= Arrays.asList(12,11,23,11,23);
     }
 
     @Test
@@ -52,7 +42,7 @@ public class FeatureTwo {
         /**
          * 偶数为true，奇数为false
          */
-        list.stream().map(x -> x % 2 == 0 ? true : false).forEach(System.out::println);
+        list.stream().map(x -> x % 2 == 0).forEach(System.out::println);
 
     }
 
