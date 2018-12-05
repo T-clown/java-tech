@@ -14,4 +14,5 @@ public interface FruitFactory {
         consumer.accept(map::put);
         return name -> map.get(name).get();
     }
+
 }

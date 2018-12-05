@@ -1,6 +1,9 @@
 package java8;
 
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.TreeSet;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -8,6 +11,9 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 import entity.Product;
+
+import static java.util.stream.Collectors.collectingAndThen;
+import static java.util.stream.Collectors.toCollection;
 
 /**
  * Supplier<T>: 数据提供器，可以提供 T 类型对象；无参的构造器，提供了 get 方法；
@@ -109,5 +115,6 @@ public class FunctionDemo {
         };
         System.out.println(factory.product());
     }
+
 
 }

@@ -1,18 +1,22 @@
 package java8;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.TreeSet;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import com.google.common.collect.Lists;
 import entity.Product;
 
+import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.mapping;
+import static java.util.stream.Collectors.toCollection;
 import static java.util.stream.Collectors.toList;
 
 public class StreamDemo {
@@ -28,9 +32,7 @@ public class StreamDemo {
     }
 
     public static void main(String[] args) {
-        Map<Integer, List<String>> groupList = productList.stream().collect(
-            groupingBy(x -> x.id, mapping(x -> x.name, toList())));
-        System.out.println(groupList.size());
+
     }
 
     private static void getByMax() {
@@ -105,6 +107,15 @@ public class StreamDemo {
          */
         Product product1 = productList.stream().min(Comparator.comparing(x -> x.id)).get();
         Product product2 = productList.stream().max(Comparator.comparing(x -> x.stock)).get();
+    }
+
+    /**
+     * 根据对象某一属性去重，对象不用重写 equals 和 hashCode 方法
+     */
+    private static void distinct() {
+        List<Product> list = productList.stream().collect(collectingAndThen(
+            toCollection(() -> new TreeSet<>(Comparator.comparingInt(Product::getId))), ArrayList::new));
+        list.forEach(System.out::println);
     }
 
 }
