@@ -2,13 +2,17 @@ package java8;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.TreeSet;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import com.google.common.collect.Lists;
 import entity.Product;
@@ -49,7 +53,6 @@ public class StreamDemo {
          * 根据某一属性排序
          */
         productList.sort(Comparator.comparing(x -> x.stock));
-
         List<Product> products = productList.stream().sorted(Comparator.comparingInt(x -> x.stock)).collect(
             toList());
 
@@ -60,6 +63,18 @@ public class StreamDemo {
         Optional<Product> optionalProduct = productList.stream().max(Comparator.comparing(x -> x.stock));
         Product product2 = optionalProduct.orElseGet(null);
 
+    }
+
+    /**
+     * 创建Stream
+     */
+    private static void createStream() {
+        Stream.of(productList);
+        productList.stream();
+        Arrays.stream(new int[] {1, 2, 3});
+        Stream.builder();
+        Stream<Integer> iterate = Stream.iterate(0, x -> x + 1).limit(3);
+        Stream<String> generate = Stream.generate(() -> "hello world").limit(3);
     }
 
     private static void streamDemo() {
@@ -80,8 +95,7 @@ public class StreamDemo {
         /**
          * 根据对象属性分类统计集合中对象某个属性的和
          */
-        Map<Integer, Long> groupSum = productList.stream().collect(Collectors
-            .groupingBy(x -> x.id, Collectors.summingLong(x -> x.stock)));
+        Map<Integer, Long> groupSum = productList.stream().collect(Collectors.groupingBy(x -> x.id, Collectors.summingLong(x -> x.stock)));
         /**
          * 统计spu下已选参团的sku单元个数
          */
@@ -117,5 +131,112 @@ public class StreamDemo {
             toCollection(() -> new TreeSet<>(Comparator.comparingInt(Product::getId))), ArrayList::new));
         list.forEach(System.out::println);
     }
+
+    private static void streamOperation() {
+        /**
+         * allMatch(Predicate<? super T> predicate)：全部匹配
+         * anyMatch：有一个匹配就返回true
+         * noneMatch：全部都不匹配才返回true
+         */
+        System.out.println(Stream.of("peter", "anna", "mike").allMatch(s -> s.startsWith("a")));
+        /**
+         * filter(Predicate<? super T> predicate)：过滤操作，返回Stream
+         */
+        Stream.of("peter", "anna", "mike").filter(value -> value.startsWith("a")).collect(Collectors.toList()).forEach(
+            System.out::println);
+        /**
+         * map：映射操作，返回Stream
+         */
+        Stream.of("peter", "anna", "mike").map(String::toUpperCase).collect(Collectors.toList()).forEach(
+            System.out::println);
+        /**
+         * flatMap：将最底层元素抽出来放到一起
+         */
+        Stream.of(Arrays.asList(1, 2, 3), Arrays.asList(2, 3, 6)).flatMap(x -> x.stream()).collect(Collectors.toList())
+            .forEach(System.out::print);
+
+        Stream<List<Integer>> listStream = Stream.of(Arrays.asList(1, 2, 3), Arrays.asList(2, 3, 6));
+        listStream.flatMap(Collection::stream).collect(Collectors.toList()).forEach(System.out::print);
+        /**
+         * concat：流连接操作
+         */
+        Stream.concat(Stream.of(1, 2), Stream.of(3)).forEach(System.out::print);
+        /**
+         * peek：生成一个包含原Stream的所有元素的新Stream，新Stream每个元素被消费之前都会执行peek给定的消费函数
+         */
+        Stream.of(2, 4).peek(x -> System.out.print(x - 1)).forEach(System.out::print);
+        /**
+         * skip：跳过前N个元素后，剩下的元素重新组成一个Stream
+         */
+        Stream.of(1, 2, 3, 4).skip(2).forEach(System.out::print);
+        /**
+         * max：最大值，存在求最大值，肯定就有求最小值。min
+         */
+        System.out.println(Stream.of(1, 2, 3, 4).max(Integer::compareTo).get());
+        System.out.println(Stream.of(1, 5, 3, 4).max(Comparator.naturalOrder()).get());
+        System.out.println(Stream.of(1, 5, 3, 4).min(Comparator.reverseOrder()).get());
+
+        /**
+         * reduce：网上翻译为规约，用途比较广，可以作为累加器，累乘器，也可以用来实现map、filter操作。
+         *
+         *  Optional<T> reduce(BinaryOperator<T> accumulator);
+         *  T reduce(T identity, BinaryOperator<T> accumulator);
+         *  <U> U reduce(U identity, BiFunction<U, ? super T, U> accumulator, BinaryOperator<U> combiner);
+         */
+        System.out.println(Stream.of(1, 2, 3).reduce((a, b) -> a + b).get());
+        System.out.println(Arrays.asList(1, 2, 3).stream().reduce(0, (a, b) -> a + b));
+        /**
+         * 把数据分成两部分
+         */
+        Map<Boolean, List<Integer>> collect1 = Stream.of(1, 3, 4).collect(Collectors.partitioningBy(x -> x > 2));
+        Map<Boolean, Long> collect2 = Stream.of(1, 3, 4).collect(Collectors.partitioningBy(x -> x > 2, Collectors.counting()));
+        /**
+         *Collectors.joining(",")：拼接字符串
+         */
+        System.out.println(Stream.of("a", "b", "c").collect(Collectors.joining(",")));
+        /**
+         * Collectors.collectingAndThen(Collectors.joining(","), x -> x + "d")：
+         * 先执行collect操作后再执行第二个参数的表达式。这里是先拼接字符串，再在最后+ "d"
+         */
+        String str= Stream.of("a", "b", "c").collect(Collectors.collectingAndThen(Collectors.joining(","), x -> x + "d"));
+        /**
+         * Collectors.mapping(...)：跟map操作类似，只是参数有点区别
+         */
+        System.out.println(Stream.of("a", "b", "c").collect(Collectors.mapping(x -> x.toUpperCase(), Collectors.joining(","))));
+        System.out.println(Stream.of("a", "b", "c").map(String::toUpperCase).collect(Collectors.joining(",")));
+
+    }
+
+    /**
+     * reduce实现filter功能方式
+     * reduce为什么每次都new一次ArrayList
+     * 因为reduce规定第二个参数BiFunction<U, ? super T, U> accumulator表达式不能改变其自身参数acc原有值，
+     * 所以每次都要new ArrayList<T>(acc)，再返回新的list。
+     */
+    public static <T> List<T> reduceFilter(Stream<T> stream, Predicate<T> predicate) {
+        return stream.reduce(new ArrayList<>(), (acc, t) -> {
+            if (predicate.test(t)) {
+                List<T> lists = new ArrayList<T>(acc);
+                lists.add(t);
+                return lists;
+            }
+            return acc;
+        }, (List<T> left, List<T> right) -> {
+            List<T> lists = new ArrayList<T>(left);
+            lists.addAll(right);
+            return lists;
+        });
+    }
+
+    /**
+     * collect实现filter功能方式
+     */
+    public static <T> List<T> collectFilter(Stream<T> stream, Predicate<T> predicate) {
+        return stream.collect(ArrayList::new, (acc, t) -> {
+            if (predicate.test(t)) { acc.add(t); }
+        }, ArrayList::addAll);
+
+    }
+
 
 }
