@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -12,9 +14,11 @@ import java.util.TreeSet;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import com.google.common.collect.Lists;
+import com.google.common.primitives.Ints;
 import entity.Product;
 
 import static java.util.stream.Collectors.collectingAndThen;
@@ -36,6 +40,19 @@ public class StreamDemo {
     }
 
     public static void main(String[] args) {
+        List<String> as = Arrays.asList("a", "b");
+        List<String> bs = Arrays.asList("1", "2", "3");
+        HashMap<String, String> hashMap = new LinkedHashMap<>(50);
+        int max = Math.max(as.size(), bs.size());
+        IntStream.range(0, max).forEach(i -> hashMap.put(
+                String.valueOf(i >= as.size() ? "defaultA" : as.get(i)),
+                String.valueOf(i >= as.size() ? "defaultB" : bs.get(i))
+                )
+            );
+
+        hashMap.keySet().forEach(System.out::println);
+        System.out.println();
+        hashMap.values().forEach(System.out::println);
 
     }
 
@@ -95,7 +112,8 @@ public class StreamDemo {
         /**
          * 根据对象属性分类统计集合中对象某个属性的和
          */
-        Map<Integer, Long> groupSum = productList.stream().collect(Collectors.groupingBy(x -> x.id, Collectors.summingLong(x -> x.stock)));
+        Map<Integer, Long> groupSum = productList.stream().collect(
+            Collectors.groupingBy(x -> x.id, Collectors.summingLong(x -> x.stock)));
         /**
          * 统计spu下已选参团的sku单元个数
          */
@@ -130,6 +148,12 @@ public class StreamDemo {
         List<Product> list = productList.stream().collect(collectingAndThen(
             toCollection(() -> new TreeSet<>(Comparator.comparingInt(Product::getId))), ArrayList::new));
         list.forEach(System.out::println);
+    }
+
+    private static void intStream() {
+        IntStream.range(1, 5).forEach(System.out::println);
+        System.out.println();
+        IntStream.rangeClosed(1, 5).forEach(System.out::println);
     }
 
     private static void streamOperation() {
@@ -189,7 +213,8 @@ public class StreamDemo {
          * 把数据分成两部分
          */
         Map<Boolean, List<Integer>> collect1 = Stream.of(1, 3, 4).collect(Collectors.partitioningBy(x -> x > 2));
-        Map<Boolean, Long> collect2 = Stream.of(1, 3, 4).collect(Collectors.partitioningBy(x -> x > 2, Collectors.counting()));
+        Map<Boolean, Long> collect2 = Stream.of(1, 3, 4).collect(
+            Collectors.partitioningBy(x -> x > 2, Collectors.counting()));
         /**
          *Collectors.joining(",")：拼接字符串
          */
@@ -198,11 +223,13 @@ public class StreamDemo {
          * Collectors.collectingAndThen(Collectors.joining(","), x -> x + "d")：
          * 先执行collect操作后再执行第二个参数的表达式。这里是先拼接字符串，再在最后+ "d"
          */
-        String str= Stream.of("a", "b", "c").collect(Collectors.collectingAndThen(Collectors.joining(","), x -> x + "d"));
+        String str = Stream.of("a", "b", "c").collect(
+            Collectors.collectingAndThen(Collectors.joining(","), x -> x + "d"));
         /**
          * Collectors.mapping(...)：跟map操作类似，只是参数有点区别
          */
-        System.out.println(Stream.of("a", "b", "c").collect(Collectors.mapping(x -> x.toUpperCase(), Collectors.joining(","))));
+        System.out.println(
+            Stream.of("a", "b", "c").collect(Collectors.mapping(x -> x.toUpperCase(), Collectors.joining(","))));
         System.out.println(Stream.of("a", "b", "c").map(String::toUpperCase).collect(Collectors.joining(",")));
 
     }
@@ -237,6 +264,5 @@ public class StreamDemo {
         }, ArrayList::addAll);
 
     }
-
 
 }
