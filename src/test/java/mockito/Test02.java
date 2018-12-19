@@ -200,7 +200,10 @@ public class Test02 {
     @Test
     public void demo1oo(){
         List<Integer> list= Arrays.asList(1,2,3,4,5,6);
+        //1=<index<3
         list.subList(1,3).forEach(System.out::println);
+        List<Integer> list1=JSON.parseArray("[1,2,3,4,5,6]",Integer.TYPE);
+        System.out.println(JSON.toJSONString(list1.size()));
     }
 
 }

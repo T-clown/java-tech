@@ -17,7 +17,7 @@ public class ArrayDemo {
         Arrays.stream(arrays).forEach(System.out::println);
     }
 
-    public static int[] getArray(int[] arrs, int k) {
+    private static int[] getArray(int[] arrs, int k) {
         for (int i = 0; i < arrs.length; i++) {
             for (int j = i + 1; j < arrs.length; j++) {
                 if (arrs[i] >= k && arrs[j] <= k) {

@@ -4,6 +4,7 @@ import java8.entity.Student;
 import org.apache.commons.lang.math.RandomUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.joda.time.LocalDate;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.InOrder;
@@ -13,6 +14,7 @@ import utils.DateUtil;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
@@ -246,8 +248,16 @@ public class Test01 {
     @Test
     public void demoo(){
 
-        System.out.println(DateUtil.DATE_FORMAT_TOOL.format(new Date()));
-        System.out.println(RandomUtils.nextInt());
+        //System.out.println(DateUtil.DATE_FORMAT_TOOL.format(new Date()));
+        //System.out.println(RandomUtils.nextInt());
+
+        Stream.of(Arrays.asList(1, 2, 3), Arrays.asList(2, 3, 6)).flatMap(x -> x.stream()).collect(Collectors.toList())
+            .forEach(System.out::println);
+        LocalDate now = LocalDate.now();
+        Date minDate = now.dayOfMonth().withMinimumValue().toDate();
+        Date maxDate = now.dayOfMonth().withMaximumValue().toDate();
+        System.out.println(minDate.toString());
+        System.out.println(maxDate.toString());
     }
 
 }

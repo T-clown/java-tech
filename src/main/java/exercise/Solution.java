@@ -8,18 +8,23 @@ package exercise;
  * - 更多详情请见官方网站：http://www.jiuzhang.com/?source=code
  */
 
+import java.util.Arrays;
+
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * 以字符串的形式给定两个非负整数 num1 和 num2，返回 num1 和 num2 的乘积。
  */
 
 public class Solution {
     public static void main(String[] args) {
-        String a="12";
-        String b="12";
-        System.out.println(multiply(a,b));
+        String a = "abcde";
+        String b = "bcda1e";
+        System.out.println(rotateString(a, b));
+        System.out.println(a.contains(b));
     }
 
-    public static String multiply(String num1, String num2) {
+    private static String multiply(String num1, String num2) {
         if (num1 == null || num2 == null) {
             return null;
         }
@@ -53,5 +58,26 @@ public class Solution {
         }
 
         return sb.toString();
+    }
+
+    private static boolean rotateString(String A, String B) {
+        if (StringUtils.isEmpty(A) || StringUtils.isEmpty(B) || A.length() != B.length()) {
+            return false;
+        }
+        char[] aChars = A.toCharArray();
+        char[] bChars = B.toCharArray();
+        Arrays.sort(aChars);
+        Arrays.sort(bChars);
+        if (!Arrays.toString(aChars).equals(Arrays.toString(bChars))) {
+            return false;
+        }
+        for (int i = 0; i < A.length(); i++) {
+            String a = A.substring(0, i + 1);
+            String b = A.substring(i + 1, A.length());
+            if (B.contains(a) && B.contains(b)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

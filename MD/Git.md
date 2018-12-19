@@ -30,7 +30,8 @@ git push //把本地库的修改提交到远程库中
 git branch -r/-a //查看远程分支/全部分支
 git checkout master/branch //切换到某个分支
 git checkout -b test //新建test分支
-git checkout -d test //删除test分支
+git branch -d test //删除本地test分支（d大写为强制删除）
+git push origin --delete test //删除远程分支
 git merge master //假设当前在test分支上面，把master分支上的修改同步到test分支上
 git merge tool //调用merge工具
 git stash //把未完成的修改缓存到栈容器中
@@ -56,4 +57,7 @@ git remote add origin https://github.com/hanyuntao/text.git
 上传本地代码
 git push -u origin master
 git pull --rebase origin master
+
+将当前分支关联到远程master分支
+git branch --set-upstream-to=origin/master master
 
