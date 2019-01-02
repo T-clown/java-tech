@@ -19,6 +19,7 @@ import java.util.stream.Stream;
 
 import com.google.common.collect.Lists;
 import com.google.common.primitives.Ints;
+import com.sun.xml.internal.bind.v2.runtime.reflect.Lister.Pack;
 import entity.Product;
 
 import static java.util.stream.Collectors.collectingAndThen;
@@ -32,28 +33,42 @@ public class StreamDemo {
 
     static {
         productList = Lists.newArrayList();
-        productList.add(new Product(1, "西瓜", 12, BigDecimal.TEN));
-        productList.add(new Product(2, "东瓜", 21, BigDecimal.TEN));
-        productList.add(new Product(3, "南瓜", 11, BigDecimal.TEN));
-        productList.add(new Product(4, "香蕉", 21, BigDecimal.TEN));
-        productList.add(new Product(5, "苹果", 31, BigDecimal.TEN));
+        productList.add(new Product(1, "西瓜", 1, BigDecimal.TEN));
+        productList.add(new Product(2, "东瓜", 2, BigDecimal.TEN));
+        productList.add(new Product(1, "南瓜", 11, BigDecimal.TEN));
+        productList.add(new Product(2, "香蕉", 12, BigDecimal.TEN));
+        productList.add(new Product(5, "苹果", 10, BigDecimal.TEN));
     }
 
     public static void main(String[] args) {
+        List<Product> list = Lists.newArrayList();
+        Product p = list.stream().filter(x -> x.id == 1).findFirst().orElse(null);
+    }
+
+    private static void max() {
+        int max = productList.stream().collect(
+            Collectors.groupingBy(x -> x.id)).values().stream().mapToInt(x -> x.stream().mapToInt(y -> y.stock).max()
+            .orElse(0)).sum();
+        int min = productList.stream().collect(Collectors.groupingBy(x -> x.id)).values().stream().mapToInt(
+            x -> x.stream().mapToInt(y -> y.stock).min().orElse(0)).sum();
+        System.out.println("最大：" + max);
+        System.out.println("最小：" + min);
+    }
+
+    private static void listUtils() {
         List<String> as = Arrays.asList("a", "b");
         List<String> bs = Arrays.asList("1", "2", "3");
         HashMap<String, String> hashMap = new LinkedHashMap<>(50);
         int max = Math.max(as.size(), bs.size());
         IntStream.range(0, max).forEach(i -> hashMap.put(
-                String.valueOf(i >= as.size() ? "defaultA" : as.get(i)),
-                String.valueOf(i >= as.size() ? "defaultB" : bs.get(i))
-                )
-            );
+            String.valueOf(i >= as.size() ? "defaultA" : as.get(i)),
+            String.valueOf(i >= as.size() ? "defaultB" : bs.get(i))
+            )
+        );
 
         hashMap.keySet().forEach(System.out::println);
         System.out.println();
         hashMap.values().forEach(System.out::println);
-
     }
 
     private static void getByMax() {
