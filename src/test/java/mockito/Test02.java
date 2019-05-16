@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
@@ -194,6 +195,15 @@ public class Test02 {
         String[] strings = strList.toArray(new String[0]);
         System.out.println(strings.length);
         System.out.println(strings[0]);
+    }
+
+    @Test
+    public void demo1oo(){
+        List<Integer> list= Arrays.asList(1,2,3,4,5,6);
+        //1=<index<3
+        list.subList(1,3).forEach(System.out::println);
+        List<Integer> list1=JSON.parseArray("[1,2,3,4,5,6]",Integer.TYPE);
+        System.out.println(JSON.toJSONString(list1.size()));
     }
 
 }

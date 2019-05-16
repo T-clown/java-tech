@@ -1,6 +1,7 @@
 package patterns.factory;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -39,6 +40,14 @@ public enum FruitType {
         return Arrays.asList(FruitType.values());
     }
 
+    public String getDesc(Short value, Date startTime, Date endTime) {
+        if (APPLE.isEquals(value)) {
+            Date now = new Date();
+            return now.before(startTime) ? "未开始" : (now.after(endTime) ? "已结束" : "进行中");
+        }
+        return this.desc;
+    }
+
     public static FruitType getTypeByDesc(String desc) {
         return Stream.of(FruitType.values())
             .filter(x -> x.getDesc().equals(desc)).findFirst()
@@ -48,16 +57,16 @@ public enum FruitType {
     public static FruitType getTypeByValue(short value) {
         return Stream.of(FruitType.values())
             .filter(x -> x.getValue() == value).findFirst()
-            .orElse(null);
+            .orElseThrow(()->new RuntimeException("无法解析"+value+"对应的类型"));
     }
 
-    public boolean isEqual(short type) {
+    public boolean isEquals(short type) {
         return this.value == type;
     }
-    public boolean isEqual(int type) {
+    public boolean isEquals(int type) {
         return this.value == type;
     }
-    public boolean isEqual(Short type) {
+    public boolean isEquals(Short type) {
         return type != null && this.value == type.intValue();
     }
 
