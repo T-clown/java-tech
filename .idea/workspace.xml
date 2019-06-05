@@ -2,71 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d13071d-3c84-4364-9bb0-5b36166d21f6" name="Default" comment="1">
-      <change afterPath="$PROJECT_DIR$/MD/code/basics/basics.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/concurrent/concurrent.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/concurrent/thread/thread.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/entity/entity.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/ImageCut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/ImageHelper2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/ImageHepler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/ImageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/ImageUtil3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/ImgUtil2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/QRCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/generateQRCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/qrcode/BufferedImageLuminanceSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/qrcode/MatrixToBgImageConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/qrcode/MatrixToImageWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/qrcode/MatrixToLogoImageConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/image/qrcode/QrcodeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/java8/java8.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/adapter/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/adapter/Airplane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/adapter/AirplaneAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/adapter/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/adapter/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/builder/BuilderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/builder/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/FactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/FruitFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/FruitType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Banana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Orange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Watermelon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/CglibProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/DynamicProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/Invocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/RealInvocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonFour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/redis/redis.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/spring/entity/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/spring/entity/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/spring/entity/SubBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/spring/entity/entity.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/spring/lifecycle/BeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/spring/lifecycle/InitApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/spring/lifecycle/LifecycleApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/spring/lifecycle/MyBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/utils/CacheUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/utils/DateTImeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/utils/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/utils/ExcelUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/utils/HttpRequester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/utils/ImageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/utils/RedisTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/adapter/adapter.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/builder/builder.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/entity/entity.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/factory.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/cglib.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/jdk.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/singleton.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/utils/util.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/Test02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/adapter/Action.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/adapter/Airplane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/adapter/AirplaneAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/adapter/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/adapter/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/builder/BuilderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/builder/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/factory/Builder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/factory/FactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/factory/Fruit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/factory/FruitFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/factory/FruitType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Apple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Banana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Orange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Watermelon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/CglibProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/Run.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/DynamicProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/Invocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/RealInvocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/singleton/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonFour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/utils/CacheUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/utils/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/utils/DateTImeUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/utils/DateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/utils/ExcelUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/utils/HttpRequester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/utils/ImageUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/utils/RedisTool.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -107,16 +87,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="12" />
-          <entry key="JAVA" value="171" />
-          <entry key="Markdown" value="26" />
+          <entry key="JAVA" value="212" />
+          <entry key="Markdown" value="36" />
           <entry key="UML" value="2" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3047" />
-          <entry key="Markdown" value="795" />
+          <entry key="JAVA" value="3088" />
+          <entry key="Markdown" value="1832" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="XML" value="308" />
         </counts>
@@ -126,11 +106,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MD/code/concurrent/concurrent.md">
+        <entry file="file://$PROJECT_DIR$/MD/code/patterns/proxy/cglib/cglib.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="530">
-                <caret line="41" selection-start-line="41" selection-end-line="41" />
+                <caret line="52" selection-start-line="52" selection-end-line="52" />
               </first_editor>
               <second_editor />
             </state>
@@ -138,35 +118,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MD/code/entity/entity.md">
+        <entry file="file://$PROJECT_DIR$/MD/code/patterns/proxy/jdk/jdk.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="530">
-                <caret line="56" selection-start-line="56" selection-end-line="56" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MD/code/java8/java8.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="5186">
-                <caret line="612" column="23" lean-forward="true" selection-start-line="612" selection-start-column="23" selection-end-line="612" selection-end-column="23" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MD/code/redis/redis.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="530">
-                <caret line="37" selection-start-line="37" selection-end-line="37" />
+                <caret line="90" selection-start-line="90" selection-end-line="90" />
               </first_editor>
               <second_editor />
             </state>
@@ -174,11 +130,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/entity.md">
+        <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/singleton.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="530">
-                <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+                <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
               </first_editor>
               <second_editor />
             </state>
@@ -186,12 +142,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/Phone.java">
+        <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/SingletonTwo.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/Book.java">
+        <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/SingletonThree.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/SingletonOne.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/SingletonFour.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/AppTest.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -249,57 +220,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MD/aaa.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/ArrayDemoo.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/FibonacciSequence.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/FrogJumpStep.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/Intersection.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/MaxNum.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/Prime.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/Solution.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/exercise.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/search/BinarySearch.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/search/search.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/BubbleSort.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/BucketSort.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/CountSort.md" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/HeapSort.java" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/InsertSort.java" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/MergeSort.java" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/QuickSort.java" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/RadixSort.java" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/SelectionSort.java" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/ShellSort.java" />
-        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/sort.md" />
-        <option value="$PROJECT_DIR$/MD/code/basics/BitSetDemo.java" />
-        <option value="$PROJECT_DIR$/MD/code/basics/JavaBasic.java" />
-        <option value="$PROJECT_DIR$/MD/code/basics/ReflectDemo.java" />
-        <option value="$PROJECT_DIR$/MD/code/basics/TryCatchFinally.java" />
-        <option value="$PROJECT_DIR$/MD/code/basics/basics.md" />
-        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/ThreadLocalDemo.java" />
-        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/ThreadOne.java" />
-        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/ThreadPool.java" />
-        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/ThreadThree.java" />
-        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/ThreadTwo.java" />
-        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/thread.md" />
-        <option value="$PROJECT_DIR$/MD/code/concurrent/CompletableFutureDemo.java" />
-        <option value="$PROJECT_DIR$/MD/code/concurrent/concurrent.md" />
-        <option value="$PROJECT_DIR$/MD/code/entity/Product.java" />
-        <option value="$PROJECT_DIR$/MD/code/entity/WriteModel.java" />
-        <option value="$PROJECT_DIR$/MD/code/entity/entity.md" />
-        <option value="$PROJECT_DIR$/MD/code/java8/Factory.java" />
-        <option value="$PROJECT_DIR$/MD/code/java8/FunctionDemo.java" />
-        <option value="$PROJECT_DIR$/MD/code/java8/FunctionUtil.java" />
-        <option value="$PROJECT_DIR$/MD/code/java8/GuavaDemo.java" />
-        <option value="$PROJECT_DIR$/MD/code/java8/LambdaSort.java" />
-        <option value="$PROJECT_DIR$/MD/code/java8/StreamDemo.java" />
-        <option value="$PROJECT_DIR$/MD/code/java8/Utils.java" />
-        <option value="$PROJECT_DIR$/MD/code/java8/java8.md" />
-        <option value="$PROJECT_DIR$/MD/code/redis/RedisUtil.java" />
-        <option value="$PROJECT_DIR$/MD/code/redis/redis.md" />
-        <option value="$PROJECT_DIR$/MD/code/spring/entity/Book.java" />
-        <option value="$PROJECT_DIR$/MD/code/spring/entity/Phone.java" />
+        <option value="$PROJECT_DIR$/MD/code/spring/entity/SubBook.java" />
         <option value="$PROJECT_DIR$/MD/code/spring/entity/entity.md" />
+        <option value="$PROJECT_DIR$/MD/code/spring/lifecycle/BeanFactory.java" />
+        <option value="$PROJECT_DIR$/MD/code/spring/lifecycle/InitApp.java" />
+        <option value="$PROJECT_DIR$/MD/code/spring/lifecycle/LifecycleApp.java" />
+        <option value="$PROJECT_DIR$/MD/code/spring/lifecycle/MyBeanPostProcessor.java" />
+        <option value="$PROJECT_DIR$/MD/code/spring/lifecycle/lifecycle.md" />
+        <option value="$PROJECT_DIR$/MD/code/utils/CacheUtil.java" />
+        <option value="$PROJECT_DIR$/MD/code/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/MD/code/utils/DateTImeUtil.java" />
+        <option value="$PROJECT_DIR$/MD/code/utils/DateUtil.java" />
+        <option value="$PROJECT_DIR$/MD/code/utils/ExcelUtil.java" />
+        <option value="$PROJECT_DIR$/MD/code/utils/HttpRequester.java" />
+        <option value="$PROJECT_DIR$/MD/code/utils/ImageUtil.java" />
+        <option value="$PROJECT_DIR$/MD/code/utils/RedisTool.java" />
+        <option value="$PROJECT_DIR$/MD/code/utils/util.md" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/adapter/Action.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/adapter/Airplane.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/adapter/AirplaneAdapter.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/adapter/App.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/adapter/Person.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/adapter/adapter.md" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/builder/BuilderTest.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/builder/Phone.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/builder/builder.md" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/factory/entity/Apple.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/factory/entity/Banana.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/factory/entity/Orange.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/factory/entity/Watermelon.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/factory/entity/entity.md" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/factory/Builder.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/factory/FactoryTest.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/factory/Fruit.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/factory/FruitFactory.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/factory/FruitType.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/factory/factory.md" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/CglibProxy.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/Client.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/Run.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/cglib.md" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/Client.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/DynamicProxy.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/Invocation.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/RealInvocation.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/jdk.md" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/singleton/AppTest.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonFour.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonOne.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonThree.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonTwo.java" />
+        <option value="$PROJECT_DIR$/MD/code/patterns/singleton/singleton.md" />
       </list>
     </option>
   </component>
@@ -333,8 +304,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="103" />
-    <option name="y" value="40" />
+    <option name="x" value="235" />
+    <option name="y" value="85" />
     <option name="width" value="1920" />
     <option name="height" value="1023" />
   </component>
@@ -567,15 +538,15 @@
               <item name="java-tech" type="462c0819:PsiDirectoryNode" />
               <item name="MD" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-tech" type="462c0819:PsiDirectoryNode" />
               <item name="MD" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="singleton" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
@@ -625,7 +596,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559701780804" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559703032026" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1069,7 +1040,7 @@
       <workItem from="1559198723236" duration="11593000" />
       <workItem from="1559613533716" duration="1796000" />
       <workItem from="1559628480434" duration="3371000" />
-      <workItem from="1559699393543" duration="2722000" />
+      <workItem from="1559699393543" duration="4075000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1532930683176</created>
@@ -1149,10 +1120,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324218000" />
+    <option name="totallyTimeSpent" value="325571000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="103" y="40" width="1920" height="1023" extended-state="0" />
+    <frame x="235" y="85" width="1920" height="1023" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
@@ -1311,269 +1282,229 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/MaxNum.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/Prime.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/Solution.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/search/search.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="530">
-            <caret line="77" selection-start-line="77" selection-end-line="77" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/search/BinarySearch.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/exercise.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="530">
-            <caret line="453" column="1" selection-start-line="453" selection-start-column="1" selection-end-line="453" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/BubbleSort.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/BucketSort.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/CountSort.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/HeapSort.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/InsertSort.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/MergeSort.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/RadixSort.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/SelectionSort.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/ShellSort.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/sort.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="530">
-            <caret line="488" selection-start-line="488" selection-end-line="488" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/Test02">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4646" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/basics/basics.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="530">
-            <caret line="536" selection-start-line="536" selection-end-line="536" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/basics/BitSetDemo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/basics/JavaBasic.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/basics/ReflectDemo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/basics/TryCatchFinally.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/search/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1124">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/ConcurrentDemo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/ThreadOne.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/ThreadPool.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/ThreadThree.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/ThreadTwo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/ThreadLocalDemo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/thread.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="530">
-            <caret line="214" selection-start-line="214" selection-end-line="214" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/CompletableFutureDemo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/concurrent.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="530">
-            <caret line="41" selection-start-line="41" selection-end-line="41" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/entity/WriteModel.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/entity/entity.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="530">
-            <caret line="56" selection-start-line="56" selection-end-line="56" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/java8/Factory.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/java8/FunctionDemo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/java8/FunctionUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/java8/GuavaDemo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/java8/LambdaSort.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/java8/StreamDemo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/java8/Utils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/java8/java8.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="5186">
-            <caret line="612" column="23" lean-forward="true" selection-start-line="612" selection-start-column="23" selection-end-line="612" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/redis/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/rocketmq/SyncProducer.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/redis/redis.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="530">
-            <caret line="37" selection-start-line="37" selection-end-line="37" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/Book.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/Phone.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/entity.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="530">
-            <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <caret line="152" selection-start-line="152" selection-end-line="152" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/spring/lifecycle/BeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/spring/lifecycle/InitApp.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/spring/lifecycle/MyBeanPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/spring/lifecycle/LifecycleApp.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/spring/lifecycle/lifecycle.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/utils/CacheUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/utils/DateTImeUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/utils/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/utils/ExcelUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/utils/HttpRequester.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/utils/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/utils/RedisTool.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/utils/util.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="701" selection-start-line="701" selection-end-line="701" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/adapter/Action.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/adapter/Airplane.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/adapter/AirplaneAdapter.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/adapter/App.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/adapter/Person.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/builder/BuilderTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/builder/Phone.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/factory/entity/Apple.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/factory/entity/Banana.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/factory/entity/Orange.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/factory/entity/Watermelon.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/factory/Builder.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/factory/FactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/factory/Fruit.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/factory/FruitFactory.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/factory/FruitType.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/factory/factory.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="138" selection-start-line="138" selection-end-line="138" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/factory/entity/entity.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="43" selection-start-line="43" selection-end-line="43" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/builder/builder.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="30" selection-start-line="30" selection-end-line="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/adapter/adapter.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="58" selection-start-line="58" selection-end-line="58" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/StreamDemo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-720" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/proxy/cglib/CglibProxy.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/proxy/cglib/Client.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/proxy/cglib/Run.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/proxy/cglib/cglib.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="52" selection-start-line="52" selection-end-line="52" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/proxy/jdk/Client.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/proxy/jdk/DynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/proxy/jdk/Invocation.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/proxy/jdk/RealInvocation.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/proxy/jdk/jdk.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="90" selection-start-line="90" selection-end-line="90" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/SingletonFour.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/SingletonOne.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/SingletonThree.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/SingletonTwo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/patterns/singleton/singleton.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
           </first_editor>
           <second_editor />
         </state>
