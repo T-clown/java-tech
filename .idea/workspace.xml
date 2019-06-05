@@ -2,18 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d13071d-3c84-4364-9bb0-5b36166d21f6" name="Default" comment="1">
+      <change afterPath="$PROJECT_DIR$/MD/code/arithmetic/exercise/exercise.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/arithmetic/search/search.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/arithmetic/sort/sort.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/ArrayDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/arithmetic/exercise/ArrayDemo.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/FibonacciSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/arithmetic/exercise/FibonacciSequence.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/FrogJumpStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/arithmetic/exercise/FrogJumpStep.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Intersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Intersection.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/MaxNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/arithmetic/exercise/MaxNum.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Prime.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Prime.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Solution.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/arithmetic/search/BinarySearch.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/arithmetic/sort/BubbleSort.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/BucketSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/arithmetic/sort/BucketSort.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/CountSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/MD/code/arithmetic/sort/CountSort.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/ArrayDemoo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/FibonacciSequence.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/FrogJumpStep.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Intersection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/MaxNum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Prime.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Solution.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/search/BinarySearch.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/BubbleSort.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/BucketSort.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/CountSort.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/HeapSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/InsertSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/MergeSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/QuickSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/RadixSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/ShellSort.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,16 +64,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="12" />
-          <entry key="JAVA" value="138" />
-          <entry key="Markdown" value="4" />
+          <entry key="JAVA" value="144" />
+          <entry key="Markdown" value="19" />
           <entry key="UML" value="2" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3018" />
-          <entry key="Markdown" value="10" />
+          <entry key="JAVA" value="3025" />
+          <entry key="Markdown" value="83" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="XML" value="308" />
         </counts>
@@ -72,72 +82,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/java8/StreamDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="152" column="17" selection-end-line="299" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/java8/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadLocalDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MD/Concurrent并发.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/sort.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MD/Cache.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MD/code/StreamDemo.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="434">
-                <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="18" />
+              <first_editor relative-caret-position="530">
+                <caret line="488" selection-start-line="488" selection-end-line="488" />
               </first_editor>
               <second_editor />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/HeapSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144" />
           </provider>
         </entry>
       </file>
@@ -195,27 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MD/SSM.md" />
-        <option value="$PROJECT_DIR$/src/main/java/concurrent/ConcurrentDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/cglib/Run.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/jdk/RealInvocation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/basics/TryCatchFinally.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java8/feature/FeatureTwo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java8/feature/ListOperation.java" />
-        <option value="$PROJECT_DIR$/MD/Linux.md" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/entity/Apple.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/entity/Watermelon.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/entity/Banana.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/entity/Orange.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/factory/Builder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/factory/FruitFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/java8/FunctionDemo.java" />
-        <option value="$PROJECT_DIR$/MD/MySQL.md" />
-        <option value="$PROJECT_DIR$/src/main/java/exercise/ArrayDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exercise/Solution.java" />
-        <option value="$PROJECT_DIR$/MD/Git.md" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/factory/FruitType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/factory/FactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/java8/sort/Demo.java" />
         <option value="$PROJECT_DIR$/src/main/java/lifecycle/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/spring/entity/SubBook.java" />
@@ -246,6 +178,27 @@
         <option value="$PROJECT_DIR$/src/test/java/mockito/Test02.java" />
         <option value="$PROJECT_DIR$/src/main/java/java8/Utils.java" />
         <option value="$PROJECT_DIR$/MD/aaa.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/ArrayDemoo.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/FibonacciSequence.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/FrogJumpStep.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/Intersection.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/MaxNum.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/Prime.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/Solution.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/exercise.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/search/BinarySearch.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/search/search.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/BubbleSort.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/BucketSort.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/CountSort.md" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/HeapSort.java" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/InsertSort.java" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/MergeSort.java" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/QuickSort.java" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/RadixSort.java" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/SelectionSort.java" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/ShellSort.java" />
+        <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/sort.md" />
       </list>
     </option>
   </component>
@@ -509,29 +462,6 @@
             <path>
               <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-tech" type="462c0819:PsiDirectoryNode" />
-              <item name="MD" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="arithmetic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
-              <item name="MD" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="arithmetic" type="462c0819:PsiDirectoryNode" />
-              <item name="exercise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
-              <item name="MD" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="arithmetic" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -556,7 +486,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559700409332" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559701079893" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1000,7 +930,7 @@
       <workItem from="1559198723236" duration="11593000" />
       <workItem from="1559613533716" duration="1796000" />
       <workItem from="1559628480434" duration="3371000" />
-      <workItem from="1559699393543" duration="956000" />
+      <workItem from="1559699393543" duration="1538000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1532930683176</created>
@@ -1080,7 +1010,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322452000" />
+    <option name="totallyTimeSpent" value="323034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="103" y="40" width="1920" height="1023" extended-state="0" />
@@ -1241,153 +1171,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="606" column="35" selection-start-line="606" selection-start-column="35" selection-end-line="606" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/function/BinaryOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="45" column="49" lean-forward="true" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/function/BiFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java8/entity/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/entity/Phone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/entity/SubBook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/factory/FactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/factory/entity/Watermelon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/factory/entity/Orange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/factory/FruitType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mockito/demo/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mockito/demo/PersonDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mockito/demo/PersonServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-984">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/mockito/mockito-core/2.11.0/mockito-core-2.11.0.jar!/org/mockito/stubbing/OngoingStubbing.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mockito/demo/PersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar!/org/joda/time/LocalDate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java8/feature/JodaDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java8/feature/FeatureDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="408" column="20" selection-start-line="408" selection-start-column="20" selection-end-line="408" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java8/apache/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2073">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java8/iterator/IteratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java8/utils/TestReadMemoryImage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1813,13 +1596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadLocalDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MD/Concurrent并发.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1856,9 +1632,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/HeapSort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadLocalDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144" />
+        <state relative-caret-position="24">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/ArrayDemo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="240">
+            <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/ArrayDemo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="288">
+            <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/FibonacciSequence.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/FrogJumpStep.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/Intersection.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/MaxNum.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/Prime.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/Solution.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/search/search.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="77" selection-start-line="77" selection-end-line="77" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/search/BinarySearch.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/exercise.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="453" column="1" selection-start-line="453" selection-start-column="1" selection-end-line="453" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/BubbleSort.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/BucketSort.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/CountSort.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/InsertSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/RadixSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/SelectionSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/ShellSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/sort.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="488" selection-start-line="488" selection-end-line="488" />
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
   </component>
