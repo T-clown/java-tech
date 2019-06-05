@@ -2,28 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d13071d-3c84-4364-9bb0-5b36166d21f6" name="Default" comment="1">
-      <change afterPath="$PROJECT_DIR$/MD/code/arithmetic/exercise/exercise.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/arithmetic/search/search.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MD/code/arithmetic/sort/sort.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/basics/basics.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/concurrent/concurrent.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/concurrent/thread/thread.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/entity/entity.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/ImageCut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/ImageHelper2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/ImageHepler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/ImageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/ImageUtil3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/ImgUtil2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/QRCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/generateQRCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/qrcode/BufferedImageLuminanceSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/qrcode/MatrixToBgImageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/qrcode/MatrixToImageWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/qrcode/MatrixToLogoImageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/image/qrcode/QrcodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/java8/java8.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/adapter/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/adapter/Airplane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/adapter/AirplaneAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/adapter/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/adapter/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/builder/BuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/builder/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/Builder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/FactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/FruitFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/FruitType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Banana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Orange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/factory/entity/Watermelon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/CglibProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/cglib/Run.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/DynamicProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/Invocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/proxy/jdk/RealInvocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonFour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonThree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/redis/redis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/spring/entity/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/spring/entity/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/spring/entity/SubBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/spring/entity/entity.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/spring/lifecycle/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/spring/lifecycle/InitApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/spring/lifecycle/LifecycleApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/spring/lifecycle/MyBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/utils/CacheUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/utils/DateTImeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/utils/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/utils/ExcelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/utils/HttpRequester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/utils/ImageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/code/utils/RedisTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/ArrayDemoo.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/FibonacciSequence.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/FrogJumpStep.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Intersection.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/MaxNum.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Prime.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/exercise/Solution.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/search/BinarySearch.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/BubbleSort.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/BucketSort.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/CountSort.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/HeapSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/InsertSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/MergeSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/QuickSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/RadixSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/SelectionSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD/code/arithmetic/sort/ShellSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/code/Test02" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,16 +107,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="12" />
-          <entry key="JAVA" value="144" />
-          <entry key="Markdown" value="19" />
+          <entry key="JAVA" value="171" />
+          <entry key="Markdown" value="26" />
           <entry key="UML" value="2" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3025" />
-          <entry key="Markdown" value="83" />
+          <entry key="JAVA" value="3047" />
+          <entry key="Markdown" value="795" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="XML" value="308" />
         </counts>
@@ -82,16 +125,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/sort/sort.md">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MD/code/concurrent/concurrent.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="530">
-                <caret line="488" selection-start-line="488" selection-end-line="488" />
+                <caret line="41" selection-start-line="41" selection-end-line="41" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MD/code/entity/entity.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="530">
+                <caret line="56" selection-start-line="56" selection-end-line="56" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MD/code/java8/java8.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="5186">
+                <caret line="612" column="23" lean-forward="true" selection-start-line="612" selection-start-column="23" selection-end-line="612" selection-end-column="23" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MD/code/redis/redis.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="530">
+                <caret line="37" selection-start-line="37" selection-end-line="37" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/entity.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="530">
+                <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/Phone.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/Book.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -148,35 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/java8/sort/Demo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lifecycle/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/entity/SubBook.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/entity/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/lifecycle/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/entity/Phone.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/lifecycle/LifecycleApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/lifecycle/BeanFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/lifecycle/InitApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/lifecycle/MyBeanPostProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-application.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/qrcode/MatrixToBgImageConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/image/ImageCut.java" />
-        <option value="$PROJECT_DIR$/src/main/java/image/qrcode/QrcodeUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java8/qrcode/QrcodeUtilsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/concurrent/CompletableFutureDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Product.java" />
-        <option value="$PROJECT_DIR$/MD/开源项目.md" />
-        <option value="$PROJECT_DIR$/src/test/java/mockito/Test01.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java8/feature/JodaDate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/basics/ReflectDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/basics/JavaBasic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/java8/StreamDemo.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/WriteModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/ExcelUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadLocalDemo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mockito/Test02.java" />
-        <option value="$PROJECT_DIR$/src/main/java/java8/Utils.java" />
         <option value="$PROJECT_DIR$/MD/aaa.md" />
         <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/ArrayDemoo.md" />
         <option value="$PROJECT_DIR$/MD/code/arithmetic/exercise/FibonacciSequence.md" />
@@ -199,6 +271,35 @@
         <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/SelectionSort.java" />
         <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/ShellSort.java" />
         <option value="$PROJECT_DIR$/MD/code/arithmetic/sort/sort.md" />
+        <option value="$PROJECT_DIR$/MD/code/basics/BitSetDemo.java" />
+        <option value="$PROJECT_DIR$/MD/code/basics/JavaBasic.java" />
+        <option value="$PROJECT_DIR$/MD/code/basics/ReflectDemo.java" />
+        <option value="$PROJECT_DIR$/MD/code/basics/TryCatchFinally.java" />
+        <option value="$PROJECT_DIR$/MD/code/basics/basics.md" />
+        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/ThreadLocalDemo.java" />
+        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/ThreadOne.java" />
+        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/ThreadPool.java" />
+        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/ThreadThree.java" />
+        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/ThreadTwo.java" />
+        <option value="$PROJECT_DIR$/MD/code/concurrent/thread/thread.md" />
+        <option value="$PROJECT_DIR$/MD/code/concurrent/CompletableFutureDemo.java" />
+        <option value="$PROJECT_DIR$/MD/code/concurrent/concurrent.md" />
+        <option value="$PROJECT_DIR$/MD/code/entity/Product.java" />
+        <option value="$PROJECT_DIR$/MD/code/entity/WriteModel.java" />
+        <option value="$PROJECT_DIR$/MD/code/entity/entity.md" />
+        <option value="$PROJECT_DIR$/MD/code/java8/Factory.java" />
+        <option value="$PROJECT_DIR$/MD/code/java8/FunctionDemo.java" />
+        <option value="$PROJECT_DIR$/MD/code/java8/FunctionUtil.java" />
+        <option value="$PROJECT_DIR$/MD/code/java8/GuavaDemo.java" />
+        <option value="$PROJECT_DIR$/MD/code/java8/LambdaSort.java" />
+        <option value="$PROJECT_DIR$/MD/code/java8/StreamDemo.java" />
+        <option value="$PROJECT_DIR$/MD/code/java8/Utils.java" />
+        <option value="$PROJECT_DIR$/MD/code/java8/java8.md" />
+        <option value="$PROJECT_DIR$/MD/code/redis/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/MD/code/redis/redis.md" />
+        <option value="$PROJECT_DIR$/MD/code/spring/entity/Book.java" />
+        <option value="$PROJECT_DIR$/MD/code/spring/entity/Phone.java" />
+        <option value="$PROJECT_DIR$/MD/code/spring/entity/entity.md" />
       </list>
     </option>
   </component>
@@ -433,7 +534,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -462,6 +565,21 @@
             <path>
               <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="MD" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="MD" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -477,6 +595,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mockito" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -486,7 +625,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559701079893" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559701780804" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -930,7 +1069,7 @@
       <workItem from="1559198723236" duration="11593000" />
       <workItem from="1559613533716" duration="1796000" />
       <workItem from="1559628480434" duration="3371000" />
-      <workItem from="1559699393543" duration="1538000" />
+      <workItem from="1559699393543" duration="2722000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1532930683176</created>
@@ -1010,16 +1149,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323034000" />
+    <option name="totallyTimeSpent" value="324218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="103" y="40" width="1920" height="1023" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.19372295" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.19372295" />
       <window_info id="Structure" order="5" weight="0.25" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="0" />
@@ -1029,7 +1169,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.55903614" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.30963856" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22891566" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22891566" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.46581692" />
       <window_info anchor="bottom" id="Run" order="10" weight="0.44698796" />
@@ -1171,518 +1311,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/java8/utils/TestReadMemoryImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java8/utils/DateComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/java8/LambdaSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/java8/FunctionDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
-          <folding>
-            <element signature="docComment;method#function#0;class#FunctionDemo#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/java8/FunctionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/java8/GuavaDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/redis/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/basics/ReflectDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/WriteModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/basics/JavaBasic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/java.util.concurrent">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.util.concurrent</OriginalElement>
-          <nodes>
-            <node x="1529.0" y="527.0">java.util.concurrent.ScheduledFuture</node>
-            <node x="2005.5" y="614.0">java.util.concurrent.RecursiveTask</node>
-            <node x="1879.0" y="952.0">java.util.concurrent.TimeoutException</node>
-            <node x="576.0" y="696.0">java.util.concurrent.CompletionService</node>
-            <node x="230.0" y="527.0">java.util.concurrent.PriorityBlockingQueue</node>
-            <node x="2019.125" y="430.0">java.util.concurrent.Future</node>
-            <node x="2392.5" y="614.0">java.util.concurrent.CountedCompleter</node>
-            <node x="1176.0" y="696.0">java.util.concurrent.RejectedExecutionHandler</node>
-            <node x="1558.5" y="614.0">java.util.concurrent.RunnableScheduledFuture</node>
-            <node x="2361.0" y="952.0">java.util.concurrent.ThreadFactory</node>
-            <node x="1462.5" y="430.0">java.util.concurrent.Delayed</node>
-            <node x="207.0" y="1034.0">java.util.concurrent.CyclicBarrier</node>
-            <node x="0.0" y="952.0">java.util.concurrent.CancellationException</node>
-            <node x="0.0" y="527.0">java.util.concurrent.SynchronousQueue</node>
-            <node x="0.0" y="783.0">java.util.concurrent.ConcurrentNavigableMap</node>
-            <node x="278.0" y="783.0">java.util.concurrent.ConcurrentHashMap</node>
-            <node x="1094.0" y="952.0">java.util.concurrent.CompletionException</node>
-            <node x="244.625" y="348.0">java.util.concurrent.ScheduledThreadPoolExecutor</node>
-            <node x="2191.5" y="614.0">java.util.concurrent.RecursiveAction</node>
-            <node x="727.5" y="430.0">java.util.concurrent.BlockingQueue</node>
-            <node x="548.0" y="952.0">java.util.concurrent.CopyOnWriteArraySet</node>
-            <node x="481.0" y="527.0">java.util.concurrent.LinkedBlockingQueue</node>
-            <node x="977.0" y="1034.0">java.util.concurrent.Executors</node>
-            <node x="406.0" y="1034.0">java.util.concurrent.locks</node>
-            <node x="2122.0" y="952.0">java.util.concurrent.CountDownLatch</node>
-            <node x="924.0" y="527.0">java.util.concurrent.ArrayBlockingQueue</node>
-            <node x="2441.0" y="430.0">java.util.concurrent.CompletionStage</node>
-            <node x="543.0" y="783.0">java.util.concurrent.ExecutorCompletionService</node>
-            <node x="274.0" y="952.0">java.util.concurrent.CopyOnWriteArrayList</node>
-            <node x="1481.0" y="696.0">java.util.concurrent.ConcurrentLinkedQueue</node>
-            <node x="61.25" y="174.0">java.util.concurrent.AbstractExecutorService</node>
-            <node x="1136.0" y="614.0">java.util.concurrent.LinkedTransferQueue</node>
-            <node x="179.0" y="261.0">java.util.concurrent.ThreadPoolExecutor</node>
-            <node x="2350.0" y="696.0">java.util.concurrent.ForkJoinWorkerThread</node>
-            <node x="1840.5" y="614.0">java.util.concurrent.FutureTask</node>
-            <node x="2381.5" y="527.0">java.util.concurrent.CompletableFuture</node>
-            <node x="1331.0" y="1034.0">java.util.concurrent.Callable</node>
-            <node x="167.5" y="696.0">java.util.concurrent.ConcurrentMap</node>
-            <node x="857.0" y="696.0">java.util.concurrent.RejectedExecutionException</node>
-            <node x="1363.0" y="952.0">java.util.concurrent.ThreadLocalRandom</node>
-            <node x="324.25" y="174.0">java.util.concurrent.ScheduledExecutorService</node>
-            <node x="1355.0" y="527.0">java.util.concurrent.DelayQueue</node>
-            <node x="228.25" y="87.0">java.util.concurrent.ExecutorService</node>
-            <node x="1775.75" y="527.0">java.util.concurrent.RunnableFuture</node>
-            <node x="2202.5" y="527.0">java.util.concurrent.ForkJoinTask</node>
-            <node x="728.0" y="527.0">java.util.concurrent.BlockingDeque</node>
-            <node x="254.75" y="0.0">java.util.concurrent.Executor</node>
-            <node x="599.0" y="1034.0">java.util.concurrent.Semaphore</node>
-            <node x="0.0" y="1034.0">java.util.concurrent.atomic</node>
-            <node x="2066.0" y="696.0">java.util.concurrent.BrokenBarrierException</node>
-            <node x="1161.0" y="527.0">java.util.concurrent.TransferQueue</node>
-            <node x="1774.0" y="696.0">java.util.concurrent.ConcurrentLinkedDeque</node>
-            <node x="1156.0" y="1034.0">java.util.concurrent.TimeUnit</node>
-            <node x="1625.0" y="952.0">java.util.concurrent.ExecutionException</node>
-            <node x="9.5" y="870.0">java.util.concurrent.ConcurrentSkipListMap</node>
-            <node x="821.0" y="952.0">java.util.concurrent.ConcurrentSkipListSet</node>
-            <node x="0.0" y="261.0">java.util.concurrent.ForkJoinPool</node>
-            <node x="1497.0" y="1034.0">java.util.concurrent.Phaser</node>
-            <node x="703.0" y="614.0">java.util.concurrent.LinkedBlockingDeque</node>
-            <node x="792.0" y="1034.0">java.util.concurrent.Exchanger</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="java.util.concurrent.ScheduledFuture" target="java.util.concurrent.Delayed">
-              <point x="-47.5" y="-18.5" />
-              <point x="1576.5" y="507.0" />
-              <point x="1554.0" y="507.0" />
-              <point x="30.5" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.SynchronousQueue" target="java.util.concurrent.BlockingQueue">
-              <point x="0.0" y="-18.5" />
-              <point x="105.0" y="487.0" />
-              <point x="740.1428571428571" y="487.0" />
-              <point x="-75.85714285714289" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.AbstractExecutorService" target="java.util.concurrent.ExecutorService">
-              <point x="0.0" y="-18.5" />
-              <point x="182.75" y="149.0" />
-              <point x="273.25" y="149.0" />
-              <point x="-45.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ForkJoinPool" target="java.util.concurrent.AbstractExecutorService">
-              <point x="0.0" y="-18.5" />
-              <point x="79.5" y="236.0" />
-              <point x="122.0" y="236.0" />
-              <point x="-60.75" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.RecursiveTask" target="java.util.concurrent.ForkJoinTask">
-              <point x="0.0" y="-18.5" />
-              <point x="2088.5" y="589.0" />
-              <point x="2229.0" y="589.0" />
-              <point x="-53.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ExecutorCompletionService" target="java.util.concurrent.CompletionService">
-              <point x="0.0" y="-18.5" />
-              <point x="0.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.CountedCompleter" target="java.util.concurrent.ForkJoinTask">
-              <point x="0.0" y="-18.5" />
-              <point x="2496.0" y="589.0" />
-              <point x="2335.0" y="589.0" />
-              <point x="53.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ExecutorService" target="java.util.concurrent.Executor">
-              <point x="0.0" y="-18.5" />
-              <point x="0.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ScheduledThreadPoolExecutor" target="java.util.concurrent.ScheduledExecutorService">
-              <point x="73.25" y="-18.5" />
-              <point x="464.375" y="323.0" />
-              <point x="453.75" y="323.0" />
-              <point x="0.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ArrayBlockingQueue" target="java.util.concurrent.BlockingQueue">
-              <point x="0.0" y="-18.5" />
-              <point x="1032.5" y="507.0" />
-              <point x="841.2857142857143" y="507.0" />
-              <point x="25.285714285714334" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.LinkedTransferQueue" target="java.util.concurrent.TransferQueue">
-              <point x="0.0" y="-18.5" />
-              <point x="0.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.RunnableScheduledFuture" target="java.util.concurrent.RunnableFuture">
-              <point x="65.5" y="-18.5" />
-              <point x="1755.0" y="589.0" />
-              <point x="1821.5" y="589.0" />
-              <point x="-45.75" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.PriorityBlockingQueue" target="java.util.concurrent.BlockingQueue">
-              <point x="0.0" y="-18.5" />
-              <point x="345.5" y="497.0" />
-              <point x="765.4285714285714" y="497.0" />
-              <point x="-50.571428571428555" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.CompletableFuture" target="java.util.concurrent.CompletionStage">
-              <point x="52.0" y="-18.5" />
-              <point x="0.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ConcurrentHashMap" target="java.util.concurrent.ConcurrentMap">
-              <point x="0.0" y="-18.5" />
-              <point x="388.0" y="758.0" />
-              <point x="304.0" y="758.0" />
-              <point x="45.5" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.DelayQueue" target="java.util.concurrent.Delayed">
-              <point x="38.5" y="-18.5" />
-              <point x="1470.5" y="507.0" />
-              <point x="1493.0" y="507.0" />
-              <point x="-30.5" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.RunnableFuture" target="java.util.concurrent.Future">
-              <point x="0.0" y="-18.5" />
-              <point x="1867.25" y="507.0" />
-              <point x="2060.75" y="507.0" />
-              <point x="-13.875" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.BlockingDeque" target="java.util.concurrent.BlockingQueue">
-              <point x="0.0" y="-18.5" />
-              <point x="0.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ThreadPoolExecutor" target="java.util.concurrent.AbstractExecutorService">
-              <point x="0.0" y="-18.5" />
-              <point x="286.0" y="236.0" />
-              <point x="243.5" y="236.0" />
-              <point x="60.75" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.TransferQueue" target="java.util.concurrent.BlockingQueue">
-              <point x="0.0" y="-18.5" />
-              <point x="1248.0" y="497.0" />
-              <point x="866.5714285714286" y="497.0" />
-              <point x="50.571428571428555" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ScheduledFuture" target="java.util.concurrent.Future">
-              <point x="47.5" y="-18.5" />
-              <point x="1671.5" y="497.0" />
-              <point x="2033.0" y="497.0" />
-              <point x="-41.625" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.LinkedBlockingDeque" target="java.util.concurrent.BlockingDeque">
-              <point x="0.0" y="-18.5" />
-              <point x="0.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ConcurrentSkipListMap" target="java.util.concurrent.ConcurrentNavigableMap">
-              <point x="0.0" y="-18.5" />
-              <point x="0.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.FutureTask" target="java.util.concurrent.RunnableFuture">
-              <point x="0.0" y="-18.5" />
-              <point x="45.75" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ForkJoinTask" target="java.util.concurrent.Future">
-              <point x="0.0" y="-18.5" />
-              <point x="2282.0" y="507.0" />
-              <point x="2088.5" y="507.0" />
-              <point x="13.875" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.DelayQueue" target="java.util.concurrent.BlockingQueue">
-              <point x="-38.5" y="-18.5" />
-              <point x="1393.5" y="487.0" />
-              <point x="891.8571428571429" y="487.0" />
-              <point x="75.85714285714289" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ScheduledExecutorService" target="java.util.concurrent.ExecutorService">
-              <point x="0.0" y="-18.5" />
-              <point x="453.75" y="149.0" />
-              <point x="363.25" y="149.0" />
-              <point x="45.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.RunnableScheduledFuture" target="java.util.concurrent.ScheduledFuture">
-              <point x="-65.5" y="-18.5" />
-              <point x="0.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ScheduledThreadPoolExecutor" target="java.util.concurrent.ThreadPoolExecutor">
-              <point x="-73.25" y="-18.5" />
-              <point x="317.875" y="323.0" />
-              <point x="286.0" y="323.0" />
-              <point x="0.0" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.CompletableFuture" target="java.util.concurrent.Future">
-              <point x="-52.0" y="-18.5" />
-              <point x="2433.5" y="497.0" />
-              <point x="2116.25" y="497.0" />
-              <point x="41.625" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.LinkedBlockingQueue" target="java.util.concurrent.BlockingQueue">
-              <point x="0.0" y="-18.5" />
-              <point x="594.5" y="507.0" />
-              <point x="790.7142857142857" y="507.0" />
-              <point x="-25.285714285714334" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.ConcurrentNavigableMap" target="java.util.concurrent.ConcurrentMap">
-              <point x="0.0" y="-18.5" />
-              <point x="129.0" y="758.0" />
-              <point x="213.0" y="758.0" />
-              <point x="-45.5" y="18.5" />
-            </edge>
-            <edge source="java.util.concurrent.RecursiveAction" target="java.util.concurrent.ForkJoinTask">
-              <point x="0.0" y="-18.5" />
-              <point x="0.0" y="18.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.1808590806330068" x="1317.0" y="536.0" />
-          <SelectedNodes>
-            <node>java.util.concurrent.ScheduledFuture</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/CompletableFutureDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/concurrent/CompletableFuture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ExcelUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadThree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mockito/Test01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="182" column="28" selection-start-line="182" selection-start-column="28" selection-end-line="182" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/lifecycle/InitApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/lifecycle/LifecycleApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/lifecycle/MyBeanPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/entity/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-843">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mockito/Test02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="194" column="19" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/java8/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/Concurrent并发.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/Cache.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/java8/StreamDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="152" column="17" selection-end-line="299" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/StreamDemo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="434">
-            <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadLocalDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/ArrayDemo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="240">
-            <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/ArrayDemo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
-            <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/FibonacciSequence.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/FrogJumpStep.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/Intersection.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MD/code/arithmetic/exercise/MaxNum.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1785,6 +1413,167 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="530">
             <caret line="488" selection-start-line="488" selection-end-line="488" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/Test02">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4646" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/basics/basics.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="536" selection-start-line="536" selection-end-line="536" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/basics/BitSetDemo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/basics/JavaBasic.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/basics/ReflectDemo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/basics/TryCatchFinally.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/search/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1124">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/ConcurrentDemo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/ThreadOne.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/ThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/ThreadThree.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/ThreadTwo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/ThreadLocalDemo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/thread/thread.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="214" selection-start-line="214" selection-end-line="214" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/CompletableFutureDemo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/concurrent/concurrent.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="41" selection-start-line="41" selection-end-line="41" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/entity/WriteModel.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/entity/entity.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="56" selection-start-line="56" selection-end-line="56" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/java8/Factory.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/java8/FunctionDemo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/java8/FunctionUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/java8/GuavaDemo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/java8/LambdaSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/java8/StreamDemo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/java8/Utils.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/java8/java8.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="5186">
+            <caret line="612" column="23" lean-forward="true" selection-start-line="612" selection-start-column="23" selection-end-line="612" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/redis/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/rocketmq/SyncProducer.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/redis/redis.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="37" selection-start-line="37" selection-end-line="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/Phone.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/code/spring/entity/entity.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="530">
+            <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
           </first_editor>
           <second_editor />
         </state>
