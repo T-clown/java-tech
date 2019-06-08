@@ -1,12 +1,13 @@
 package patterns.factory;
 
+import patterns.factory.entity.Apple;
+import patterns.factory.entity.Banana;
+import patterns.factory.entity.Orange;
+import patterns.factory.entity.Watermelon;
+
 import java.util.Date;
 import java.util.function.Consumer;
 
-import patterns.entity.Apple;
-import patterns.entity.Banana;
-import patterns.entity.Orange;
-import patterns.entity.Watermelon;
 
 public class FactoryTest {
     public static void main(String[] args) {
