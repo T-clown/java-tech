@@ -1,5 +1,9 @@
 package java8.apache;
 
+import java8.entity.Student;
+import org.joda.time.DateTime;
+import org.junit.Test;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.DayOfWeek;
@@ -10,19 +14,14 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
-
-import com.alibaba.fastjson.JSON;
-
-import com.google.common.collect.Sets;
-import java8.entity.Student;
-import org.joda.time.DateTime;
-import org.junit.Test;
 
 public class Demo {
     @Test
     public void demo01(){
+        ArrayList a=new ArrayList();
+
+
         System.out.println(2<<3);//2*8
         System.out.println(8>>2);//8/4
     }
