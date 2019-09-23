@@ -2,7 +2,7 @@
 切换分支：  git checkout a
 创建并切换分支：  git checkout -b a
 更新master主线上的东西到该分支上：git rebase master
-切换到master分支：git checkout master
+
 更新mybranch分支上的东西到master上：git rebase a
 提交：git commit -a
 
@@ -40,6 +40,8 @@ git stash pop //恢复本地分支到缓存状态
 git blame someFile //查看某个文件的每一行的修改记录（）谁在什么时候修改的）
 git status //查看当前分支有哪些修改
 git log //查看当前分支上面的日志信息
+
+
 git diff //查看当前没有add的内容
 git diff --cache //查看已经add但是没有commit的内容
 git diff HEAD //上面两个内容的合并
