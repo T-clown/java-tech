@@ -2,8 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d13071d-3c84-4364-9bb0-5b36166d21f6" name="Default" comment="1">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/MySQL/mysqls面试.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/Tcp协议.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/framework/Dubbo.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/framework/Kafka.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/framework/Redis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/framework/Zookeeper.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/framework/transaction.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/tool/Docker.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/tool/Maven.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MD/tool/Tomcat.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/patterns/strategy/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/patterns/strategy/ByOneGetTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/patterns/strategy/DefaultActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/patterns/strategy/IEum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/patterns/strategy/Promotion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/patterns/strategy/PromotionEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/patterns/strategy/PromotionStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/patterns/strategy/ReturnCash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/transaction/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/transaction/ExampleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/transaction/ExampleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/transaction/ProxyByJdkDynamic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/transaction/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/transaction/ServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/Git.md" beforeDir="false" afterPath="$PROJECT_DIR$/MD/tool/Git.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/JVM/JVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/MD/JVM/JVM.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/Linux.md" beforeDir="false" afterPath="$PROJECT_DIR$/MD/Linux/Linux.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/SSM.md" beforeDir="false" afterPath="$PROJECT_DIR$/MD/framework/SSM.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD/basic/拦截器和过滤器的区别.md" beforeDir="false" afterPath="$PROJECT_DIR$/MD/basic/拦截器和过滤器的区别.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaInterview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaInterview.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/patterns/singleton/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/patterns/singleton/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/patterns/singleton/SingletonFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/patterns/singleton/DoubleCheckLazySingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/patterns/singleton/SingletonOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/patterns/singleton/HungrySingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/patterns/singleton/SingletonThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/patterns/singleton/LazySingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/patterns/singleton/SingletonTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/patterns/singleton/StaticInnerSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/lifecycle/LifecycleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/lifecycle/LifecycleApp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,35 +78,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/patterns/singleton/DoubleCheckLazySingleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="140">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/CglibProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/basics/ReflectDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            <state relative-caret-position="162">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -171,6 +191,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/concurrent/CompletableFutureDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/WriteModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/java8/LambdaSort.java" />
@@ -221,7 +242,6 @@
         <option value="$PROJECT_DIR$/src/main/java/patterns/strategy/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/patterns/strategy/Promotion.java" />
         <option value="$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/CglibProxy.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -472,6 +492,49 @@
               <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-tech" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -481,7 +544,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571752187041" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571752003948" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-design-patterns" />
@@ -961,7 +1024,7 @@
       <workItem from="1569512602114" duration="591000" />
       <workItem from="1570074147999" duration="4699000" />
       <workItem from="1570163427165" duration="1852000" />
-      <workItem from="1571751434028" duration="740000" />
+      <workItem from="1571751434028" duration="362000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1532930683176</created>
@@ -1041,7 +1104,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="390897000" />
+    <option name="totallyTimeSpent" value="390519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -1060,7 +1123,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.55751175" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.23719676" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5164319" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.72652584" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.46581692" />
       <window_info anchor="bottom" id="Run" order="10" weight="0.045774646" />
@@ -1211,6 +1274,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MD/Idea配置相关.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MD/Linux/Linux.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1485,6 +1556,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/basics/ReflectDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MD/JVM/JVM.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1587,6 +1665,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/singleton/DoubleCheckLazySingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patterns/proxy/jdk/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -1615,31 +1700,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/basics/ReflectDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/CglibProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/singleton/DoubleCheckLazySingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        <state relative-caret-position="162">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
