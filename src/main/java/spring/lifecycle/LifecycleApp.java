@@ -13,8 +13,8 @@ public class LifecycleApp {
 
     private static void lifecycle(){
         // 为面试而准备的Bean生命周期加载过程
-        // ApplicationContext context = new ClassPathXmlApplicationContext("spring-application.xml");
-        ApplicationContext context =  new FileSystemXmlApplicationContext("classpath:spring-application.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-application.xml");
+        //ApplicationContext context =  new FileSystemXmlApplicationContext("classpath:spring-application.xml");
         Book book = (Book)context.getBean("book");
         System.out.println("第九步：Book name = " + book.getBookName());
         // ((ClassPathXmlApplicationContext) context).destroy();

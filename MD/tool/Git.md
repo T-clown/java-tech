@@ -1,8 +1,12 @@
-创建分支：  git branch a 
-切换分支：  git checkout a
-创建并切换分支：  git checkout -b a
-更新master主线上的东西到该分支上：git rebase master
+创建分支： git branch a 
+切换分支： git checkout a
+创建并切换分支： git checkout -b a (等价于上面两条命令)
 
+查看所有分支
+git branch -vv
+Git branch -a
+
+更新master主线上的东西到该分支上：git rebase master
 更新mybranch分支上的东西到master上：git rebase a
 提交：git commit -a
 
@@ -15,9 +19,7 @@ git branch --set-upstream-to=origin/a
 git branch a
 git push --set-upstream origin a
 
-查看所有分支
-git branch -vv
-Git branch -a
+
 
 git init //初始化本地git环境
 git clone XXX//克隆一份代码到本地仓库
