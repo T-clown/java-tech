@@ -5,6 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class ThreadOne extends Thread{
     private static AtomicInteger count=new AtomicInteger();
 
+    @Override
     public void run(){
         Thread currentThread=  Thread.currentThread();
         currentThread.setName("线程\t" +count.incrementAndGet());

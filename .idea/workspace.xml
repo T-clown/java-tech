@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d13071d-3c84-4364-9bb0-5b36166d21f6" name="Default" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/arithmetic/sort/SortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/arithmetic/exercise/AliExercise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/arithmetic/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/arithmetic/sort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/arithmetic/sort/CountSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/arithmetic/sort/CountSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/arithmetic/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/arithmetic/sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/arithmetic/exercise/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/arithmetic/exercise/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/arithmetic/exercise/FrogJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/arithmetic/exercise/FrogJump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/arithmetic/exercise/Intersect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/arithmetic/exercise/Intersect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadTwo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,100 +36,118 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Java/jdk1.8.0_221/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="1119" column="69" selection-start-line="1119" selection-start-column="62" selection-end-line="1119" selection-end-column="69" />
-              <folding>
-                <element signature="e#53266#53923#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/BubbleSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/RadixSort.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/AliExercise.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/QuickSort.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="280">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/ArrayType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/Fibonacci.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-260">
+              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="27" />
               <folding>
-                <element signature="docComment;method#QuickSort#0;class#QuickSort#0" expanded="true" />
-                <element signature="docComment;method#partition#1;class#QuickSort#0" expanded="true" />
+                <element signature="docComment;class#Fibonacci#0" expanded="true" />
+                <element signature="docComment;method#getN#0;class#Fibonacci#0" expanded="true" />
+                <element signature="docComment;method#recursion#0;class#Fibonacci#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/BucketSort.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/FrogJump.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="28" column="64" lean-forward="true" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+            <state relative-caret-position="-426">
+              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <element signature="e#97#98#0" expanded="true" />
+                <element signature="e#141#142#0" expanded="true" />
+                <element signature="docComment;method#getN#0;class#FrogJump#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/CountSort.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/Intersect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="923">
+              <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+              <folding>
+                <element signature="docComment;class#Intersect#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/SortTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/MaxNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="-122">
+              <caret line="81" column="4" lean-forward="true" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+              <folding>
+                <element signature="docComment;method#getMaxNum#0;class#MaxNumber#0" expanded="true" />
+                <element signature="docComment;method#jumpLast#0;class#MaxNumber#0" expanded="true" />
+                <element signature="docComment;method#splitArray#0;class#MaxNumber#0" expanded="true" />
+                <element signature="docComment;method#exists#0;class#MaxNumber#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/InsertSort.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/PrimeDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="95">
+              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding>
+                <element signature="docComment;method#getPrimeCount#0;class#PrimeDemo#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/SelectionSort.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/StringDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="-817">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="docComment;class#StringDemo#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/search/BinSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -174,8 +193,8 @@
       <find>最后一天</find>
       <find>转</find>
       <find>submit</find>
-      <find>execute</find>
       <find>快速排序</find>
+      <find>execute</find>
     </findStrings>
     <replaceStrings>
       <replace>1</replace>
@@ -192,20 +211,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MD/code/patterns/singleton/SingletonTwo.java" />
         <option value="$PROJECT_DIR$/MD/code/patterns/singleton/singleton.md" />
         <option value="$PROJECT_DIR$/src/test/java/mockito/Test02.java" />
         <option value="$PROJECT_DIR$/src/test/java/mockito/Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/mockito/DemoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/mockito/DemoTest2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/arithmetic/exercise/Fibonacci.java" />
-        <option value="$PROJECT_DIR$/src/main/java/arithmetic/exercise/FrogJump.java" />
         <option value="$PROJECT_DIR$/src/main/java/arithmetic/exercise/MaxNumber.java" />
         <option value="$PROJECT_DIR$/src/main/java/arithmetic/exercise/PrimeDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/arithmetic/exercise/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/arithmetic/exercise/StringDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/arithmetic/search/BinSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/arithmetic/exercise/Intersect.java" />
         <option value="$PROJECT_DIR$/src/main/java/arithmetic/sort/BucketSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/arithmetic/sort/HeapSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/arithmetic/sort/InsertSort.java" />
@@ -217,9 +232,7 @@
         <option value="$PROJECT_DIR$/src/main/java/basics/StringBasic.java" />
         <option value="$PROJECT_DIR$/src/main/java/basics/ReflectDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadLocalDemoo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadOne.java" />
         <option value="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadThree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadTwo.java" />
         <option value="$PROJECT_DIR$/MD/code/concurrent/concurrent.md" />
         <option value="$PROJECT_DIR$/src/main/java/concurrent/CompletableFutureDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Product.java" />
@@ -243,6 +256,12 @@
         <option value="$PROJECT_DIR$/src/main/java/arithmetic/sort/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/arithmetic/sort/SortTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/arithmetic/sort/CountSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadOne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadTwo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/arithmetic/exercise/AliExercise.java" />
+        <option value="$PROJECT_DIR$/src/main/java/arithmetic/exercise/Fibonacci.java" />
+        <option value="$PROJECT_DIR$/src/main/java/arithmetic/exercise/FrogJump.java" />
+        <option value="$PROJECT_DIR$/src/main/java/arithmetic/exercise/Intersect.java" />
       </list>
     </option>
   </component>
@@ -484,6 +503,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -524,27 +545,51 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="arithmetic" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="arithmetic" type="462c0819:PsiDirectoryNode" />
               <item name="sort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="thread" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572954744901" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573368716227" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -574,20 +619,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SortTest">
+  <component name="RunManager" selected="Application.Fibonacci">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="arithmetic.sort.BubbleSort" />
+    <configuration name="AliExercise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arithmetic.exercise.AliExercise" />
       <module name="javaInterview" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="arithmetic.sort.*" />
+          <option name="PATTERN" value="arithmetic.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -595,13 +640,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="patterns.proxy.cglib.Client" />
+    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arithmetic.exercise.Fibonacci" />
       <module name="javaInterview" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="patterns.proxy.cglib.*" />
+          <option name="PATTERN" value="arithmetic.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -630,6 +675,23 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="arithmetic.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <RunnerSettings RunnerId="Debug with VisualVM">
+        <option name="visualVMId" value="418880278597100" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concurrent.thread.ThreadTwo" />
+      <module name="javaInterview" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="concurrent.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -662,23 +724,6 @@
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
       <method v="2" />
-    </configuration>
-    <configuration name="FeatureDate.dateToLocalDateTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaInterview" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java8.feature.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java8.feature" />
-      <option name="MAIN_CLASS_NAME" value="java8.feature.FeatureDate" />
-      <option name="METHOD_NAME" value="dateToLocalDateTime" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -860,19 +905,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Client" />
-      <item itemvalue="JUnit.FeatureDate.dateToLocalDateTime" />
-      <item itemvalue="Application.BubbleSort" />
       <item itemvalue="Application.SortTest" />
       <item itemvalue="Application.QuickSort" />
+      <item itemvalue="Application.AliExercise" />
+      <item itemvalue="Application.ThreadTwo" />
+      <item itemvalue="Application.Fibonacci" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Fibonacci" />
+        <item itemvalue="Application.AliExercise" />
+        <item itemvalue="Application.ThreadTwo" />
         <item itemvalue="Application.SortTest" />
         <item itemvalue="Application.QuickSort" />
-        <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="JUnit.FeatureDate.dateToLocalDateTime" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -1015,7 +1060,11 @@
       <workItem from="1571657640401" duration="1347000" />
       <workItem from="1571904577885" duration="1217000" />
       <workItem from="1572316440464" duration="140000" />
-      <workItem from="1572945668987" duration="6224000" />
+      <workItem from="1572945668987" duration="7168000" />
+      <workItem from="1573006820262" duration="841000" />
+      <workItem from="1573009006356" duration="4255000" />
+      <workItem from="1573025743368" duration="152000" />
+      <workItem from="1573356551350" duration="3706000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1532930683176</created>
@@ -1095,7 +1144,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363139000" />
+    <option name="totallyTimeSpent" value="373037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -1105,21 +1154,21 @@
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.2603072" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.2392886" />
       <window_info id="Structure" order="5" weight="0.25" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="0" weight="0.32884097" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="1" weight="0.44204852" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="0" weight="0.29313543" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="1" weight="0.44155845" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="3" weight="0.0" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.55658627" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.055658627" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.23719676" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.20408164" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.64378476" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.46581692" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.055658627" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.47495362" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.07235622" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -1253,6 +1302,12 @@
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/arithmetic/sort/SortTest.java</url>
+          <line>8</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1261,84 +1316,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MD/Cache.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JDK/jdk1.8.0_201/src.zip!/java/util/concurrent/BlockingDeque.java" />
-    <entry file="jar://E:/JDK/jdk1.8.0_201/src.zip!/java/util/concurrent/BlockingQueue.java" />
-    <entry file="file://$PROJECT_DIR$/MD/multi-thread/ReentrantLock.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/multi-thread/synchronized.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/Linux/linux常用命令.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-7271">
-            <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/basic/基础.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="112">
-            <caret line="4" selection-start-line="4" selection-end-line="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/basic/img/拦截器和过滤器.webp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/basic/ArrayList.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-3948">
-            <caret line="222" selection-start-line="222" selection-end-line="245" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD/basic/拦截器和过滤器的区别.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="280">
-            <caret line="10" column="407" selection-start-line="10" selection-start-column="407" selection-end-line="10" selection-end-column="407" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/4.3.1.RELEASE/spring-context-4.3.1.RELEASE.jar!/org/springframework/context/ApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/lifecycle/InitApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spring/lifecycle/BeanFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1470,16 +1447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MD/Git.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="32" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MD/Idea配置相关.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1575,16 +1542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_221/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="1119" column="69" selection-start-line="1119" selection-start-column="62" selection-end-line="1119" selection-end-column="69" />
-          <folding>
-            <element signature="e#53266#53923#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/InsertSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1631,17 +1588,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/SortTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/CountSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="57">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/CountSort.java">
+    <entry file="file://$PROJECT_DIR$/MD/Git.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_221/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        <state relative-caret-position="59">
+          <caret line="1119" column="69" selection-start-line="1119" selection-start-column="62" selection-end-line="1119" selection-end-column="69" />
+          <folding>
+            <element signature="e#53266#53923#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/sort/SortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_221/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
+          <folding>
+            <element signature="e#4725#4726#0" expanded="true" />
+            <element signature="e#4793#4794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/AliExercise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/ArrayType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/Fibonacci.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-260">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="docComment;class#Fibonacci#0" expanded="true" />
+            <element signature="docComment;method#getN#0;class#Fibonacci#0" expanded="true" />
+            <element signature="docComment;method#recursion#0;class#Fibonacci#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/FrogJump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-426">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#97#98#0" expanded="true" />
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="docComment;method#getN#0;class#FrogJump#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/MaxNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122">
+          <caret line="81" column="4" lean-forward="true" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;method#getMaxNum#0;class#MaxNumber#0" expanded="true" />
+            <element signature="docComment;method#jumpLast#0;class#MaxNumber#0" expanded="true" />
+            <element signature="docComment;method#splitArray#0;class#MaxNumber#0" expanded="true" />
+            <element signature="docComment;method#exists#0;class#MaxNumber#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/PrimeDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;method#getPrimeCount#0;class#PrimeDemo#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/StringDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-817">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="docComment;class#StringDemo#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/search/BinSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/arithmetic/exercise/Intersect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="923">
+          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+          <folding>
+            <element signature="docComment;class#Intersect#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
