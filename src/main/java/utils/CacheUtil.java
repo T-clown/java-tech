@@ -17,6 +17,7 @@ public class CacheUtil {
 
         String a = null;
         try {
+            System.out.println(null+"");
             a = CACHE.get(1, () -> {
                 String str = "获取";
                 return str + "缓存数据";

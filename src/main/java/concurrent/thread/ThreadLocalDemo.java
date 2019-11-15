@@ -12,8 +12,8 @@ public class ThreadLocalDemo {
         return threadLocal.get();
     }
 
-    private void setName(String string) {
-        threadLocal.set(string);
+    private void setName(String name) {
+        threadLocal.set(name);
     }
 
     @Getter
