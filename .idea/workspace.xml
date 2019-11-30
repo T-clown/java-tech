@@ -136,8 +136,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="291">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -543,7 +543,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575086820783" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575087177363" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1042,7 +1042,7 @@
       <workItem from="1571751434028" duration="362000" />
       <workItem from="1574505854966" duration="1408000" />
       <workItem from="1574508396236" duration="783000" />
-      <workItem from="1574778149544" duration="1122000" />
+      <workItem from="1574778149544" duration="1467000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1532930683176</created>
@@ -1093,7 +1093,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574778399348</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1">
+      <created>1575086919344</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575086919344</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1129,7 +1136,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="393832000" />
+    <option name="totallyTimeSpent" value="394177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1144,11 +1151,11 @@
       <window_info anchor="bottom" id="Debug with VisualVM" order="0" weight="0.16314554" />
       <window_info anchor="bottom" id="Run with VisualVM" order="1" weight="0.600939" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="3" weight="0.0" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="3" weight="0.32939914" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.55686694" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.23719676" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.41201717" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.444206" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29077253" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.46581692" />
       <window_info anchor="bottom" id="Run" order="10" weight="0.35407725" />
@@ -1714,8 +1721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="291">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
