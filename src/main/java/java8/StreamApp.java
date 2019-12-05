@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.*;
 
-public class StreamDemo {
+public class StreamApp {
     public static List<Product> productList;
 
     static {

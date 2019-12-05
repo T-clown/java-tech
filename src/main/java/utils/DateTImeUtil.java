@@ -18,29 +18,8 @@ public class DateTImeUtil {
     public static final DateTimeFormatter DATETIME_FORMATTER =  DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
     public static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyyMMdd");
 
-    /**
-     * 返回当前的日期
-     * @return
-     */
-    public static LocalDate getCurrentLocalDate() {
-        return LocalDate.now();
-    }
 
-    /**
-     * 返回当前时间
-     * @return
-     */
-    public static LocalTime getCurrentLocalTime() {
-        return LocalTime.now();
-    }
 
-    /**
-     * 返回当前日期时间
-     * @return
-     */
-    public static LocalDateTime getCurrentLocalDateTime() {
-        return LocalDateTime.now();
-    }
 
     /**
      * yyyyMMdd
@@ -188,14 +167,6 @@ public class DateTImeUtil {
         return Duration.between(startInclusive, endExclusive).toMillis();
     }
 
-    /**
-     * 是否当天
-     * @param date
-     * @return
-     */
-    public static boolean isToday(LocalDate date) {
-        return getCurrentLocalDate().equals(date);
-    }
 
     public static Long toEpochMilli(LocalDateTime dateTime) {
         return dateTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
