@@ -1,12 +1,16 @@
 package spring.entity;
 
-import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.*;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
-
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 
 /**
  * Bean的生命周期
@@ -24,14 +28,17 @@ public class Book  implements BeanNameAware, BeanFactoryAware,
         System.out.println("第二步：setBookName: Book name has set.");
     }
 
+    @Override
     public void setBeanName(String name) {
         System.out.println("第三步：Book.setBeanName invoke");
     }
 
+    @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
         System.out.println("第四步：Book.setBeanFactory invoke");
     }
 
+    @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         System.out.println("第五步：Book.setApplicationContext invoke");
     }

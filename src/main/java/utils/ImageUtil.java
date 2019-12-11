@@ -135,7 +135,7 @@ public class ImageUtil {
         try {
             inputStream = new ByteArrayInputStream(bytes);
             result = ImageIO.read(inputStream);
-            result = setClip(result, 30);
+            //result = setClip(result, 30);
         } catch (IOException e) {
             logger.error("getBufferedImage failed! ", e);
         } finally {

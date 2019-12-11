@@ -1,13 +1,11 @@
 package java8.lang3;
 
-import org.apache.commons.lang3.time.DateUtils;
-import org.junit.Test;
-
 import java.math.BigDecimal;
 import java.text.NumberFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
+
+import org.apache.commons.lang3.time.DateUtils;
+import org.junit.Test;
 
 public class DateUtilsTest {
 
@@ -17,9 +15,6 @@ public class DateUtilsTest {
         System.out.println(date.toString());
         date= DateUtils.addDays(date,-30);
         System.out.println(date.toString());
-
-        System.out.println("什么");
-
     }
 
     @Test
@@ -30,13 +25,7 @@ public class DateUtilsTest {
         System.out.println(divide);
         NumberFormat numberFormat = NumberFormat.getPercentInstance();
         numberFormat.setMaximumFractionDigits(2);
-        divide.doubleValue();
-        Object q=1;
-        System.out.println(String.valueOf(q));
         System.out.println(numberFormat.format(divide));
-
-        List<Integer> list=new ArrayList<>();
-
     }
 
     @Test

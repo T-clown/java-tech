@@ -2,15 +2,14 @@ package concurrent.thread;
 
 public class Exam {
     public static void main(String[] args) {
-
-        //brea();
-        //System.out.println();
-        //con();
-        //System.out.println();
-        //retry();
+        breakFun();
+        System.out.println();
+        continueFun();
+        System.out.println();
+        retryFun();
     }
 
-    private static void brea() {
+    private static void breakFun() {
         int count = 0;
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 5; j++) {
@@ -24,12 +23,13 @@ public class Exam {
         }
     }
 
-    private static void con() {
+    private static void continueFun() {
         int count = 0;
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 5; j++) {
                 count++;
                 if (count == 3) {
+                    //跳过当前步骤
                     continue;
                 }
                 System.out.print(count + " ");
@@ -37,7 +37,7 @@ public class Exam {
         }
     }
 
-    private static void retry() {
+    private static void retryFun() {
         int count = 0;
         retry:
         for (int i = 0; i < 2; i++) {

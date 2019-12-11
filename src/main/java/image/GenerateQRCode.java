@@ -17,9 +17,10 @@ import com.google.zxing.common.BitMatrix;
 import static com.google.zxing.client.j2se.MatrixToImageConfig.BLACK;
 import static com.google.zxing.client.j2se.MatrixToImageConfig.WHITE;
 
-public class generateQRCode {
+public class GenerateQRCode {
     private static final MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
     private final static int WIDTH = 500;
+    private final static int HEIGHT = 500;
     private final static String EXTENSION = "png";
 
     public static void main(String[] args) {
@@ -38,12 +39,8 @@ public class generateQRCode {
             //outputStream = new ByteArrayOutputStream();
             // MatrixToImageWriter.writeToStream(matrix, EXTENSION, outputStream);
             // file = outputStream.toByteArray();
-            BitMatrix matrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE, WIDTH, WIDTH);
-            BufferedImage bufferedImage = new BufferedImage(
-                WIDTH,
-                WIDTH,
-                BufferedImage.TYPE_INT_RGB
-            );
+            BitMatrix matrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE, WIDTH, HEIGHT);
+            BufferedImage bufferedImage = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
             for (int x = 0; x < WIDTH; x++) {
                 for (int y = 0; y < WIDTH; y++) {
                     bufferedImage.setRGB(x, y, matrix.get(x, y) ? BLACK : WHITE);
