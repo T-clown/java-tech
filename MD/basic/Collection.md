@@ -39,4 +39,28 @@ HashMap和Hashtable区别：
 
 LinkedList
 数据结构：双向链表
+非线程安全，可以实现栈和队列
+
+LinkedHashMap
+数据结构：HashMap+双向链表（继承了HashMap）
+有序的Map：访问模式和插入模式（默认）
+LinkedHashMap映射减少了HashMap排序中的混乱，且不会导致TreeMap的性能损失
+
+LinkedHashSet
+数据结构：继承HashSet，基于LinkedHashMap实现
+有序的Set：插入模式
+
+TreeMap
+数据结构：红黑树
+有序的Map
+自然排序：TreeMap的所有key必须实现Comparable接口，所有的key都是同一个类的对象
+定制排序：创建TreeMap对象传入了一个Comparator对象，该对象负责对TreeMap中所有的key进行排序，采用定制排序不要求Map的key实现Comparable接口
+
+红黑树特点：
+每个节点只能是红色或者黑色
+根节点永远是黑色的
+所有的叶子的子节点都是空节点，并且都是黑色的
+每个红色节点的两个子节点都是黑色的（不会有两个连续的红色节点）
+从任一个节点到其子树中每个叶子节点的路径都包含相同数量的黑色节点（叶子节点到根节点的黑色节点数量每条路径都相同）
+
 
