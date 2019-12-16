@@ -3,8 +3,11 @@ package mockito;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -186,4 +189,12 @@ public class DemoTest {
         System.out.println(Long.parseLong("34020000001320000001"));
     }
 
+    @Test
+    public void test(){
+        Hashtable hashtable=new Hashtable<String,Integer>();
+       // hashtable.put(null,1);
+        Map<String,Integer> map=new HashMap<>();
+        map.put(null,null);
+
+    }
 }
