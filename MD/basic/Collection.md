@@ -64,3 +64,13 @@ TreeMap
 从任一个节点到其子树中每个叶子节点的路径都包含相同数量的黑色节点（叶子节点到根节点的黑色节点数量每条路径都相同）
 
 
+CopyOnWriteArrayList
+数据结构：Object[],创建集合的时候数组长度为0
+写时复制策略：add的时候lock，拷贝一个新数组，添加元素，再把指针指向新数组，数据具有弱一致性
+获取元素时候没有加锁
+
+CopyOnWriteArraySet
+数据结构：基于CopyOnWriteArrayList实现（本地维护一个CopyOnWriteArrayList实例）
+添加的时候采用addIfAbsent保证元素的唯一性
+
+
