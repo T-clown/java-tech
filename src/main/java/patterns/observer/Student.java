@@ -1,5 +1,5 @@
 package patterns.observer;
 
-public interface Person {
+public interface Student {
     void getMessage(String s);
 }

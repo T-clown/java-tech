@@ -2,7 +2,7 @@ package patterns.template;
 
 public class TempletApp {
     public static void main(String[] args) {
-        useTemplet("业务逻辑", new Callback<Integer, String>() {
+        useTemplet("1", new Callback<Integer, String>() {
             @Override
             public Integer doSomething(String t) {
                 return Integer.parseInt(t);

@@ -6,15 +6,13 @@ package patterns.observer;
 public class App {
     public static void main(String[] args) {
 
-        XiaoMei xiao_mei = new XiaoMei();
-        LaoWang lao_wang = new LaoWang();
-        LaoLi lao_li = new LaoLi();
+        Teacher teacher = new Teacher();
+        XiaoBai lao_wang = new XiaoBai();
+        XiaoLi lao_li = new XiaoLi();
 
+        teacher.addStudent(lao_wang);
+        teacher.addStudent(lao_li);
 
-        xiao_mei.addPerson(lao_wang);
-        xiao_mei.addPerson(lao_li);
-
-
-        xiao_mei.notifyPerson();
+        teacher.notifyStudent();
     }
 }
