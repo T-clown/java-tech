@@ -1,11 +1,19 @@
 package patterns.builder;
 
-public  class Phone {
+public class Phone {
     public int id;
     public String brand;
     public int price;
     public String options;
     public String color;
+
+    public Phone(PhoneBuilder builder) {
+        this.id = builder.id;
+        this.brand = builder.brand;
+        this.price = builder.price;
+        this.options = builder.options;
+        this.color = builder.color;
+    }
 
     Phone() {
     }
@@ -43,18 +51,14 @@ public  class Phone {
             this.options = options;
             return this;
         }
+
         public PhoneBuilder color(String color) {
             this.color = color;
             return this;
         }
+
         public Phone build() {
-            Phone phone = new Phone();
-            phone.id = this.id;
-            phone.brand = this.brand;
-            phone.price = this.price;
-            phone.options = this.options;
-            phone.color = this.color;
-            return phone;
+            return new Phone(this);
         }
     }
 
