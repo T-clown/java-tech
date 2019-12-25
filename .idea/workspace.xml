@@ -273,7 +273,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="527" />
     <option name="y" value="43" />
     <option name="width" value="1080" />
@@ -547,7 +547,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571752003948" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-design-patterns" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -1249,7 +1249,7 @@
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/4.3.1.RELEASE/spring-context-4.3.1.RELEASE.jar!/org/springframework/context/support/AbstractXmlApplicationContext.class</url>
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.1.RELEASE/spring-context-4.3.1.RELEASE.jar!/org/springframework/context/support/AbstractXmlApplicationContext.class</url>
           <line>56</line>
           <properties />
           <option name="timeStamp" value="35" />
