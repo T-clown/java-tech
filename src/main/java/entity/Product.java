@@ -3,6 +3,8 @@ package entity;
 import lombok.Data;
 
 @Data
+//@Builder
+//@Accessors(chain = true)
 public class Product {
     public int id;
     public String name;

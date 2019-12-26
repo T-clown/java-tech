@@ -41,36 +41,25 @@ public class ImageHepler {
      */
 
     public static int[] zoom(BufferedImage bitmap, int width, int height,
-
                              String type, File temp) throws IOException {
-
         if (bitmap == null) {
-
             return null;
-
         }
         if (width < 1 || height < 1) {
-
             return null;
-
         }
         Image itemp = null;
-
         float oldWidth = bitmap.getWidth();
-
         float oldHeight = bitmap.getHeight();
-
         double ratio = (height / oldHeight) < (width / oldWidth) ? (height / oldHeight)
             : (width / oldWidth);// 缩放比例
         itemp = bitmap.getScaledInstance(width, height, BufferedImage.SCALE_SMOOTH);
-
         AffineTransformOp op = new AffineTransformOp(
             AffineTransform.getScaleInstance(ratio, ratio), null);
         itemp = op.filter(bitmap, null);
         ImageIO.write((BufferedImage)itemp, type, temp);
         int[] wh = {itemp.getWidth(null), itemp.getHeight(null)};
         return wh;
-
     }
 
     /**
@@ -81,23 +70,14 @@ public class ImageHepler {
      * @param height 目标图高
      * @return
      */
-
     private static BufferedImage makeThumbnail(Image img, int width, int height) {
-
         BufferedImage tag = new BufferedImage(width, height,
-
             BufferedImage.TYPE_INT_RGB);
-
         Graphics g = tag.getGraphics();
-
         g.drawImage(img.getScaledInstance(width, height, Image.SCALE_SMOOTH),
-
             0, 0, null);
-
         g.dispose();
-
         return tag;
-
     }
 
     /**
@@ -110,55 +90,28 @@ public class ImageHepler {
      */
 
     private static void saveSubImage(BufferedImage image,
-
                                      Rectangle subImageBounds, File subImageFile) throws IOException {
-
         String fileName = subImageFile.getName();
-
         String formatName = fileName.substring(fileName.lastIndexOf('.') + 1);
-
         BufferedImage subImage = new BufferedImage(subImageBounds.width,
-
             subImageBounds.height, BufferedImage.TYPE_INT_RGB);
-
         Graphics g = subImage.getGraphics();
-
         if (subImageBounds.width > image.getWidth()
-
             || subImageBounds.height > image.getHeight()) {
-
             int left = subImageBounds.x;
-
             int top = subImageBounds.y;
-
-            if (image.getWidth() < subImageBounds.width)
-
-            { left = (subImageBounds.width - image.getWidth()) / 2; }
-
-            if (image.getHeight() < subImageBounds.height)
-
-            { top = (subImageBounds.height - image.getHeight()) / 2; }
-
+            if (image.getWidth() < subImageBounds.width) { left = (subImageBounds.width - image.getWidth()) / 2; }
+            if (image.getHeight() < subImageBounds.height) { top = (subImageBounds.height - image.getHeight()) / 2; }
             g.setColor(Color.white);
-
             g.fillRect(0, 0, subImageBounds.width, subImageBounds.height);
-
             g.drawImage(image, left, top, null);
-
             ImageIO.write(image, formatName, subImageFile);
-
         } else {
-
             // BufferedImage subImage =
-
             // image.getSubimage(subImageBounds.x,subImageBounds.y,
-
             // subImageBounds.width, subImageBounds.height);
-
             g.drawImage(image.getSubimage(subImageBounds.x, subImageBounds.y,
-
                 subImageBounds.width, subImageBounds.height), 0, 0, null);
-
         }
 
         g.dispose();
@@ -227,15 +180,10 @@ public class ImageHepler {
      */
 
     public static boolean cutToFile(File tFile, File sFile, int x, int y,
-
                                     int w, int h) throws IOException {
-
         BufferedImage tBi = ImageIO.read(tFile);
-
         Rectangle rec = new Rectangle(x, y, w, h);
-
         saveSubImage(tBi, rec, sFile);
-
         return true;
 
     }

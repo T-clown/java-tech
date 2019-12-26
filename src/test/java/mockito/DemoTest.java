@@ -1,16 +1,33 @@
 package mockito;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 import com.alibaba.fastjson.JSON;
+
+import org.apache.commons.lang3.StringUtils;
 import org.joda.time.LocalDate;
 import org.junit.Test;
 import org.mockito.InOrder;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.atLeastOnce;
+import static org.mockito.Mockito.atMost;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.inOrder;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 public class DemoTest {
 
@@ -165,6 +182,19 @@ public class DemoTest {
         Date maxDate = now.dayOfMonth().withMaximumValue().toDate();
         System.out.println(minDate.toString());
         System.out.println(maxDate.toString());
+        System.out.println(        StringUtils.isNumeric("34020000001320000001")
+        );
+        System.out.println(String.valueOf(Long.MAX_VALUE).length());
+        System.out.println("34020000001320000001".length());
+        System.out.println(Long.parseLong("34020000001320000001"));
     }
 
+    @Test
+    public void test(){
+        Hashtable hashtable=new Hashtable<String,Integer>();
+       // hashtable.put(null,1);
+        Map<String,Integer> map=new HashMap<>();
+        map.put(null,null);
+
+    }
 }

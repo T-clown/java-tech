@@ -65,3 +65,23 @@ git pull --rebase origin master
 将当前分支关联到远程master分支
 git branch --set-upstream-to=origin/master master
 
+面试：
+git回退到上一个版本
+git reset --hard HEAD^
+git回退到上上个版本
+git reset --hard HEAD^^
+git回退到前100个版本
+git reset --hard HEAD~100
+
+版本回退
+该命令显示从最近到最远的提交日志。每一次提交都有对应的 commit id 和 commit message
+git log
+根据 id 回退到指定的版本
+git reset --hard id
+推送到本地到远程仓库：让远程仓库代码和你本地一样，到当前你本地的版本
+git push origin HEAD --force
+查看命令操作的历史
+git reflog
+查找到你要的 操作id，依旧使用 上文说的 git reset --hard id。又回退到当初一模一样的版本
+
+

@@ -16,8 +16,9 @@ import org.apache.commons.lang.StringUtils;
  * 使用场景
  * 在搭建框架的时候，有时候不知道需要什么类，什么方法，这个类有哪些属性。比如查询数据库之后的数据，反射成对象。
  */
-public class ReflectDemo {
+public class Reflect {
     public static void main(String[] args) throws Exception {
+        clazz();
         constructor();
         method();
         field();
@@ -27,9 +28,10 @@ public class ReflectDemo {
      * 获取Class对象三种方式
      */
     private static void clazz() throws Exception {
-        Class<String> a = String.class;
-        Class b = "abc".getClass();
-        Class c = Class.forName("java.lang.String");
+        Class<Product> a = Product.class;
+        Class b = new Product().getClass();
+        Class c = Class.forName("entity.Product");
+        System.out.println(a+"\t"+b+"\t"+c);
     }
 
     /**
@@ -65,7 +67,8 @@ public class ReflectDemo {
         //获取secretFunc方法
         Method method = clazz.getDeclaredMethod("reflect", String.class, String.class);
         //实例一个demo02
-        Product p = new Product();
+        //Product p = new Product();
+        Product p = clazz.newInstance();
         //去掉权限验证（暴力反射）
         method.setAccessible(true);
         //执行p的reflect方法,并获得返回值

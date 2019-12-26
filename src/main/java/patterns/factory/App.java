@@ -1,17 +1,17 @@
 package patterns.factory;
 
+import java.util.Date;
+import java.util.function.Consumer;
+
 import patterns.factory.entity.Apple;
 import patterns.factory.entity.Banana;
 import patterns.factory.entity.Orange;
 import patterns.factory.entity.Watermelon;
 
-import java.util.Date;
-import java.util.function.Consumer;
 
-
-public class FactoryTest {
+public class App {
     public static void main(String[] args) {
-        //factoryTest();
+        factory();
         Date start=new Date();
         start.setDate(250);
         Date end=new Date();
@@ -19,7 +19,7 @@ public class FactoryTest {
         System.out.println(FruitType.BANANA.getDesc((short)1,start,end));
     }
 
-    private static void factoryTest() {
+    private static void factory() {
         Consumer<Builder> consumer = builder -> {
             builder.put(FruitType.APPLE, Apple::new);
             builder.put(FruitType.BANANA, Banana::new);

@@ -10,12 +10,12 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 
-public class PersonServiceTest {
+public class StudentServiceTest {
     @Mock
     private PersonDao personDao;//模拟对象
     private PersonService personService;//被测类
 
-    public PersonServiceTest() {
+    public StudentServiceTest() {
     }
 
     @BeforeClass

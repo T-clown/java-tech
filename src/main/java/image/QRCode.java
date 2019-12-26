@@ -25,7 +25,8 @@ import com.google.zxing.common.HybridBinarizer;
 public class QRCode {
     public static void main(String[] args) {
         String content = "https://www.cnblogs.com/mark8080/p/7084955.html";
-        getQRCode(content);
+        String qrCode = getQRCode(content);
+        System.out.println(qrCode);
     }
 
     private static final int BLACK = 0xff000000;

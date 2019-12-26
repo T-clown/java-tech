@@ -1,20 +1,34 @@
 package java8;
 
-import com.alibaba.fastjson.JSON;
-import com.google.common.collect.Lists;
-import entity.Product;
-
 import java.math.BigDecimal;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.TreeSet;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import static java.util.stream.Collectors.*;
+import com.alibaba.fastjson.JSON;
 
-public class StreamDemo {
+import com.google.common.collect.Lists;
+import entity.Product;
+
+import static java.util.stream.Collectors.collectingAndThen;
+import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.mapping;
+import static java.util.stream.Collectors.toCollection;
+import static java.util.stream.Collectors.toList;
+
+public class StreamApp {
     public static List<Product> productList;
 
     static {
@@ -122,7 +136,7 @@ public class StreamDemo {
         Map<Integer, Product> productMap = productList.stream().collect(
                 Collectors.toMap(x -> x.id, Function.identity()));
         /**
-         * 聚合，集合中有重复
+         * 根据字段分组聚合
          */
         Map<Integer, List<Product>> groupList = productList.stream().collect(groupingBy(x -> x.id));
 
