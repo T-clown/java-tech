@@ -23,12 +23,10 @@
 
 package patterns.state;
 
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * Angry state.
  */
-@Slf4j
 public class AngryState implements State {
 
 
@@ -40,12 +38,12 @@ public class AngryState implements State {
 
   @Override
   public void observe() {
-    log.info("{} is furious!", mammoth);
+    //log.info("{} is furious!", mammoth);
   }
 
   @Override
   public void onEnterState() {
-    log.info("{} gets angry!", mammoth);
+    //log.info("{} gets angry!", mammoth);
   }
 
 }

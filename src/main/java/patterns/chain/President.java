@@ -24,22 +24,26 @@
 package patterns.chain;
 
 /**
- * President makes requests that are handled by the chain.
+ * President.
  */
-public class President {
+public class President extends RequestHandler {
 
-  private RequestHandler chain;
-
-  public President() {
-    buildChain();
+  public President(RequestHandler handler) {
+    super(handler);
   }
 
-  private void buildChain() {
-    chain = new OrcCommander(new Teacher(new Student(null)));
+  @Override
+  public void handleRequest(Request req) {
+    if (RequestType.SPEECH == req.getRequestType()) {
+      printHandling(req);
+      req.markHandled();
+    } else {
+      super.handleRequest(req);
+    }
   }
 
-  public void makeRequest(Request req) {
-    chain.handleRequest(req);
+  @Override
+  public String toString() {
+    return "校长";
   }
-
 }
