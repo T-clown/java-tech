@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yit</groupId>
-    <artifactId>mockitoDemo</artifactId>
+    <artifactId>java-tech</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
