@@ -31,12 +31,16 @@ public class App {
    */
   public static void main(String[] args) {
 
-    Mammoth mammoth = new Mammoth();
-    mammoth.observe();
-    mammoth.timePasses();
-    mammoth.observe();
-    mammoth.timePasses();
-    mammoth.observe();
+    Context context = new Context();
+    AngryState angryState = new AngryState();
+    angryState.doAction(context);
+
+    System.out.println(context.getState().toString());
+
+    PeacefulState peacefulState = new PeacefulState();
+    peacefulState.doAction(context);
+
+    System.out.println(context.getState().toString());
 
   }
 }

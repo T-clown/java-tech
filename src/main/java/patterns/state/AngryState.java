@@ -24,26 +24,20 @@
 package patterns.state;
 
 
+
 /**
  * Angry state.
  */
 public class AngryState implements State {
 
-
-  private Mammoth mammoth;
-
-  public AngryState(Mammoth mammoth) {
-    this.mammoth = mammoth;
+  @Override
+  public void doAction(Context context) {
+    System.out.println("Player is in Angry state");
+    context.setState(this);
   }
 
-  @Override
-  public void observe() {
-    //log.info("{} is furious!", mammoth);
-  }
-
-  @Override
-  public void onEnterState() {
-    //log.info("{} gets angry!", mammoth);
+  public String toString(){
+    return "Angry State";
   }
 
 }
