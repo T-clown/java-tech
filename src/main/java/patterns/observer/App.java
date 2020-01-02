@@ -7,12 +7,11 @@ public class App {
     public static void main(String[] args) {
 
         Teacher teacher = new Teacher();
-        XiaoBai lao_wang = new XiaoBai();
-        XiaoLi lao_li = new XiaoLi();
+        XiaoBai lao_wang = new XiaoBai(teacher);
+        XiaoLi lao_li = new XiaoLi(teacher);
 
-        teacher.addStudent(lao_wang);
-        teacher.addStudent(lao_li);
+        teacher.notifyAllObservers("明天上课");
 
-        teacher.notifyStudent();
+        teacher.setState(1);
     }
 }
