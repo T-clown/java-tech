@@ -2,6 +2,7 @@
 
 package patterns.iterator;
 
+import java.util.List;
 
 public class TreasureChestItemIterator implements Iterator<Item> {
 
@@ -31,8 +32,8 @@ public class TreasureChestItemIterator implements Iterator<Item> {
   }
 
   private int findNextIdx() {
-    var items = chest.getItems();
-    var tempIdx = idx;
+    List<Item> items = chest.getItems();
+    int tempIdx = idx;
     while (true) {
       tempIdx++;
       if (tempIdx >= items.size()) {
