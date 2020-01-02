@@ -1,4 +1,4 @@
-package utils;
+package util;
 
 public class Constants {
     public static String imgUrl1 = "https://asset.yit.com/SDP/SHOP/bae4fa0dd0d78dc926ef6bd90a93d7e5_460X760.jpeg";
