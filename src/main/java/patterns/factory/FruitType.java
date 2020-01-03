@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public enum FruitType {
+    /**
+     * 水果枚举
+     */
     APPLE(1, "苹果"),
     ORANGE(2, "橘子"),
     BANANA(3, "香蕉"),

@@ -4,7 +4,6 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -69,17 +68,17 @@ public class ImageUtil3 {
 
 
     public  static void image() throws IOException {
-        BufferedImage bi1 = ImageIO.read(new File("/Users/ti93/tmp/picture.png"));
+        BufferedImage bufferedImage = ImageIO.read(new File("/Users/ti93/tmp/picture.png"));
         // 根据需要是否使用 BufferedImage.TYPE_INT_ARGB
-        BufferedImage image = new BufferedImage(bi1.getWidth(),
-            bi1.getHeight(), BufferedImage.TYPE_INT_RGB);
+        BufferedImage image = new BufferedImage(bufferedImage.getWidth(),
+            bufferedImage.getHeight(), BufferedImage.TYPE_INT_RGB);
 
-        Ellipse2D.Double shape = new Ellipse2D.Double(0, 0, bi1.getWidth(), bi1
+        Ellipse2D.Double shape = new Ellipse2D.Double(0, 0, bufferedImage.getWidth(), bufferedImage
             .getHeight());
 
         Graphics2D g2 = image.createGraphics();
         image = g2.getDeviceConfiguration().createCompatibleImage(
-            bi1.getWidth(), bi1.getHeight(), Transparency.TRANSLUCENT);
+            bufferedImage.getWidth(), bufferedImage.getHeight(), Transparency.TRANSLUCENT);
         g2 = image.createGraphics();
 
         g2.setPaint(new Color (255,255,255));
@@ -87,7 +86,7 @@ public class ImageUtil3 {
         g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.8f));
         g2.setClip(shape);
         // 使用 setRenderingHint 设置抗锯齿
-        g2.drawImage(bi1, 0, 0, null);
+        g2.drawImage(bufferedImage, 0, 0, null);
         g2.dispose();
         try {
             ImageIO.write(image, "png", new File("/Users/ti93/tmp/2.png"));

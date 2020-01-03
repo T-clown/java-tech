@@ -10,9 +10,7 @@ import java.time.Month;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Base64;
-import java.util.Calendar;
 import java.util.Collections;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
@@ -23,6 +21,7 @@ import java8.entity.Student;
 import java8.utils.DateComparator;
 import org.junit.Before;
 import org.junit.Test;
+
 import static java.util.stream.Collectors.groupingBy;
 
 public class FeatureOne {
@@ -129,7 +128,6 @@ public class FeatureOne {
     @Test
     public void base64Test() {
         final String text = "Base64 finally in Java8";
-
         final String encoded = Base64.getEncoder().encodeToString(text.getBytes(StandardCharsets.UTF_8));
         final String decoded = new String(Base64.getDecoder().decode(encoded), StandardCharsets.UTF_8);
         System.out.println(encoded);
@@ -146,28 +144,8 @@ public class FeatureOne {
 
         Arrays.parallelSort(array);
         Arrays.stream(array).limit(10).forEach(i -> System.out.print(i + "\t"));
-        System.out.println();
-        Date date1 = new Date();
-
-        Calendar calendar2 = Calendar.getInstance();
-        calendar2.setTime(date1);
-        System.out.println(calendar2.getTime());
-    }
-
-    @Test
-    public void dateTest() {
-        Calendar calendar1 = Calendar.getInstance();
-        calendar1.set(2017, 10, 28, 12, 0);
-        Date date1 = calendar1.getTime();
-        Date date2 = new Date();
 
     }
 
-    @Test
-    public void demo05(){
-        List<String > strs=new ArrayList<>();
-        strs.add("aaa");
-        System.out.println(strs.contains("aaa"));
-    }
 
 }

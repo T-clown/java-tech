@@ -5,8 +5,6 @@ import org.springframework.beans.factory.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 
 /**
  * Bean的生命周期
@@ -37,7 +35,7 @@ public class Book  implements BeanNameAware, BeanFactoryAware,
     }
 
     // 自定义初始化方法
-    @PostConstruct
+   // @PostConstruct
     public void springPostConstruct(){
         System.out.println("第六步：@PostConstruct");
     }
@@ -59,7 +57,7 @@ public class Book  implements BeanNameAware, BeanFactoryAware,
     }
 
     // 自定义销毁方法
-    @PreDestroy
+   // @PreDestroy
     public void springPreDestory(){
         System.out.println("第十步：@PreDestory");
     }

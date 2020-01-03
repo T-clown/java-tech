@@ -1,6 +1,8 @@
-import org.apache.commons.lang3.StringUtils;
+package arithmetic.exercise;
 
 import java.util.Arrays;
+
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * 以字符串的形式给定两个非负整数 num1 和 num2，返回 num1 和 num2 的乘积。
