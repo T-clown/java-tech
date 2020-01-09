@@ -29,9 +29,9 @@ jstack可以定位到线程堆栈，根据堆栈信息我们可以定位到具�
 
 3. jmap（Memory Map）和 jhat（Java Heap Analysis Tool）
 作用： jmap用来查看堆内存使用状况，一般结合jhat使用
-语法：jmap [option] pid  
-      jmap [option] executable core  
-      jmap [option] [server-id@]remote-hostname-or-ip 
+语法：jmap pid  
+      jmap executable core  
+      jmap [server-id@]remote-hostname-or-ip 
 (1)查看进程堆内存使用情况:包括使用的GC算法、堆配置参数和各代中堆内存使用：jmap -heap pid
 (2)查看堆内存中的对象数目、大小统计直方图，如果带上live则只统计活对象：jmap -histo[:live] pid(带上live会执行FGC)
 (3)用jmap把进程内存使用情况dump到文件中，再用jhat分析查看。dump出来的文件还可以用MAT、VisualVM等工具查看
