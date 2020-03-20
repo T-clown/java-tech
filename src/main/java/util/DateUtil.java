@@ -102,8 +102,8 @@ public class DateUtil {
      * @return
      */
     private static LocalDate dateToLocateDate(Date date) {
-        //return date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-        return LocalDate.ofInstant(date.toInstant(), ZoneId.systemDefault());
+        return date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+       // return LocalDate.ofInstant(date.toInstant(), ZoneId.systemDefault());
     }
 
     /**
