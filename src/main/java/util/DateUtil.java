@@ -6,7 +6,6 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
-import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Date;
@@ -103,7 +102,7 @@ public class DateUtil {
      */
     private static LocalDate dateToLocateDate(Date date) {
         return date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-       // return LocalDate.ofInstant(date.toInstant(), ZoneId.systemDefault());
+        //return LocalDate.ofInstant(date.toInstant(), ZoneId.systemDefault());
     }
 
     /**
@@ -115,7 +114,6 @@ public class DateUtil {
     public static Date getEndOfDay(Date date) {
         LocalDateTime localDateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(date.getTime()),
             ZoneId.systemDefault());
-        ;
         LocalDateTime endOfDay = localDateTime.with(LocalTime.MAX);
         return Date.from(endOfDay.atZone(ZoneId.systemDefault()).toInstant());
     }

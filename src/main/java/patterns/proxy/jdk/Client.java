@@ -30,8 +30,10 @@ public class Client {
 
         System.out.println(proxyInstance.getClass().getName());
 
-        proxyInstance.run();
-        proxyInstance.sayHello("world");
+        proxyInstance.sayHello("江南");
+
+        proxyInstance.run("江南");
+
 
     }
 }

@@ -10,8 +10,9 @@ public class BitSetDemo {
      */
     public static void containChars(String str) {
         BitSet used = new BitSet();
-        for (int i = 0; i < str.length(); i++)
+        for (int i = 0; i < str.length(); i++) {
             used.set(str.charAt(i)); // set bit for char
+        }
 
         StringBuilder sb = new StringBuilder();
         sb.append("[");

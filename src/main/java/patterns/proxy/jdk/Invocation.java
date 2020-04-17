@@ -1,7 +1,7 @@
 package patterns.proxy.jdk;
 
 public interface Invocation {
-    public void run();
+    void run(String name);
 
-    public void sayHello(String str);
+    void sayHello(String str);
 }

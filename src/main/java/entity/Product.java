@@ -1,10 +1,12 @@
 package entity;
 
+import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 @Data
-//@Builder
-//@Accessors(chain = true)
+@Builder
+@Accessors(chain = true)
 public class Product {
     public int id;
     public String name;

@@ -2,8 +2,8 @@ package patterns.proxy.jdk;
 
 public class RealInvocation implements Invocation {
     @Override
-    public void run() {
-        System.out.println("you must keep running");
+    public void run(String name) {
+        System.out.println("you must keep running，"+name);
     }
 
     @Override

@@ -5,7 +5,8 @@ public class TempletApp {
         useTemplet("1", new Callback<Integer, String>() {
             @Override
             public Integer doSomething(String t) {
-                return Integer.parseInt(t);
+                int a= Integer.parseInt(t);
+                return a+1;
             }
         });
     }
