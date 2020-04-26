@@ -195,6 +195,6 @@ public class DemoTest {
        // hashtable.put(null,1);
         Map<String,Integer> map=new HashMap<>();
         map.put(null,null);
-
+        System.out.println(JSON.toJSONString("1.2.3".split("\\.")));
     }
 }

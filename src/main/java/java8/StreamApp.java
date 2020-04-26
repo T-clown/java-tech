@@ -41,19 +41,21 @@ public class StreamApp {
     }
 
     public static void main(String[] args) {
-        Map<Integer,Long> map=  productList.stream().collect(groupingBy(x -> x.id, Collectors.mapping(x -> x.stock, Collectors.summingLong(Integer::longValue))));
-        List<Map<String, Object>> list=Lists.newArrayList();
-        list.stream().collect(groupingBy(x -> String.valueOf(x.get("")), Collectors.mapping(x ->String.valueOf(x.get("")), Collectors.summingLong(
-                Long::parseLong))));
-        //Map<String, Object> map = list.parallelStream()
-        //    .collect(Collectors.groupingBy(x -> String.valueOf(x.get("channel")),
-        //        Collectors.mapping(x -> String.valueOf(x.get("charge")),
-        //            Collectors.summarizingLong(x -> Long.valueOf(x)))));
-        System.out.println(JSON.toJSONString(map));
-        double d = 114.145;
-        d = (double) Math.round(d * 100) / 100;
-        System.out.println(d);
-        System.out.println(new BigDecimal(1).divide(new BigDecimal(20)));
+        merge();
+
+    }
+
+    /**
+     * 分组操作
+     */
+    private static void groupBy(){
+        /**
+         * 分组后求和
+         */
+        Map<Integer, Long> sumMap = productList.stream().collect(groupingBy(x -> x.id, Collectors.mapping(x -> x.stock, Collectors.summingLong(Integer::longValue))));
+        Map<Integer, Long> countMap = productList.stream().collect(groupingBy(x -> x.id, Collectors.counting()));
+        System.out.println(JSON.toJSONString(sumMap));
+        System.out.println(JSON.toJSONString(countMap));
 
     }
 
@@ -61,12 +63,13 @@ public class StreamApp {
         /**
          * 根据某一属性分组后再根据另一属性求出每组中最大的
          */
-        List<Product>  p=  productList.stream().collect(Collectors.groupingBy(x->x.id)).values().stream().map(x->x.stream().max(Comparator.comparing(y->y.stock)).get()).collect(Collectors.toList());
+        List<Product> p = productList.stream().collect(Collectors.groupingBy(x -> x.id)).values().stream().map(
+            x -> x.stream().max(Comparator.comparing(y -> y.stock)).get()).collect(Collectors.toList());
         int max = productList.stream().collect(
-                Collectors.groupingBy(x -> x.id)).values().stream().mapToInt(x -> x.stream().mapToInt(y -> y.stock).max()
-                .orElse(0)).sum();
+            Collectors.groupingBy(x -> x.id)).values().stream().mapToInt(x -> x.stream().mapToInt(y -> y.stock).max()
+            .orElse(0)).sum();
         int min = productList.stream().collect(Collectors.groupingBy(x -> x.id)).values().stream().mapToInt(
-                x -> x.stream().mapToInt(y -> y.stock).min().orElse(0)).sum();
+            x -> x.stream().mapToInt(y -> y.stock).min().orElse(0)).sum();
         System.out.println("最大：" + max);
         System.out.println("最小：" + min);
     }
@@ -77,9 +80,9 @@ public class StreamApp {
         HashMap<String, String> hashMap = new LinkedHashMap<>(50);
         int max = Math.max(as.size(), bs.size());
         IntStream.range(0, max).forEach(i -> hashMap.put(
-                String.valueOf(i >= as.size() ? "defaultA" : as.get(i)),
-                String.valueOf(i >= as.size() ? "defaultB" : bs.get(i))
-                )
+            String.valueOf(i >= as.size() ? "defaultA" : as.get(i)),
+            String.valueOf(i >= as.size() ? "defaultB" : bs.get(i))
+            )
         );
 
         hashMap.keySet().forEach(System.out::println);
@@ -92,17 +95,16 @@ public class StreamApp {
         /**
          * 根据某一属性聚合另一个属性
          */
-        productList.stream().collect(
-                groupingBy(x -> x.stock, mapping(x -> x.name, toList())));
+        productList.stream().collect(groupingBy(x -> x.stock, mapping(x -> x.name, toList())));
 
         Map<Integer, List<String>> groupList = productList.stream().collect(
-                groupingBy(x -> x.stock, Collectors.mapping(x -> x.name, toList())));
+            groupingBy(x -> x.stock, Collectors.mapping(x -> x.name, toList())));
         /**
          * 根据某一属性排序
          */
         productList.sort(Comparator.comparing(x -> x.stock));
         List<Product> products = productList.stream().sorted(Comparator.comparingInt(x -> x.stock)).collect(
-                toList());
+            toList());
 
         /**
          * 根据最大属性值获取
@@ -134,7 +136,7 @@ public class StreamApp {
          * 聚合成map，集合中无重复
          */
         Map<Integer, Product> productMap = productList.stream().collect(
-                Collectors.toMap(x -> x.id, Function.identity()));
+            Collectors.toMap(x -> x.id, Function.identity()));
         /**
          * 根据字段分组聚合
          */
@@ -144,7 +146,7 @@ public class StreamApp {
          * 根据对象属性分类统计集合中对象某个属性的和
          */
         Map<Integer, Long> groupSum = productList.stream().collect(
-                Collectors.groupingBy(x -> x.id, Collectors.summingLong(x -> x.stock)));
+            Collectors.groupingBy(x -> x.id, Collectors.summingLong(x -> x.stock)));
         /**
          * 统计spu下已选参团的sku单元个数
          */
@@ -168,8 +170,8 @@ public class StreamApp {
         /**
          * 某一属性最大或者最小
          */
-        Product product1 = productList.stream().min(Comparator.comparing(x -> x.id)).get();
-        Product product2 = productList.stream().max(Comparator.comparing(x -> x.stock)).get();
+        Product product1 = productList.stream().min(Comparator.comparing(x -> x.id)).orElseGet(null);
+        Product product2 = productList.stream().max(Comparator.comparing(x -> x.stock)).orElseGet(null);
     }
 
     /**
@@ -177,7 +179,7 @@ public class StreamApp {
      */
     private static void distinct() {
         List<Product> list = productList.stream().collect(collectingAndThen(
-                toCollection(() -> new TreeSet<>(Comparator.comparingInt(Product::getId))), ArrayList::new));
+            toCollection(() -> new TreeSet<>(Comparator.comparingInt(Product::getId))), ArrayList::new));
         list.forEach(System.out::println);
     }
 
@@ -185,6 +187,12 @@ public class StreamApp {
         IntStream.range(1, 5).forEach(System.out::println);
         System.out.println();
         IntStream.rangeClosed(1, 5).forEach(System.out::println);
+    }
+
+    private static void merge() {
+        Map<Integer, Integer> productMap = new HashMap<>();
+        productList.forEach(x -> productMap.merge(x.getId(), x.getStock(), Integer::sum));
+        System.out.println(JSON.toJSONString(productMap));
     }
 
     private static void streamOperation() {
@@ -198,17 +206,17 @@ public class StreamApp {
          * filter(Predicate<? super T> predicate)：过滤操作，返回Stream
          */
         Stream.of("peter", "anna", "mike").filter(value -> value.startsWith("a")).collect(Collectors.toList()).forEach(
-                System.out::println);
+            System.out::println);
         /**
          * map：映射操作，返回Stream
          */
         Stream.of("peter", "anna", "mike").map(String::toUpperCase).collect(Collectors.toList()).forEach(
-                System.out::println);
+            System.out::println);
         /**
          * flatMap：将最底层元素抽出来放到一起
          */
         Stream.of(Arrays.asList(1, 2, 3), Arrays.asList(2, 3, 6)).flatMap(x -> x.stream()).collect(Collectors.toList())
-                .forEach(System.out::print);
+            .forEach(System.out::print);
 
         Stream<List<Integer>> listStream = Stream.of(Arrays.asList(1, 2, 3), Arrays.asList(2, 3, 6));
         listStream.flatMap(Collection::stream).collect(Collectors.toList()).forEach(System.out::print);
@@ -245,7 +253,7 @@ public class StreamApp {
          */
         Map<Boolean, List<Integer>> collect1 = Stream.of(1, 3, 4).collect(Collectors.partitioningBy(x -> x > 2));
         Map<Boolean, Long> collect2 = Stream.of(1, 3, 4).collect(
-                Collectors.partitioningBy(x -> x > 2, Collectors.counting()));
+            Collectors.partitioningBy(x -> x > 2, Collectors.counting()));
         /**
          *Collectors.joining(",")：拼接字符串
          */
@@ -255,12 +263,12 @@ public class StreamApp {
          * 先执行collect操作后再执行第二个参数的表达式。这里是先拼接字符串，再在最后+ "d"
          */
         String str = Stream.of("a", "b", "c").collect(
-                Collectors.collectingAndThen(Collectors.joining(","), x -> x + "d"));
+            Collectors.collectingAndThen(Collectors.joining(","), x -> x + "d"));
         /**
          * Collectors.mapping(...)：跟map操作类似，只是参数有点区别
          */
         System.out.println(
-                Stream.of("a", "b", "c").collect(Collectors.mapping(x -> x.toUpperCase(), Collectors.joining(","))));
+            Stream.of("a", "b", "c").collect(Collectors.mapping(x -> x.toUpperCase(), Collectors.joining(","))));
         System.out.println(Stream.of("a", "b", "c").map(String::toUpperCase).collect(Collectors.joining(",")));
 
     }
