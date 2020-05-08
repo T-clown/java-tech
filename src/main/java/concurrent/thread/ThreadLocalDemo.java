@@ -23,9 +23,11 @@ public class ThreadLocalDemo {
 
 
     public static void main(String[] args) {
-        int number=1;
+        System.out.println(new Object().hashCode());
+        System.out.println(new Object().hashCode());
+        System.out.println(new Object().hashCode());
         // threadDemo();
-        threadLocalDemo();
+        //threadLocalDemo();
     }
 
     private static void threadLocalDemo(){
@@ -54,5 +56,6 @@ public class ThreadLocalDemo {
             }, "thread - " + i);
             thread.start();
         }
+
     }
 }
