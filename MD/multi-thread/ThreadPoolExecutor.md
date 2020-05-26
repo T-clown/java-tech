@@ -6,7 +6,7 @@ ReentrantLock
 释放锁的时候，若state==0，则取出链表第一个Node，并用LockSupport.unpark()唤醒线程
 内部的ConditionObject，也是一个链表，类似于加锁和释放锁(都用到了LockSupport)
 
-
+https://www.cnblogs.com/fanguangdexiaoyuer/p/12332082.html#_label3_0
 
 ThreadPoolExecutor
 参数

@@ -1,5 +1,6 @@
 package concurrent.thread;
 
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadFactory;
@@ -10,54 +11,61 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class ThreadPool {
 
-
     public static final ThreadPoolExecutor EXECUTOR =
-            new ThreadPoolExecutor(15, 15, 0L, TimeUnit.MILLISECONDS,
-                    new LinkedBlockingQueue<>(), new ThreadFactory() {
-                private final AtomicInteger threadNumber = new AtomicInteger(1);
-                private static final String NAME_PREFIX = "Thread";
+        new ThreadPoolExecutor(5, 10, 0L, TimeUnit.MILLISECONDS,
+            new LinkedBlockingQueue<>(), new ThreadFactory() {
+            private final AtomicInteger threadNumber = new AtomicInteger(1);
+            private static final String NAME_PREFIX = "Thread";
 
-                @Override
-                public Thread newThread(Runnable r) {
-                    Thread t = new Thread(Thread.currentThread().getThreadGroup(), r,
-                            NAME_PREFIX + threadNumber.getAndIncrement(),
-                            0);
-                    //是否守护进程
-                    if (t.isDaemon()) {
-                        t.setDaemon(false);
-                    }
-                    if (t.getPriority() != Thread.NORM_PRIORITY) {
-                        t.setPriority(Thread.NORM_PRIORITY);
-                    }
-                    System.out.println(t.getName());
-                    return t;
+            @Override
+            public Thread newThread(Runnable r) {
+                Thread t = new Thread(Thread.currentThread().getThreadGroup(), r,
+                    NAME_PREFIX + threadNumber.getAndIncrement(),
+                    0);
+                //是否守护进程
+                if (t.isDaemon()) {
+                    t.setDaemon(false);
                 }
-            }, new AbortPolicy());
+                if (t.getPriority() != Thread.NORM_PRIORITY) {
+                    t.setPriority(Thread.NORM_PRIORITY);
+                }
+                t.setUncaughtExceptionHandler((t1, e) -> {
+                    System.out.println(t1.getName() + "\t" + e.getMessage());
+                });
+                return t;
+            }
+        }, new AbortPolicy());
 
     static {
-        Runtime.getRuntime().addShutdownHook(new Thread(EXECUTOR::shutdown));
-    }
 
-    private static void print(String str) {
-        System.out.println(str);
+        Runtime.getRuntime().addShutdownHook(new Thread(EXECUTOR::shutdown));
     }
 
     public static void main(String[] args) {
 
-        EXECUTOR.execute(() -> print("hahha "));
+        int cpu = Runtime.getRuntime().availableProcessors();
 
-        Future<String> future = EXECUTOR.submit(() -> task("bbb"));
+        EXECUTOR.execute(() -> execute("clown"));
+
+        Future<String> future = EXECUTOR.submit(() -> task("clown"));
+
         try {
             System.out.println(future.get());
         } catch (InterruptedException e) {
             e.printStackTrace();
-        } catch (Exception e) {
+        } catch (ExecutionException e) {
             e.printStackTrace();
         }
 
     }
 
     private static String task(String str) {
-        return "参数：" + str;
+        int a = 1 / 0;
+        return "submit执行：" + str;
+    }
+
+    private static void execute(String name) {
+        int a = 1 / 0;
+        System.out.println("execute执行：" + name);
     }
 }
