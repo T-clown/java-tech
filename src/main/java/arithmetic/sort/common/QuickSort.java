@@ -6,11 +6,10 @@ import com.alibaba.fastjson.JSON;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int[] arr={1,4,2,4,6,8,9,6,5};
-        arr= sort(arr);
+        int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        arr = sort(arr);
         System.out.println(JSON.toJSONString(arr));
     }
-
 
     public static int[] sort(int[] sourceArray) {
         // 对 arr 进行拷贝，不改变参数内容
@@ -41,9 +40,9 @@ public class QuickSort {
         return index - 1;
     }
 
-
     /**
      * 快速排序方法
+     *
      * @param array
      * @param start
      * @param end
@@ -59,15 +58,17 @@ public class QuickSort {
         }
         return array;
     }
+
     /**
      * 快速排序算法——partition
+     *
      * @param array
      * @param start
      * @param end
      * @return
      */
     public static int partitionB(int[] array, int start, int end) {
-        int pivot = (int) (start + Math.random() * (end - start + 1));
+        int pivot = (int)(start + Math.random() * (end - start + 1));
         int smallIndex = start - 1;
         swap(array, pivot, end);
         for (int i = start; i <= end; i++) {

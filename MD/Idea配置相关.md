@@ -17,3 +17,10 @@ taskkill /pid xxxx /f      停止进程xxxx
 命令执行文件创建表
 mysql -uroot -proot -P3306 databaseName < filePath
 mysql -uroot -proot -P3306 log_20190421 < log_db_table_new
+
+
+查看字节码
+打开File->Settings->Tools->External Tools
+Program => 填入javap.exe的绝对路径
+Arguments => -c $FileNameWithoutExtension$.class
+Working directory => $OutputPath$/$FileDirRelativeToSourcepath$

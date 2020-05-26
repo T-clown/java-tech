@@ -14,6 +14,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.SynchronousQueue;
 import java.util.stream.Collectors;
 
 public class Demo {
@@ -129,6 +130,12 @@ public class Demo {
 
         System.out.println(toweekMonday);
         System.out.println(toweekSumday);
+    }
+
+    @Test
+    public void demo09(){
+        SynchronousQueue queue=new SynchronousQueue();
+
     }
 
 
