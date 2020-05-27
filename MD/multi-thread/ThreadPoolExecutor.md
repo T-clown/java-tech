@@ -90,4 +90,7 @@ handler：默认
 
 5.newWorkStealingPool：窃取线程池，基于ForkJoinPool
 
-
+线程池线程数设置：
+CPU密集型(计算密集型) => CPU数量 + 1
+IO密集型 => CPU数量 * CPU利用率 * (1 + 线程等待时间/线程CPU时间)(或者直接为CPU数量的2倍)
+CPU数量Ncpu=Runtime.getRuntime().availableProcessors()
