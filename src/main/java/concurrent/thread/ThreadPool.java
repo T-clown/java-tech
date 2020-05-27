@@ -1,6 +1,7 @@
 package concurrent.thread;
 
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadFactory;
@@ -36,10 +37,15 @@ public class ThreadPool {
             }
         }, new AbortPolicy());
 
+    /**
+     * 这个代码的作用，是当进程关闭时，我们将线程池中已经添加的任务继续执行完毕，然后关闭线程池。
+     * 作用是防止已添加的任务丢失
+     */
     static {
-
         Runtime.getRuntime().addShutdownHook(new Thread(EXECUTOR::shutdown));
     }
+
+
 
     public static void main(String[] args) {
 
