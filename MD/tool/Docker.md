@@ -74,3 +74,8 @@ docker stop $(docker ps -a | awk '{ print $1}' | tail -n +2)
 docker rm $(docker ps -a | awk '{ print $1}' | tail -n +2)
 删除所有的镜像
 docker rmi $(docker images | awk '{print $3}' |tail -n +2)
+
+登录redis客户端
+docker exec -it 容器id redis-cli
+登录zookeeper客户端
+docker exec -it 容器id zkCli.sh
