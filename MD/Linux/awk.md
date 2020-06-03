@@ -1,0 +1,16 @@
+https://mp.weixin.qq.com/s?subscene=23&__biz=MzI4MDEwNzAzNg==&mid=2649444004&idx=1&sn=a41f34890847c2e55d7931a0c5449d57&chksm=f3a26fd7c4d5e6c131d06d21d9cf4a00f8545ca6dd41c10ebe262fe509213a357681e76bb9fd&scene=7&key=b3f2a0e2d868ba4270ab235d3519565a2f77446158776e2a6d4efb94852075bab32aea15f899cfb66d4ece31bec61040ea5179b0c2e0129a2c2bc306d1caf1b6e6a526b9943e1366a91ed00e88956bc8&ascene=0&uin=MTIwNzg3MDIyOQ%3D%3D&devicetype=Windows+10+x64&version=62090070&lang=zh_CN&exportkey=AZLjJjXasQHug4D6a6vZUnw%3D&pass_ticket=IkHFIe5SdC17beybYjrdR%2FJ6VIlH%2FIGgiYLgJyvvniSIQuzQ3NHOedRjsBv7Yhtt
+https://mp.weixin.qq.com/s?subscene=23&__biz=MzI4MDEwNzAzNg==&mid=2649443938&idx=1&sn=4ffc53b43c8111987d17601c98bcc499&chksm=f3a26f11c4d5e60718b8dacbde364bd1bc0be1de71ecbcd2b565141ff61a65d280398535c74b&scene=7&key=26817ffa6a4ada9ea25b5be473897b19a72fd237261a6ddb2fcb71c3f31e2a0aed3a777c0c6b8ad4f635a37491c66128db166619394fa393e6683bbfa7a7b4882b3853fd28da3443a1ae37742618b576&ascene=0&uin=MTIwNzg3MDIyOQ%3D%3D&devicetype=Windows+10+x64&version=62090070&lang=zh_CN&exportkey=ASWsjLHCoYYASNI2jttEXes%3D&pass_ticket=IkHFIe5SdC17beybYjrdR%2FJ6VIlH%2FIGgiYLgJyvvniSIQuzQ3NHOedRjsBv7Yhtt
+https://mp.weixin.qq.com/s?subscene=23&__biz=MjM5OTA1MDUyMA==&mid=2655443277&idx=2&sn=80bbe05f8237e8d899b9820e628334fd&chksm=bd73153a8a049c2c48189f907a4fcbf731b09b7b7d159b1f029615c98572752238079bdad542&scene=7&key=40e599c655b82c87dabee3e9b2b7175bffa30901120fa10a198cf9e7c3b2026f22642e37452c7a143fd4ca3a9ec495154122a1ab54ace0239f5ad6aabc17b40ec465acbc8d57dc3f5fa09f11ac2c6227&ascene=0&uin=MTIwNzg3MDIyOQ%3D%3D&devicetype=Windows+10+x64&version=62090070&lang=zh_CN&exportkey=AQqkRMkaj83kK6DFX50RH7M%3D&pass_ticket=IkHFIe5SdC17beybYjrdR%2FJ6VIlH%2FIGgiYLgJyvvniSIQuzQ3NHOedRjsBv7Yhtt
+https://mp.weixin.qq.com/s?subscene=23&__biz=MzI4MDEwNzAzNg==&mid=2649445097&idx=1&sn=5c12a95881241056fe0de4c0907cb41d&chksm=f3a2739ac4d5fa8cd780c5a0024e169254817419b21b4fcd145b245ec86c05bc5a2b058d9965&scene=7&key=a2563109174208e50c55319e031b32c63ccd4f1da1970570cc6021ea94060c4721dbec76acc45889a35b40c49c6a2df28e9f0a206a5e3a87ca2717f246f7b052568fda5e82f264d330a6f283a7d5d4ed&ascene=0&uin=MTIwNzg3MDIyOQ%3D%3D&devicetype=Windows+10+x64&version=62090070&lang=zh_CN&exportkey=AXOTwneqygqfJ%2BgRGxdtRgY%3D&pass_ticket=IkHFIe5SdC17beybYjrdR%2FJ6VIlH%2FIGgiYLgJyvvniSIQuzQ3NHOedRjsBv7Yhtt
+https://mp.weixin.qq.com/s?subscene=23&__biz=MzAwODkwMDk4OQ==&mid=2247483785&idx=1&sn=fc28e5e6b30bb4a71e0a3e4109249f9d&chksm=9b66999bac11108de28f53caa7191078495c4aeed7805fc7a4781dc9309d52a748b56e7d695c&scene=7&key=4ed30a840d75ec687f0171985f80fcace6a183184bb3f013836adfc5ead33f5f43365ac701cc8527030bfd8f2b28f49e3666dd9305b65c69c53ab187130fadac33b29a1000b523f86bdad230f5e00c82&ascene=0&uin=MTIwNzg3MDIyOQ%3D%3D&devicetype=Windows+10+x64&version=62090070&lang=zh_CN&exportkey=AaEC6NQ7omlixl5E0huR%2BJI%3D&pass_ticket=V4P1Tq3Jw%2FnL0x3yCNQ295CwoLfad7y1nTKiXGYN5cnPn6l7qGgVpqgGw1HImZID
+1.语法
+awk [-F ERE] [-v assignment] ... program [argument ...]
+awk [-F ERE] -f progfile ...  [-v assignment] ...[argument ...]
+-F ERE：定义字段分隔符，该选项的值可以是扩展的正则表达式（ERE）；
+-f progfile：指定awk脚本，可以同时指定多个脚本，它们会按照在命令行中出现的顺序连接在一起；
+-v assignment：定义awk变量，形式同awk中的变量赋值，即name=value，赋值发生在awk处理文本之前
+
+例：
+echo "1:2:3" | awk -F: '{print $1 " and " $2 " and " $3}'
+echo | awk -v a=1 'BEGIN {print a}'
+BEGIN是一个特殊的pattern，它在awk处理输入之前就会执行，可以认为是一个初始化语句，与此对应的还有END

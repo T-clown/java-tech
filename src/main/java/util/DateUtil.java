@@ -2,6 +2,7 @@ package util;
 
 import java.text.SimpleDateFormat;
 import java.time.Instant;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
@@ -20,7 +21,6 @@ public class DateUtil {
      * 格式化日期工具
      */
     public static final FastDateFormat FAST_DATE_FORMAT = FastDateFormat.getInstance(YYYY_MM_DD_HH_MM_SS);
-
 
     private static volatile Map<String, DateTimeFormatter> formatterMap = new ConcurrentHashMap<>();
     private static volatile Map<String, SimpleDateFormat> simpleDateFormatMap = new ConcurrentHashMap<>();
@@ -48,8 +48,8 @@ public class DateUtil {
      * @return
      */
     public static Date getFirstDayOfMon(Date date) {
-        LocalDateTime firstOfDay = transToLocateDateTime(date).with(TemporalAdjusters.firstDayOfMonth());
-        return transToDate(firstOfDay);
+        LocalDateTime firstOfDay = dateToLocateDateTime(date).with(TemporalAdjusters.firstDayOfMonth());
+        return localDateTimeToDate(firstOfDay);
     }
 
     /**
@@ -59,9 +59,9 @@ public class DateUtil {
      * @return
      */
     public static Date getLastDayOfMon(Date date) {
-        LocalDateTime endOfDay = transToLocateDateTime(date).with(TemporalAdjusters.lastDayOfMonth()).with(
+        LocalDateTime endOfDay = dateToLocateDateTime(date).with(TemporalAdjusters.lastDayOfMonth()).with(
             LocalTime.MAX);
-        return transToDate(endOfDay);
+        return localDateTimeToDate(endOfDay);
     }
 
     /**
@@ -70,8 +70,18 @@ public class DateUtil {
      * @param localDateTime
      * @return
      */
-    private static Date transToDate(LocalDateTime localDateTime) {
+    private static Date localDateTimeToDate(LocalDateTime localDateTime) {
         return Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
+    }
+
+    /**
+     * LocalDate转Date
+     *
+     * @param localDate
+     * @return
+     */
+    private static Date localDateToDate(LocalDate localDate) {
+        return Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
     }
 
     /**
@@ -80,8 +90,19 @@ public class DateUtil {
      * @param date
      * @return
      */
-    private static LocalDateTime transToLocateDateTime(Date date) {
+    private static LocalDateTime dateToLocateDateTime(Date date) {
         return LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault());
+    }
+
+    /**
+     * Date转LocalDate
+     *
+     * @param date
+     * @return
+     */
+    private static LocalDate dateToLocateDate(Date date) {
+        return date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        //return LocalDate.ofInstant(date.toInstant(), ZoneId.systemDefault());
     }
 
     /**
@@ -93,7 +114,6 @@ public class DateUtil {
     public static Date getEndOfDay(Date date) {
         LocalDateTime localDateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(date.getTime()),
             ZoneId.systemDefault());
-        ;
         LocalDateTime endOfDay = localDateTime.with(LocalTime.MAX);
         return Date.from(endOfDay.atZone(ZoneId.systemDefault()).toInstant());
     }
@@ -117,6 +137,39 @@ public class DateUtil {
         System.out.println(FAST_DATE_FORMAT.format(date));
         System.out.println(formatter(YYYY_MM_DD_HH_MM_SS).format(dateTime));
         System.out.println(DateFormatUtils.format(date, YYYY_MM_DD_HH_MM_SS));
+    }
+
+
+    /**
+     * 根据生日计算年龄
+     * @param birthDay
+     * @return
+     */
+    public static int getAgeByBirth(LocalDate birthDay) {
+        LocalDate now = LocalDate.now();
+        //出生日期晚于当前时间，无法计算
+        if (now.isBefore(birthDay)) {
+            throw new IllegalArgumentException(
+                "The birthDay is before Now.It's unbelievable!");
+        }
+        //计算整岁数
+        int age =  now.getYear() - birthDay.getYear();
+        int monthNow = now.getMonthValue();
+        int dayOfMonthNow = now.getDayOfMonth();
+        int monthBirth = birthDay.getMonthValue();
+        int dayOfMonthBirth =birthDay.getDayOfMonth();
+        if (monthNow <= monthBirth) {
+            if (monthNow == monthBirth) {
+                //当前日期在生日之前，年龄减一
+                if (dayOfMonthNow < dayOfMonthBirth) {
+                    age--;
+                }
+            } else {
+                //当前月份在生日之前，年龄减一
+                age--;
+            }
+        }
+        return age;
     }
 
 }

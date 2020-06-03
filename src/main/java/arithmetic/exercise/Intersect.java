@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 
 import com.alibaba.fastjson.JSON;
 
-import arithmetic.sort.BubbleSort;
+import arithmetic.sort.common.BubbleSort;
 import com.google.common.primitives.Ints;
 
 /**

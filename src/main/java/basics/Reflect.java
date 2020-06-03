@@ -18,12 +18,18 @@ import org.apache.commons.lang.StringUtils;
  */
 public class Reflect {
     public static void main(String[] args) throws Exception {
-        clazz();
-        constructor();
-        method();
-        field();
-        progress();
+        ClassLoader.getSystemClassLoader().loadClass("entity.Product");
+        System.out.println("-----------------------------------------");
+        Class.forName("entity.Product");
+        //clazz();
+        //constructor();
+        //method();
+        //field();
+        //progress();
+
     }
+
+
     /**
      * 获取Class对象三种方式
      */

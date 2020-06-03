@@ -1,6 +1,6 @@
 package arithmetic.search;
 
-import arithmetic.sort.BubbleSort;
+import arithmetic.sort.common.BubbleSort;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
