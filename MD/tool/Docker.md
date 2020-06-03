@@ -68,6 +68,7 @@ docker rmi 镜像名称(镜像ID)或者docker image rm 镜像名称(镜像ID)
 
 启动所有的容器
 docker start $(docker ps -a | awk '{ print $1}' | tail -n +2)
+docker start $(docker ps -aq)
 关闭所有的容器
 docker stop $(docker ps -a | awk '{ print $1}' | tail -n +2)
 删除所有的容器
@@ -79,3 +80,6 @@ docker rmi $(docker images | awk '{print $3}' |tail -n +2)
 docker exec -it 容器id redis-cli
 登录zookeeper客户端
 docker exec -it 容器id zkCli.sh
+
+查看所有容器名称
+docker ps --format "{{.Names}}"
