@@ -101,3 +101,14 @@ docker exec -it 容器id zkCli.sh
 
 查看所有容器名称
 docker ps --format "{{.Names}}"
+
+docker基础容器中bash: vi: command not found问题解决
+apt-get update
+apt-get install vim
+
+Docker有三种网络模式，bridge、host、none，在你创建容器的时候，不指定--network默认是bridge。
+bridge：为每一个容器分配IP，并将容器连接到一个docker0虚拟网桥，通过docker0网桥与宿主机通信。也就是说，此模式下，你不能用宿主机的IP+容器映射端口来进行Docker容器之间的通信。
+host：容器不会虚拟自己的网卡，配置自己的IP，而是使用宿主机的IP和端口。这样一来，Docker容器之间的通信就可以用宿主机的IP+容器映射端口
+none：无网络
+
+https://www.imooc.com/article/details/id/20872
