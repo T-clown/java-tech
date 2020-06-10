@@ -2,6 +2,9 @@ package arithmetic.sort.common;
 
 import java.util.Arrays;
 
+/**
+ * 选择排序
+ */
 public class SelectionSort {
     public static int[] sort(int[] sourceArray)  {
         int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);

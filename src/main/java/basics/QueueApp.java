@@ -14,7 +14,6 @@ public class QueueApp {
 
     public static void main(String[] args) throws InterruptedException {
         arrayBlockingQueue();
-
     }
 
     private static void arrayBlockingQueue() throws InterruptedException {

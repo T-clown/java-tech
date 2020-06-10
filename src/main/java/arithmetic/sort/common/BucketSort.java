@@ -2,6 +2,9 @@ package arithmetic.sort.common;
 
 import java.util.Arrays;
 
+/**
+ * 桶排序
+ */
 public class BucketSort {
     private static final InsertSort insertSort = new InsertSort();
     public int[] sort(int[] sourceArray) throws Exception {

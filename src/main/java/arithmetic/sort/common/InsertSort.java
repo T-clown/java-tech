@@ -2,6 +2,9 @@ package arithmetic.sort.common;
 
 import java.util.Arrays;
 
+/**
+ * 插入排序
+ */
 public class InsertSort {
     public static int[] sort(int[] sourceArray) throws Exception {
         // 对 arr 进行拷贝，不改变参数内容

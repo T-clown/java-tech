@@ -1,6 +1,9 @@
 package arithmetic.sort.common;
 import java.util.Arrays;
 
+/**
+ * 希尔排序
+ */
 public class ShellSort {
     public int[] sort(int[] sourceArray) throws Exception {
         // 对 arr 进行拷贝，不改变参数内容

@@ -2,6 +2,9 @@ package arithmetic.sort.common;
 
 import java.util.Arrays;
 
+/**
+ * 计数排序
+ */
 public class CountSort {
     public static int[] sort(int[] sourceArray) {
         // 对 arr 进行拷贝，不改变参数内容
