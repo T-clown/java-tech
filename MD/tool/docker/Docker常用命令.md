@@ -11,7 +11,6 @@ docker network create somenetwork
 运行ElasticSearch
 docker run -d --name elasticsearch --net somenetwork -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:tag
 
-Docker常用命令
 systemctl start docker		启动 docker
 systemctl status docker		查看 docker 状态
 systemctl stop docker		停止 docker

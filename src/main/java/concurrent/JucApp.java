@@ -1,18 +1,10 @@
 package concurrent;
 
-import java.util.concurrent.locks.LockSupport;
+import com.alibaba.fastjson.JSON;
 
 public class JucApp {
     public static void main(String[] args) throws InterruptedException {
-        Thread t = new Thread(() -> {
-            System.out.println("LockSupport.park");
-            LockSupport.park();
-            System.out.println("LockSupport.unpark");
-        });
-        LockSupport.unpark(t);
-        t.start();
-        t.join();
-        System.out.println("main thread unpark t");
-        LockSupport.unpark(t);
+        String[] split = "aaa".split(",");
+        System.out.println(JSON.toJSONString(split));
     }
 }
