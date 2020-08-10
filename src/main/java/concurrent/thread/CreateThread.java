@@ -19,7 +19,7 @@ public class CreateThread {
         //实质是以Callable对象来创建并启动线程
         new Thread(threadName, "有返回值的线程").start();
         System.out.println(threadName.get());
-        //或者
+        //或者````````
         FutureTask<Integer> task = new FutureTask<>(() -> {
             System.out.println(Thread.currentThread().getName());
             return 1;
