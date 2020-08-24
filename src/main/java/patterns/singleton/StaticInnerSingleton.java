@@ -7,10 +7,10 @@ public class StaticInnerSingleton {
     private StaticInnerSingleton(){}
 
     public static StaticInnerSingleton getInstance(){
-        return InitInstance.INSTANCE;
+        return InstanceHolder.INSTANCE;
     }
 
-    private static  class  InitInstance{
+    private static  class InstanceHolder {
         private  static final StaticInnerSingleton INSTANCE=new StaticInnerSingleton();
     }
 }
