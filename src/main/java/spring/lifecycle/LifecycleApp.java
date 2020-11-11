@@ -18,7 +18,7 @@ public class LifecycleApp {
         Book book = (Book)context.getBean("book");
         System.out.println("第九步：Book name = " + book.getBookName());
         // ((ClassPathXmlApplicationContext) context).destroy();
-        ((FileSystemXmlApplicationContext) context).destroy();
+        ((ClassPathXmlApplicationContext) context).destroy();
     }
 
     private static void conpleteLifecycle(){

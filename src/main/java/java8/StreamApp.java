@@ -48,11 +48,12 @@ public class StreamApp {
     /**
      * 分组操作
      */
-    private static void groupBy(){
+    private static void groupBy() {
         /**
          * 分组后求和
          */
-        Map<Integer, Long> sumMap = productList.stream().collect(groupingBy(x -> x.id, Collectors.mapping(x -> x.stock, Collectors.summingLong(Integer::longValue))));
+        Map<Integer, Long> sumMap = productList.stream().collect(
+            groupingBy(x -> x.id, Collectors.mapping(x -> x.stock, Collectors.summingLong(Integer::longValue))));
         Map<Integer, Long> countMap = productList.stream().collect(groupingBy(x -> x.id, Collectors.counting()));
         System.out.println(JSON.toJSONString(sumMap));
         System.out.println(JSON.toJSONString(countMap));
@@ -137,6 +138,11 @@ public class StreamApp {
          */
         Map<Integer, Product> productMap = productList.stream().collect(
             Collectors.toMap(x -> x.id, Function.identity()));
+        /**
+         * 聚合成map，集合中有重复
+         */
+        Map<Integer, Product> productMap2 = productList.stream().collect(
+            Collectors.toMap(x -> x.id, Function.identity(), (oldValue, newValue) -> oldValue));
         /**
          * 根据字段分组聚合
          */
