@@ -3,6 +3,7 @@ package java8.apache;
 import java8.entity.Student;
 import org.joda.time.DateTime;
 import org.junit.Test;
+import util.DateUtil;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -19,23 +20,23 @@ import java.util.stream.Collectors;
 
 public class Demo {
     @Test
-    public void demo01(){
-        ArrayList a=new ArrayList();
+    public void demo01() {
+        ArrayList a = new ArrayList();
 
-
-        System.out.println(2<<3);//2*8
-        System.out.println(8>>2);//8/4
+        System.out.println(2 << 3);//2*8
+        System.out.println(8 >> 2);//8/4
     }
+
     @Test
-    public void demo02(){
-        int x=1|2|4|6;
+    public void demo02() {
+        int x = 1 | 2 | 4 | 6;
         System.out.println(x);
-        System.out.println(4|16);
+        System.out.println(4 | 16);
     }
 
     @Test
-    public void demo03(){
-        BigDecimal b=new BigDecimal(100.1);
+    public void demo03() {
+        BigDecimal b = new BigDecimal(100.1);
         System.out.println(b.setScale(2, RoundingMode.UNNECESSARY));
     }
 
@@ -46,24 +47,23 @@ public class Demo {
     }
 
     @Test
-    public void demo04(){
-        String a="111";
-        String b="222";
-        String c="333";
-        System.out.println(getTicketTitle(a,b,c));
+    public void demo04() {
+        String a = "111";
+        String b = "222";
+        String c = "333";
+        System.out.println(getTicketTitle(a, b, c));
     }
 
-
     @Test
-    public void demo(){
-        Date date=new Date(1603958015949L);
-        Date date1=new DateTime(date).plus(1).toDate();
+    public void demo() {
+        Date date = new Date(1603958015949L);
+        Date date1 = new DateTime(date).plus(1).toDate();
         System.out.println(date.toString());
         System.out.println(date1.toString());
     }
 
     @Test
-    public void demo4(){
+    public void demo4() {
         System.out.println(Integer.MAX_VALUE);
         System.out.println(Integer.MIN_VALUE);
 
@@ -71,30 +71,29 @@ public class Demo {
     }
 
     @Test
-    public void demo5(){
-        List<Student> list=new ArrayList<>();
-        list.add(new Student(1,"1","1",1));
-        list.add(new Student(2,"1","1",1));
-        list.add(new Student(3,"1","1",1));
-        list.add(new Student(1,"1","1",1));
+    public void demo5() {
+        List<Student> list = new ArrayList<>();
+        list.add(new Student(1, "1", "1", 1));
+        list.add(new Student(2, "1", "1", 1));
+        list.add(new Student(3, "1", "1", 1));
+        list.add(new Student(1, "1", "1", 1));
         List<Integer> ids = list.stream()
-                .filter(student -> student.id != 0)
-                .mapToInt(student -> student.id)
-                .distinct()
-                .boxed()
-                .collect(Collectors.toList());
+            .filter(student -> student.id != 0)
+            .mapToInt(student -> student.id)
+            .distinct()
+            .boxed()
+            .collect(Collectors.toList());
         ids.forEach(System.out::println);
     }
 
     @Test
-    public void demo6(){
+    public void demo6() {
         LocalDate localDate = LocalDate.now();
         LocalDateTime minTime = localDate.atTime(LocalTime.MIN);
         LocalDateTime maxTime = localDate.atTime(LocalTime.MAX);
         System.out.println(localDate.toString());
         System.out.println(minTime.toString());
         System.out.println(maxTime.toString());
-
 
         LocalDateTime localDateTime = LocalDateTime.now();
         LocalDateTime minTime1 = localDateTime.with(LocalTime.MIN);
@@ -103,28 +102,26 @@ public class Demo {
         System.out.println(maxTime1.toString());
     }
 
-
     @Test
-    public void demo7(){
+    public void demo7() {
         LocalDate now = LocalDate.now();
         LocalDate localDate = LocalDate.now().plusDays(3);
 
-        LocalDateTime localDateTime=LocalDateTime.now();
-        LocalDateTime localDateTime2=LocalDateTime.now().plusDays(3);
+        LocalDateTime localDateTime = LocalDateTime.now();
+        LocalDateTime localDateTime2 = LocalDateTime.now().plusDays(3);
 
         System.out.println(now.until(localDate, ChronoUnit.DAYS));
-        System.out.println(ChronoUnit.DAYS.between(now,localDate));
-        System.out.println(ChronoUnit.DAYS.between(localDateTime,localDateTime2));
+        System.out.println(ChronoUnit.DAYS.between(now, localDate));
+        System.out.println(ChronoUnit.DAYS.between(localDateTime, localDateTime2));
     }
 
-
     @Test
-    public void demo08(){
+    public void demo08() {
         LocalDate today = LocalDate.now();
         LocalDate toweekMonday = today.with(DayOfWeek.MONDAY);
         LocalDate toweekSumday = today.with(DayOfWeek.SUNDAY);
-        LocalDate lastMonday=toweekMonday.minusDays(7);
-        LocalDate lastSumday=toweekSumday.minusDays(7);
+        LocalDate lastMonday = toweekMonday.minusDays(7);
+        LocalDate lastSumday = toweekSumday.minusDays(7);
         System.out.println(lastMonday);
         System.out.println(lastSumday);
 
@@ -133,10 +130,16 @@ public class Demo {
     }
 
     @Test
-    public void demo09(){
-        SynchronousQueue queue=new SynchronousQueue();
+    public void demo09() {
+        Date start = new Date(1604505600000L);
+        System.out.println(DateUtil.format(start));
+        Date end = new Date(1605110399999L);
+        System.out.println(DateUtil.format(end));
+
+
+        Date end2 = new Date(1603814400000L);
+        System.out.println(DateUtil.format(end2));
 
     }
-
 
 }

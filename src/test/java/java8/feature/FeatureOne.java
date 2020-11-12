@@ -13,6 +13,7 @@ import java.util.Base64;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -39,6 +40,9 @@ public class FeatureOne {
 
     @Test
     public void demo01() {
+        Optional<Student> first = list.stream().filter(x -> x.getId() > 5).findFirst();
+        boolean present = first.isPresent();
+        Student student = first.get();
         //Arrays.asList("a","b","d").forEach(e->System.out.println(e));
         Arrays.asList("a", 'b', "c").forEach(x -> {
             System.out.println(x);

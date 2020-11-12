@@ -41,6 +41,14 @@ public class DateUtil {
         return formatter;
     }
 
+    public static String format(LocalDateTime localDateTime) {
+        return formatter(YYYY_MM_DD_HH_MM_SS).format(localDateTime);
+    }
+
+    public static String format(Date date) {
+        return formatter(YYYY_MM_DD_HH_MM_SS).format(dateToLocateDateTime(date));
+    }
+
     /**
      * 当月第一天
      *
@@ -139,9 +147,9 @@ public class DateUtil {
         System.out.println(DateFormatUtils.format(date, YYYY_MM_DD_HH_MM_SS));
     }
 
-
     /**
      * 根据生日计算年龄
+     *
      * @param birthDay
      * @return
      */
@@ -153,11 +161,11 @@ public class DateUtil {
                 "The birthDay is before Now.It's unbelievable!");
         }
         //计算整岁数
-        int age =  now.getYear() - birthDay.getYear();
+        int age = now.getYear() - birthDay.getYear();
         int monthNow = now.getMonthValue();
         int dayOfMonthNow = now.getDayOfMonth();
         int monthBirth = birthDay.getMonthValue();
-        int dayOfMonthBirth =birthDay.getDayOfMonth();
+        int dayOfMonthBirth = birthDay.getDayOfMonth();
         if (monthNow <= monthBirth) {
             if (monthNow == monthBirth) {
                 //当前日期在生日之前，年龄减一
