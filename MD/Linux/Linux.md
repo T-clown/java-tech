@@ -20,3 +20,11 @@ scp file username@ip:path
 linux下载文件
 1.sz file(下载文件夹sz file/*，只下载文件夹里面的内容)
 2.scp  username@ip:path file
+
+
+ps -p PID -o lstart
+PID 为进程id  -o 是output 输出项
+-o etime 是运行时间
+-o lstart 是开始时间
+-o comm 是进程名
+-o user 运行用户
