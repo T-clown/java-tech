@@ -26,13 +26,16 @@ public class Client {
         ClassLoader classLoader = handler.getClass().getClassLoader();
         Class[] interfaces = invocation.getClass().getInterfaces();
 
-        Invocation proxyInstance = (Invocation)Proxy.newProxyInstance(classLoader, interfaces, handler);
+        //Invocation proxyInstance = (Invocation)Proxy.newProxyInstance(classLoader, interfaces, handler);
+        Invocation proxyInstance = (Invocation)Proxy.newProxyInstance(Invocation.class.getClassLoader(), new Class[]{Invocation.class}, handler);
 
         System.out.println(proxyInstance.getClass().getName());
 
         proxyInstance.sayHello("江南");
 
         proxyInstance.run("江南");
+
+
 
 
     }
