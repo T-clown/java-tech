@@ -52,3 +52,6 @@ jstack可以定位到线程堆栈，根据堆栈信息我们可以定位到具�
 
 分析死锁：
 jstack -l pid > deadlock.jstack
+
+jps无法查看java进程
+启动命令加上-Djava.io.tmpdir=/tmp/hsperfdata_username(username为登录账户的用户名)
