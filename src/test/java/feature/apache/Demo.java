@@ -4,15 +4,19 @@ import feature.entity.Student;
 import org.joda.time.DateTime;
 import org.junit.Test;
 import util.DateUtil;
+import util.FileUtil;
+import util.HttpRequester;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.nio.charset.StandardCharsets;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -116,6 +120,8 @@ public class Demo {
 
     @Test
     public void demo08() {
+
+
         LocalDate today = LocalDate.now();
         LocalDate toweekMonday = today.with(DayOfWeek.MONDAY);
         LocalDate toweekSumday = today.with(DayOfWeek.SUNDAY);
@@ -130,14 +136,21 @@ public class Demo {
 
     @Test
     public void demo09() {
-        Date start = new Date(1604505600000L);
-        System.out.println(DateUtil.format(start));
-        Date end = new Date(1605110399999L);
-        System.out.println(DateUtil.format(end));
+        String replaceUrl
+            = "http://10.128.160.247:80/cwos-portal/portal/fileManager/imgByPath?path=faceEvent_default_387728532949696512";
+        HttpRequester httpRequester = new HttpRequester();
+        httpRequester.setUrl(replaceUrl);
+        httpRequester.setMethod(HttpRequester.Method.GET);
+        byte[] bytes = httpRequester.downloadBytes();
+        String encoded = Base64.getEncoder().encodeToString(bytes);
 
+        String base64 = FileUtil.imgBase64(replaceUrl);
 
-        Date end2 = new Date(1603814400000L);
-        System.out.println(DateUtil.format(end2));
+        //System.out.println(encoded);
+        System.out.println();
+        System.out.println(base64);
+        System.out.println();
+        System.out.println(FileUtil.url2base64(replaceUrl));
 
     }
 
