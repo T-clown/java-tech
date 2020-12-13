@@ -34,7 +34,7 @@ rmdir(remove directory)命令可用来删除“空”的子目录： rmdir app  
 浏览文件
 【cat、more、less】
 cat 用于显示文件的内容。 格式：cat[参数]<文件名>
-   * cat yum.conf 
+   * cat yum.conf 后面加 |grep -Ev '^$|#'过滤掉注释和空白行
 more 一般用于要显示的内容会超过一个画面长度的情况。按空格键显示下一个画面。
 回车显示下一行内容。
 按 q 键退出查看。

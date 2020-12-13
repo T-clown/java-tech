@@ -2,7 +2,6 @@ package patterns.proxy.jdk;
 
 
 import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Proxy;
 
 public class Client {
     public static void main(String[] args) {
@@ -27,13 +26,13 @@ public class Client {
         Class[] interfaces = invocation.getClass().getInterfaces();
 
         //Invocation proxyInstance = (Invocation)Proxy.newProxyInstance(classLoader, interfaces, handler);
-        Invocation proxyInstance = (Invocation)Proxy.newProxyInstance(Invocation.class.getClassLoader(), new Class[]{Invocation.class}, handler);
-
-        System.out.println(proxyInstance.getClass().getName());
-
-        proxyInstance.sayHello("江南");
-
-        proxyInstance.run("江南");
+//        Invocation proxyInstance = (Invocation)Proxy.newProxyInstance(Invocation.class.getClassLoader(), new Class[]{Invocation.class}, handler);
+//
+//        System.out.println(proxyInstance.getClass().getName());
+//
+//        proxyInstance.sayHello("江南");
+//
+//        proxyInstance.run("江南");
 
 
 
