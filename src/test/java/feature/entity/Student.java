@@ -3,8 +3,11 @@ package feature.entity;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 public class Student implements Comparable<Student> {
     public int id;
+    @JSONField(name = "username")
     public String name;
     public String address;
     public int score;

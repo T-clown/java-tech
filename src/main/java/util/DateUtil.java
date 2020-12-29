@@ -140,11 +140,12 @@ public class DateUtil {
     }
 
     public static void main(String[] args) {
-        LocalDateTime dateTime = LocalDateTime.now();
-        Date date = new Date();
-        System.out.println(FAST_DATE_FORMAT.format(date));
-        System.out.println(formatter(YYYY_MM_DD_HH_MM_SS).format(dateTime));
-        System.out.println(DateFormatUtils.format(date, YYYY_MM_DD_HH_MM_SS));
+        //LocalDateTime dateTime = LocalDateTime.now();
+        //Date date = new Date();
+        //System.out.println(FAST_DATE_FORMAT.format(date));
+        //System.out.println(formatter(YYYY_MM_DD_HH_MM_SS).format(dateTime));
+        //System.out.println(DateFormatUtils.format(date, YYYY_MM_DD_HH_MM_SS));
+        System.out.println(getStartOfDay(getFirstDayOfMon(new Date())).getTime());
     }
 
     /**

@@ -1,8 +1,10 @@
 package feature.apache;
 
 import feature.entity.Student;
+import org.apache.commons.lang3.time.DateUtils;
 import org.joda.time.DateTime;
 import org.junit.Test;
+import org.springframework.beans.BeanUtils;
 import util.DateUtil;
 import util.FileUtil;
 import util.HttpRequester;
@@ -17,9 +19,12 @@ import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Base64;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import com.alibaba.fastjson.JSON;
 
 public class Demo {
     @Test
@@ -67,10 +72,12 @@ public class Demo {
 
     @Test
     public void demo4() {
+        System.out.println(Student.class.getName());
         System.out.println(Integer.MAX_VALUE);
         System.out.println(Integer.MIN_VALUE);
-
-        System.out.println(System.getProperties());
+        Student student = new Student(1,"aa",null,2);
+        System.out.println(JSON.toJSONString(student));
+        // System.out.println(System.getProperties());
     }
 
     @Test
@@ -103,6 +110,7 @@ public class Demo {
         LocalDateTime maxTime1 = localDateTime.with(LocalTime.MAX);
         System.out.println(minTime1.toString());
         System.out.println(maxTime1.toString());
+        BeanUtils.copyProperties(null,new Student());
     }
 
     @Test
@@ -118,20 +126,22 @@ public class Demo {
         System.out.println(ChronoUnit.DAYS.between(localDateTime, localDateTime2));
     }
 
+
+
     @Test
     public void demo08() {
+        Date startOfDay = DateUtil.getStartOfDay(DateUtils.addDays(new Date(), -1));
+        Date endOfDay = DateUtil.getEndOfDay(DateUtils.addDays(new Date(), -1));
+        System.out.println(startOfDay.getTime());
+        System.out.println(endOfDay.getTime());
+        Calendar calendar = Calendar.getInstance();
 
-
-        LocalDate today = LocalDate.now();
-        LocalDate toweekMonday = today.with(DayOfWeek.MONDAY);
-        LocalDate toweekSumday = today.with(DayOfWeek.SUNDAY);
-        LocalDate lastMonday = toweekMonday.minusDays(7);
-        LocalDate lastSumday = toweekSumday.minusDays(7);
-        System.out.println(lastMonday);
-        System.out.println(lastSumday);
-
-        System.out.println(toweekMonday);
-        System.out.println(toweekSumday);
+        long a=1607529600000L;
+        long b=a-300000;
+        calendar.setTimeInMillis(b);
+        System.out.println(new Date(a));
+        System.out.println(new Date(b));
+        System.out.println(new Date(calendar.getTimeInMillis()));
     }
 
     @Test
