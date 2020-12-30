@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d13071d-3c84-4364-9bb0-5b36166d21f6" name="Default" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaInterview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaInterview.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/patterns/builder/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/patterns/builder/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/patterns/template/Callback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/patterns/template/Callback.java" afterDir="false" />
-    </list>
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="d7a41303-26e0-4ea1-9894-109f8fc52ad0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/java_tech$StringBasic.ic" NAME="StringBasic Coverage Results" MODIFIED="1569496351082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -38,98 +28,94 @@
     <expand />
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="java-tech" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patterns/decorator/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="27" />
+        <entry file="file://$PROJECT_DIR$/MD/软件的安装和破解.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patterns/observer/XiaoLi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <entry file="file://$PROJECT_DIR$/MD/开源项目.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patterns/observer/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <entry file="file://$PROJECT_DIR$/MD/十大排序算法.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patterns/observer/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <entry file="file://$PROJECT_DIR$/MD/java基础.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patterns/observer/Teacher.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/java8/StreamApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="-1406">
+              <caret line="63" column="149" selection-start-line="63" selection-start-column="149" selection-end-line="63" selection-end-column="149" />
+              <folding>
+                <element signature="docComment;method#createStream#0;class#StreamApp#0" expanded="true" />
+                <element signature="docComment;method#distinct#0;class#StreamApp#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patterns/observer/XiaoBai.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patterns/template/Callback.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patterns/template/Templet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state>
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patterns/template/TempletApp.java">
+        <entry file="file://$PROJECT_DIR$/javaInterview.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="-135" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/stream/Collectors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6223">
+              <caret line="830" column="32" selection-start-line="830" selection-start-column="32" selection-end-line="830" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/patterns/decorator/PowerWrapper.java">
+        <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/function/ToDoubleFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-              <folding>
-                <element signature="e#106#107#0" expanded="true" />
-                <element signature="e#132#133#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -139,44 +125,42 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Object</find>
-      <find>equals</find>
-      <find>optional</find>
-      <find>abstra</find>
-      <find>com.yit</find>
-      <find>1.1.3</find>
-      <find>guava</find>
-      <find>lang</find>
-      <find>Optional</find>
-      <find>数组转</find>
-      <find>asList</find>
-      <find>stream</find>
-      <find>enum</find>
-      <find>peek</find>
-      <find>flat</find>
-      <find>本月</find>
-      <find>删除</find>
-      <find>DateTime</find>
-      <find>去重</find>
-      <find>max</find>
-      <find>maxBy</find>
-      <find>Collectors.maxBy</find>
-      <find>BigDecimal.TEN</find>
-      <find>range</find>
-      <find>Book.myPreDestory invoke</find>
-      <find>最大</find>
-      <find>IntStream</find>
-      <find>fruit</find>
-      <find>spring</find>
-      <find>8005</find>
+      <find>find</find>
+      <find>proxy</find>
+      <find>loader</find>
+      <find>andThen</find>
+      <find>comparable</find>
+      <find>Comparable</find>
+      <find>Comparator</find>
+      <find>当月</find>
+      <find>.reduce(</find>
+      <find>TemporalAdjusters.firstDayOfMonth()</find>
+      <find>mockito</find>
+      <find>-Xmn</find>
+      <find>base64</find>
+      <find>Base64.encodeBase64String</find>
+      <find>/9j/4AAQSkZJRgABAQAAAQABAAD</find>
+      <find>+5QZMsxbXbt1zWlF2rJt61Yfuj6VnI5plhWz3p341EnapK5mlcyuf/Z</find>
+      <find>死锁</find>
+      <find>登录mysql</find>
+      <find>Cache</find>
+      <find>cat</find>
+      <find>最小化</find>
+      <find>docker ps</find>
+      <find>netstat</find>
+      <find>Collectors.toMap</find>
+      <find>-Ev</find>
+      <find>端口</find>
+      <find>sum()</find>
+      <find>jstack</find>
+      <find>mapping</find>
+      <find>y-&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>1</replace>
@@ -196,70 +180,58 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/java8/apache/Demo.java" />
-        <option value="$PROJECT_DIR$/MD/basic/基础.md" />
-        <option value="$PROJECT_DIR$/MD/开源项目.md" />
-        <option value="$PROJECT_DIR$/MD/软件的安装和破解.md" />
-        <option value="$PROJECT_DIR$/MD/Linux/linux常用命令.md" />
-        <option value="$PROJECT_DIR$/MD/面试题.md" />
-        <option value="$PROJECT_DIR$/MD/basic/ArrayList.md" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/lifecycle/MyBeanPostProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/java8/FunctionDemo.java" />
-        <option value="$PROJECT_DIR$/MD/basic/拦截器和过滤器的区别.md" />
-        <option value="$PROJECT_DIR$/MD/MySQL/mysqls面试.md" />
-        <option value="$PROJECT_DIR$/MD/Git.md" />
-        <option value="$PROJECT_DIR$/MD/Zookeeper.md" />
-        <option value="$PROJECT_DIR$/MD/Tcp协议.md" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/lifecycle/LifecycleApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/singleton/SingletonOne.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/singleton/SingletonThree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/singleton/SingletonFour.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/singleton/DoubleCheckLazySingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/singleton/HungrySingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/singleton/LazySingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/singleton/SingletonTwo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/concurrent/thread/CreateThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/image/BufferedImageLuminanceSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/image/QRCodeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/image/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/image/ImageUtil3.java" />
         <option value="$PROJECT_DIR$/src/main/java/patterns/singleton/StaticInnerSingleton.java" />
-        <option value="$PROJECT_DIR$/MD/framework/Redis.md" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/transaction/Service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/transaction/ProxyByJdkDynamic.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/transaction/ServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/transaction/ExampleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/transaction/ExampleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/transaction/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/transaction/transaction.md" />
-        <option value="$PROJECT_DIR$/MD/tool/Docker.md" />
-        <option value="$PROJECT_DIR$/MD/tool/Maven.md" />
-        <option value="$PROJECT_DIR$/MD/tool/Tomcat.md" />
-        <option value="$PROJECT_DIR$/MD/JVM/JVM.md" />
-        <option value="$PROJECT_DIR$/MD/framework/Kafka.md" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/strategy/DefaultActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/strategy/ByOneGetTwo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/strategy/ReturnCash.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/strategy/IEum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/strategy/PromotionStrategyFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/strategy/PromotionEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/strategy/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/strategy/Promotion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/CglibProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/lifecycle/LifecycleApp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-application.xml" />
         <option value="$PROJECT_DIR$/src/main/java/spring/entity/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/basics/TryCatchFinally.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/lifecycle/MyBeanPostProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Tree.java" />
+        <option value="$PROJECT_DIR$/MD/tool/Git.md" />
+        <option value="$PROJECT_DIR$/src/test/java/java8/apache/Demo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/arithmetic/alibaba/ReverseLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/basics/Reflect.java" />
+        <option value="$PROJECT_DIR$/MD/软件的安装和破解.md" />
+        <option value="$PROJECT_DIR$/MD/database/mysql/mysql常用命令.md" />
+        <option value="$PROJECT_DIR$/MD/Linux/Linux.md" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/aop/AspectAop.java" />
+        <option value="$PROJECT_DIR$/MD/tool/Maven.md" />
+        <option value="$PROJECT_DIR$/src/main/java/patterns/proxy/jdk/MapperProxyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patterns/proxy/jdk/DynamicProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patterns/proxy/jdk/ProxyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/patterns/proxy/jdk/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/java8/StreamApp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java8/entity/Student.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java8/compare/Compare.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java8/feature/FeatureOne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/java8/FunctionApp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java8/ExcelTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/utils/DateComparator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/feature/ListOperation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/StreamApp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/feature/FeatureTwo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/feature/FeatureOne.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/lang3/DateUtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/feature/utils/TestReadMemoryImage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/feature/mockito/demo/StudentServiceTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/MD/JVM/JVM调优工具.md" />
+        <option value="$PROJECT_DIR$/src/main/java/util/FileUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/CacheUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/ImageUtil.java" />
+        <option value="$PROJECT_DIR$/MD/Linux/查看配置命令.md" />
+        <option value="$PROJECT_DIR$/MD/Linux/systemctl.md" />
+        <option value="$PROJECT_DIR$/src/test/java/feature/entity/Student.java" />
+        <option value="$PROJECT_DIR$/src/test/java/feature/apache/Demo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/DateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/feature/StreamApp.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/builder/Phone.java" />
-        <option value="$PROJECT_DIR$/src/main/java/patterns/template/Callback.java" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="userSettingsFile" value="$USER_HOME$/tools/Maven/apache-maven-3.6.2/conf/settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -267,221 +239,22 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mockitoDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="java-tech" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mockitoDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="java-tech" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mockitoDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1920" />
-    <option name="height" value="1032" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Abstraction issuesJava</id>
-          </State>
-          <State>
-            <id>Android</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Accessibility</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Correctness</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Correctness &gt; Messages</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Internationalization</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Lint</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Performance</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Security</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Usability</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
-          </State>
-          <State>
-            <id>Android Lint for Kotlin</id>
-          </State>
-          <State>
-            <id>Assignment issuesGroovy</id>
-          </State>
-          <State>
-            <id>Assignment issuesJava</id>
-          </State>
-          <State>
-            <id>Bitwise operation issuesJava</id>
-          </State>
-          <State>
-            <id>Class structureJava</id>
-          </State>
-          <State>
-            <id>Code maturity issuesJava</id>
-          </State>
-          <State>
-            <id>Code style issuesJava</id>
-          </State>
-          <State>
-            <id>Control flow issuesJava</id>
-          </State>
-          <State>
-            <id>Declaration redundancyJava</id>
-          </State>
-          <State>
-            <id>General</id>
-          </State>
-          <State>
-            <id>GeneralJava</id>
-          </State>
-          <State>
-            <id>Groovy</id>
-          </State>
-          <State>
-            <id>HTML</id>
-          </State>
-          <State>
-            <id>Initialization issuesJava</id>
-          </State>
-          <State>
-            <id>Internationalization issuesJava</id>
-          </State>
-          <State>
-            <id>J2ME issuesJava</id>
-          </State>
-          <State>
-            <id>JUnit issuesJava</id>
-          </State>
-          <State>
-            <id>Java</id>
-          </State>
-          <State>
-            <id>Java 5Java language level migration aidsJava</id>
-          </State>
-          <State>
-            <id>Java 8Java language level migration aidsJava</id>
-          </State>
-          <State>
-            <id>Java interop issuesKotlin</id>
-          </State>
-          <State>
-            <id>Java language level issuesJava</id>
-          </State>
-          <State>
-            <id>Java language level migration aidsJava</id>
-          </State>
-          <State>
-            <id>Javadoc issuesJava</id>
-          </State>
-          <State>
-            <id>Kotlin</id>
-          </State>
-          <State>
-            <id>Logging issuesJava</id>
-          </State>
-          <State>
-            <id>Memory issuesJava</id>
-          </State>
-          <State>
-            <id>Naming conventionsJava</id>
-          </State>
-          <State>
-            <id>Numeric issuesJava</id>
-          </State>
-          <State>
-            <id>Other problemsKotlin</id>
-          </State>
-          <State>
-            <id>Performance issuesJava</id>
-          </State>
-          <State>
-            <id>Portability issuesJava</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsGroovy</id>
-          </State>
-          <State>
-            <id>Probable bugsGroovy</id>
-          </State>
-          <State>
-            <id>Probable bugsJava</id>
-          </State>
-          <State>
-            <id>Probable bugsKotlin</id>
-          </State>
-          <State>
-            <id>Properties Files</id>
-          </State>
-          <State>
-            <id>RELAX NG</id>
-          </State>
-          <State>
-            <id>Redundant constructsKotlin</id>
-          </State>
-          <State>
-            <id>Reflective access issuesJava</id>
-          </State>
-          <State>
-            <id>Security issuesJava</id>
-          </State>
-          <State>
-            <id>Style issuesKotlin</id>
-          </State>
-          <State>
-            <id>StyleGroovy</id>
-          </State>
-          <State>
-            <id>TestNGJava</id>
-          </State>
-          <State>
-            <id>Threading issuesJava</id>
-          </State>
-          <State>
-            <id>UI Form Problems</id>
-          </State>
-          <State>
-            <id>Visibility issuesJava</id>
-          </State>
-          <State>
-            <id>XPath</id>
-          </State>
-          <State>
-            <id>XSLT</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>IgnoreResultOfCall</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
+    <option name="x" value="-113" />
+    <option name="y" value="33" />
+    <option name="width" value="1941" />
+    <option name="height" value="1014" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -491,40 +264,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-tech" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-tech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-tech" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -533,33 +280,34 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577269234917" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1609309645040" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.14648438" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="feature" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\OpenSourceProject\java-tech\MD\code" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/java/qrcode" />
+      <recent name="D:\OS-Projects\java-tech\MD\tool" />
+      <recent name="D:\OS-Projects\java-tech\MD\Linux\shell" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="concurrent.thread" />
-      <recent name="java8.qrcode" />
+      <recent name="patterns.proxy.jdk" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IdeaProject\java-tech\MD\framework" />
-      <recent name="E:\IdeaProject\java-tech\MD\Linux" />
-      <recent name="E:\IdeaProject\java-tech\MD\framework.md" />
-      <recent name="E:\IdeaProject\java-tech\MD\tool" />
-      <recent name="E:\IdeaProject\java-tech\MD\basic\img" />
+      <recent name="D:\OS-Projects\java-tech\MD\framework\spring" />
+      <recent name="D:\OS-Projects\java-tech\MD\framework\mybatis" />
+      <recent name="D:\OS-Projects\java-tech\MD\framework\dubbo" />
+      <recent name="D:\OS-Projects\java-tech\MD\interview" />
+      <recent name="D:\OS-Projects\java-tech\MD\high-concurrency" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -574,20 +322,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App (2)">
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="patterns.strategy.App" />
-      <module name="javaInterview" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+  <component name="RunManager" selected="Application.DateUtil">
+    <configuration name="CacheUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.CacheUtil" />
+      <module name="java-tech" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="patterns.strategy.*" />
+          <option name="PATTERN" value="util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -595,73 +336,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="patterns.decorator.App" />
-      <module name="javaInterview" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="DateUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.DateUtil" />
+      <module name="java-tech" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="patterns.decorator.*" />
+          <option name="PATTERN" value="util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="patterns.proxy.cglib.Client" />
-      <module name="javaInterview" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="patterns.proxy.cglib.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basics.StringBasic" />
-      <module name="javaInterview" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <RunnerSettings RunnerId="Debug with VisualVM">
-        <option name="visualVMId" value="2342513556585" />
-      </RunnerSettings>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TryCatchFinally" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basics.TryCatchFinally" />
-      <module name="javaInterview" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="mockitoDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -672,6 +360,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="TARGET" value="" />
       <option name="SETTINGS_FILE" value="" />
@@ -680,15 +369,90 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    <configuration name="Demo.demo08" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-tech" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="feature.apache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="feature.apache" />
+      <option name="MAIN_CLASS_NAME" value="feature.apache.Demo" />
+      <option name="METHOD_NAME" value="demo08" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo.demo4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-tech" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="feature.apache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="feature.apache" />
+      <option name="MAIN_CLASS_NAME" value="feature.apache.Demo" />
+      <option name="METHOD_NAME" value="demo4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo.demo6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-tech" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="feature.apache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="feature.apache" />
+      <option name="MAIN_CLASS_NAME" value="feature.apache.Demo" />
+      <option name="METHOD_NAME" value="demo6" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="mockitoDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -701,7 +465,6 @@
       </method>
     </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="mockitoDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -709,12 +472,12 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <module name="mockitoDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -722,12 +485,12 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="mockitoDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -738,6 +501,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
@@ -748,17 +512,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="Python.FlaskServer" factoryName="Flask server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="mockitoDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -769,17 +536,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="mockitoDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -787,6 +544,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
@@ -797,91 +555,25 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <module name="mockitoDemo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Twisted Trial">
-      <module name="mockitoDemo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="mockitoDemo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <module name="mockitoDemo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Application.StringBasic" />
-      <item itemvalue="Application.App (1)" />
-      <item itemvalue="Application.TryCatchFinally" />
-      <item itemvalue="Application.Client (1)" />
-      <item itemvalue="Application.App (2)" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App (2)" />
-        <item itemvalue="Application.Client (1)" />
-        <item itemvalue="Application.TryCatchFinally" />
-        <item itemvalue="Application.App (1)" />
-        <item itemvalue="Application.StringBasic" />
+        <item itemvalue="Application.DateUtil" />
+        <item itemvalue="JUnit.Demo.demo6" />
+        <item itemvalue="JUnit.Demo.demo4" />
+        <item itemvalue="JUnit.Demo.demo08" />
+        <item itemvalue="Application.CacheUtil" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7d13071d-3c84-4364-9bb0-5b36166d21f6" name="Default" comment="" />
+      <changelist id="d7a41303-26e0-4ea1-9894-109f8fc52ad0" name="Default Changelist" comment="" />
       <created>1508987013708</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -1018,128 +710,503 @@
       <workItem from="1570074147999" duration="4699000" />
       <workItem from="1570163427165" duration="1852000" />
       <workItem from="1571751434028" duration="362000" />
-      <workItem from="1574505854966" duration="1408000" />
-      <workItem from="1574508396236" duration="783000" />
-      <workItem from="1574778149544" duration="1467000" />
-      <workItem from="1577099512788" duration="175000" />
-      <workItem from="1577154908750" duration="1423000" />
-      <workItem from="1577255354539" duration="29000" />
-      <workItem from="1577266274928" duration="2207000" />
+      <workItem from="1578038400965" duration="337000" />
+      <workItem from="1578276834671" duration="3878000" />
+      <workItem from="1578295211200" duration="764000" />
+      <workItem from="1578299201721" duration="5247000" />
+      <workItem from="1578363893753" duration="15400000" />
+      <workItem from="1578472372233" duration="4643000" />
+      <workItem from="1578482449314" duration="1848000" />
+      <workItem from="1578535245791" duration="5018000" />
+      <workItem from="1578552831013" duration="1369000" />
+      <workItem from="1578882465233" duration="3712000" />
+      <workItem from="1578994079403" duration="595000" />
+      <workItem from="1579058774841" duration="916000" />
+      <workItem from="1579489502191" duration="605000" />
+      <workItem from="1579492695843" duration="1207000" />
+      <workItem from="1581930823987" duration="810000" />
+      <workItem from="1582013819279" duration="14000" />
+      <workItem from="1582710536300" duration="737000" />
+      <workItem from="1583216746901" duration="728000" />
+      <workItem from="1583219360793" duration="593000" />
+      <workItem from="1583897483178" duration="824000" />
+      <workItem from="1583906658759" duration="609000" />
+      <workItem from="1583983915761" duration="1926000" />
+      <workItem from="1584409217839" duration="165000" />
+      <workItem from="1584430701374" duration="2014000" />
+      <workItem from="1584606397733" duration="657000" />
+      <workItem from="1584619742012" duration="1830000" />
+      <workItem from="1584955477463" duration="1327000" />
+      <workItem from="1585048068349" duration="596000" />
+      <workItem from="1585128867501" duration="32000" />
+      <workItem from="1585205895002" duration="91000" />
+      <workItem from="1585535269342" duration="3130000" />
+      <workItem from="1585623741729" duration="6280000" />
+      <workItem from="1586744722019" duration="1220000" />
+      <workItem from="1586766611447" duration="1191000" />
+      <workItem from="1587103119727" duration="1205000" />
+      <workItem from="1587538881444" duration="3954000" />
+      <workItem from="1587890959971" duration="2088000" />
+      <workItem from="1587898863723" duration="2407000" />
+      <workItem from="1587956620475" duration="598000" />
+      <workItem from="1587976948141" duration="3780000" />
+      <workItem from="1588042050455" duration="1953000" />
+      <workItem from="1588127381771" duration="1053000" />
+      <workItem from="1588133115968" duration="1194000" />
+      <workItem from="1588734571366" duration="723000" />
+      <workItem from="1588735339386" duration="37000" />
+      <workItem from="1588735449993" duration="171000" />
+      <workItem from="1588735667837" duration="1663000" />
+      <workItem from="1588754110187" duration="187000" />
+      <workItem from="1588817948201" duration="5564000" />
+      <workItem from="1588835123511" duration="594000" />
+      <workItem from="1588847446688" duration="2726000" />
+      <workItem from="1588903982051" duration="6973000" />
+      <workItem from="1589351113034" duration="1012000" />
+      <workItem from="1589355520169" duration="10337000" />
+      <workItem from="1589511686030" duration="5357000" />
+      <workItem from="1589795675128" duration="1276000" />
+      <workItem from="1590113139773" duration="14411000" />
+      <workItem from="1590396798845" duration="128000" />
+      <workItem from="1590396972772" duration="10550000" />
+      <workItem from="1590479142926" duration="661000" />
+      <workItem from="1590479860444" duration="23409000" />
+      <workItem from="1590633487383" duration="593000" />
+      <workItem from="1590722370935" duration="2545000" />
+      <workItem from="1590749630080" duration="7074000" />
+      <workItem from="1591000683022" duration="372000" />
+      <workItem from="1591001113833" duration="1710000" />
+      <workItem from="1591064113575" duration="1685000" />
+      <workItem from="1591069445633" duration="2374000" />
+      <workItem from="1591150667885" duration="5069000" />
+      <workItem from="1591236856552" duration="2086000" />
+      <workItem from="1591258447941" duration="1246000" />
+      <workItem from="1591338513468" duration="3622000" />
+      <workItem from="1591597919130" duration="4432000" />
+      <workItem from="1591684589575" duration="1641000" />
+      <workItem from="1591755385588" duration="6612000" />
+      <workItem from="1591845099790" duration="2328000" />
+      <workItem from="1591927991024" duration="5279000" />
+      <workItem from="1592190103352" duration="21775000" />
+      <workItem from="1592387361536" duration="1971000" />
+      <workItem from="1592532876175" duration="7701000" />
+      <workItem from="1592792499762" duration="11806000" />
+      <workItem from="1592965759617" duration="628000" />
+      <workItem from="1593314891377" duration="3043000" />
+      <workItem from="1594114151652" duration="1885000" />
+      <workItem from="1594285815597" duration="2864000" />
+      <workItem from="1596534231474" duration="4682000" />
+      <workItem from="1596788052508" duration="7890000" />
+      <workItem from="1597027214696" duration="26410000" />
+      <workItem from="1597733098596" duration="4743000" />
+      <workItem from="1598235412321" duration="2572000" />
+      <workItem from="1600053374761" duration="990000" />
+      <workItem from="1601261925250" duration="1192000" />
+      <workItem from="1602231214522" duration="226000" />
+      <workItem from="1602729066642" duration="11161000" />
+      <workItem from="1603702623380" duration="2680000" />
+      <workItem from="1603763300138" duration="642000" />
+      <workItem from="1603958058286" duration="2097000" />
+      <workItem from="1604116692921" duration="4726000" />
+      <workItem from="1604627899728" duration="1243000" />
+      <workItem from="1604729489447" duration="13449000" />
+      <workItem from="1605493330314" duration="8044000" />
+      <workItem from="1605670910347" duration="3113000" />
+      <workItem from="1605840452461" duration="590000" />
+      <workItem from="1605843195358" duration="3201000" />
+      <workItem from="1605863910184" duration="153000" />
+      <workItem from="1605864116636" duration="1186000" />
+      <workItem from="1606096601005" duration="19026000" />
+      <workItem from="1606726653513" duration="24629000" />
+      <workItem from="1607308191143" duration="26657000" />
+      <workItem from="1608090267773" duration="8728000" />
+      <workItem from="1609043603159" duration="164000" />
+      <workItem from="1609045255676" duration="56000" />
+      <workItem from="1609139899888" duration="462000" />
+      <workItem from="1609154173764" duration="618000" />
+      <workItem from="1609209371371" duration="638000" />
+      <workItem from="1609244213981" duration="2535000" />
     </task>
-    <task id="LOCAL-00001" summary="1">
-      <created>1532930683176</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1532930683176</updated>
-    </task>
-    <task id="LOCAL-00002" summary="1">
-      <created>1537414816191</created>
+    <task id="LOCAL-00002" summary="merge">
+      <created>1578040009277</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1537414816191</updated>
+      <updated>1578040009277</updated>
     </task>
-    <task id="LOCAL-00003" summary="1">
-      <created>1542943451267</created>
+    <task id="LOCAL-00003" summary="ref">
+      <created>1578301683836</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1542943451267</updated>
+      <updated>1578301683836</updated>
     </task>
-    <task id="LOCAL-00004" summary="1">
-      <created>1543201617252</created>
+    <task id="LOCAL-00004" summary="ref">
+      <created>1578304838293</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1543201617252</updated>
+      <updated>1578304838293</updated>
     </task>
-    <task id="LOCAL-00005" summary="1">
-      <created>1543201927958</created>
+    <task id="LOCAL-00005" summary="ref">
+      <created>1578397430913</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1543201927958</updated>
+      <updated>1578397430913</updated>
     </task>
-    <task id="LOCAL-00006" summary="1">
-      <created>1543486611640</created>
+    <task id="LOCAL-00006" summary="ref">
+      <created>1578465644812</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1543486611640</updated>
+      <updated>1578465644812</updated>
     </task>
-    <task id="LOCAL-00007" summary="1">
-      <created>1574778399348</created>
+    <task id="LOCAL-00007" summary="ref">
+      <created>1578475636165</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1574778399348</updated>
+      <updated>1578475636165</updated>
     </task>
-    <task id="LOCAL-00008" summary="1">
-      <created>1575086919344</created>
+    <task id="LOCAL-00008" summary="ref">
+      <created>1578483247170</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1575086919344</updated>
+      <updated>1578483247170</updated>
     </task>
-    <task id="LOCAL-00009" summary="1">
-      <created>1577088068253</created>
+    <task id="LOCAL-00009" summary="ref">
+      <created>1578484003021</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1577088068253</updated>
+      <updated>1578484003021</updated>
     </task>
-    <task id="LOCAL-00010" summary="1">
-      <created>1577088637980</created>
+    <task id="LOCAL-00010" summary="ref">
+      <created>1578554278827</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1577088637980</updated>
+      <updated>1578554278827</updated>
     </task>
-    <task id="LOCAL-00011" summary="1">
-      <created>1577088693039</created>
+    <task id="LOCAL-00011" summary="ref">
+      <created>1578984717192</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1577088693039</updated>
+      <updated>1578984717193</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ref">
+      <created>1579060229088</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1579060229088</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ref">
+      <created>1584688250336</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584688250336</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ref">
+      <created>1587106955072</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1587106955072</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ref">
+      <created>1587892728528</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1587892728528</updated>
+    </task>
+    <task id="LOCAL-00016" summary="ref">
+      <created>1588127830847</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1588127830847</updated>
+    </task>
+    <task id="LOCAL-00017" summary="ref">
+      <created>1588921145400</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1588921145400</updated>
+    </task>
+    <task id="LOCAL-00018" summary="ref">
+      <created>1589366703227</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1589366703227</updated>
+    </task>
+    <task id="LOCAL-00019" summary="ref">
+      <created>1589532430271</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1589532430271</updated>
+    </task>
+    <task id="LOCAL-00020" summary="ref">
+      <created>1590139543686</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1590139543687</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ref">
+      <created>1590139761534</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1590139761534</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ref">
+      <created>1590481807474</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1590481807474</updated>
+    </task>
+    <task id="LOCAL-00023" summary="ref">
+      <created>1590490317743</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1590490317743</updated>
+    </task>
+    <task id="LOCAL-00024" summary="ref">
+      <created>1590576760142</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1590576760142</updated>
+    </task>
+    <task id="LOCAL-00025" summary="ref">
+      <created>1590577832387</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1590577832387</updated>
+    </task>
+    <task id="LOCAL-00026" summary="ref">
+      <created>1590748726574</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1590748726574</updated>
+    </task>
+    <task id="LOCAL-00027" summary="ref">
+      <created>1590993853959</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1590993853959</updated>
+    </task>
+    <task id="LOCAL-00028" summary="ref">
+      <created>1591011045278</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1591011045278</updated>
+    </task>
+    <task id="LOCAL-00029" summary="ref">
+      <created>1591154331374</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1591154331374</updated>
+    </task>
+    <task id="LOCAL-00030" summary="ref">
+      <created>1591182521717</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1591182521717</updated>
+    </task>
+    <task id="LOCAL-00031" summary="ref">
+      <created>1591183906004</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1591183906004</updated>
+    </task>
+    <task id="LOCAL-00032" summary="ref">
+      <created>1591271477704</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1591271477704</updated>
+    </task>
+    <task id="LOCAL-00033" summary="ref">
+      <created>1591340490822</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1591340490822</updated>
+    </task>
+    <task id="LOCAL-00034" summary="ref">
+      <created>1591771489785</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1591771489785</updated>
+    </task>
+    <task id="LOCAL-00035" summary="ref">
+      <created>1592190648335</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1592190648336</updated>
+    </task>
+    <task id="LOCAL-00036" summary="ref">
+      <created>1592202346184</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1592202346184</updated>
+    </task>
+    <task id="LOCAL-00037" summary="ref">
+      <created>1592825272752</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1592825272752</updated>
+    </task>
+    <task id="LOCAL-00038" summary="ref">
+      <created>1592965790938</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1592965790939</updated>
+    </task>
+    <task id="LOCAL-00039" summary="ref">
+      <created>1598236732421</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1598236732421</updated>
+    </task>
+    <task id="LOCAL-00040" summary="ref">
+      <created>1605062884219</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1605062884219</updated>
+    </task>
+    <task id="LOCAL-00041" summary="ref">
+      <created>1605171947351</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1605171947351</updated>
+    </task>
+    <task id="LOCAL-00042" summary="ref">
+      <created>1605519583805</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1605519583805</updated>
+    </task>
+    <task id="LOCAL-00043" summary="ref">
+      <created>1606208580818</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1606208580818</updated>
+    </task>
+    <task id="LOCAL-00044" summary="ref">
+      <created>1606463411124</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1606463411124</updated>
+    </task>
+    <task id="LOCAL-00045" summary="ref">
+      <created>1606704301665</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1606704301665</updated>
+    </task>
+    <task id="LOCAL-00046" summary="ref">
+      <created>1606895430878</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1606895430878</updated>
+    </task>
+    <task id="LOCAL-00047" summary="ref">
+      <created>1606979971150</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1606979971150</updated>
+    </task>
+    <task id="LOCAL-00048" summary="ref">
+      <created>1606985504634</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1606985504634</updated>
+    </task>
+    <task id="LOCAL-00049" summary="ref">
+      <created>1607424906382</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1607424906382</updated>
+    </task>
+    <task id="LOCAL-00050" summary="ref">
+      <created>1609220431741</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1609220431742</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Demo_aVoid - 2019.05.21 at 10h 29m 03s.xml">
-      <configuration name="Demo.aVoid" configurationId="JUnit" />
+    <history-entry file="Demo_demo08 - 2020.12.10 at 18h 46m 40s.xml">
+      <configuration name="Demo.demo08" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test01_demos - 2019.05.27 at 18h 06m 06s.xml">
-      <configuration name="Test01.demos" configurationId="JUnit" />
+    <history-entry file="Demo_demo08 - 2020.12.10 at 19h 56m 40s.xml">
+      <configuration name="Demo.demo08" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test02_aa - 2019.05.27 at 18h 14m 31s.xml">
-      <configuration name="Test02.aa" configurationId="JUnit" />
+    <history-entry file="Demo_demo08 - 2020.12.10 at 19h 59m 42s.xml">
+      <configuration name="Demo.demo08" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test01_demo01 - 2019.05.27 at 18h 25m 00s.xml">
-      <configuration name="Test01.demo01" configurationId="JUnit" />
+    <history-entry file="Demo_demo08 - 2020.12.10 at 20h 01m 43s.xml">
+      <configuration name="Demo.demo08" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IteratorTest_iterator - 2019.05.27 at 18h 29m 46s.xml">
-      <configuration name="IteratorTest.iterator" configurationId="JUnit" />
+    <history-entry file="Demo_demo08 - 2020.12.10 at 20h 02m 43s.xml">
+      <configuration name="Demo.demo08" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IteratorTest_iterator - 2019.05.28 at 15h 30m 23s.xml">
-      <configuration name="IteratorTest.iterator" configurationId="JUnit" />
+    <history-entry file="Demo_demo4 - 2020.12.14 at 21h 22m 29s.xml">
+      <configuration name="Demo.demo4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test02_demo1oo - 2019.06.03 at 14h 33m 13s.xml">
-      <configuration name="Test02.demo1oo" configurationId="JUnit" />
+    <history-entry file="Demo_demo4 - 2020.12.14 at 21h 22m 55s.xml">
+      <configuration name="Demo.demo4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test02_demo1oo - 2019.06.04 at 10h 18m 37s.xml">
-      <configuration name="Test02.demo1oo" configurationId="JUnit" />
+    <history-entry file="Demo_demo4 - 2020.12.15 at 18h 02m 59s.xml">
+      <configuration name="Demo.demo4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test02_demo1oo - 2019.06.04 at 16h 27m 11s.xml">
-      <configuration name="Test02.demo1oo" configurationId="JUnit" />
+    <history-entry file="Demo_demo4 - 2020.12.15 at 18h 10m 23s.xml">
+      <configuration name="Demo.demo4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test02_demo1oo - 2019.06.04 at 16h 35m 30s.xml">
-      <configuration name="Test02.demo1oo" configurationId="JUnit" />
+    <history-entry file="Demo_demo6 - 2020.12.21 at 11h 04m 41s.xml">
+      <configuration name="Demo.demo6" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="399359000" />
+    <option name="totallyTimeSpent" value="459665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -1147,82 +1214,111 @@
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.2069523" />
-      <window_info id="Structure" order="5" weight="0.25" />
+      <window_info id="Favorites" order="3" sideWeight="0.5019608" side_tool="true" weight="0.33791432" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49803922" visible="true" weight="0.3539463" />
+      <window_info id="Structure" order="5" weight="0.2497979" />
       <window_info id="Image Layers" order="6" />
-      <window_info id="Learn" order="7" />
+      <window_info id="Learn" order="7" weight="0.32983023" />
+      <window_info id="Alibaba Cloud Explorer" order="8" weight="0.32983023" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="0" weight="0.16314554" />
       <window_info anchor="bottom" id="Run with VisualVM" order="1" weight="0.600939" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="3" weight="0.32939914" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.33024117" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.6011132" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.47495362" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="3" weight="0.593692" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5011013" side_tool="true" weight="0.64669424" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.42236024" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49889868" visible="true" weight="0.7859922" />
       <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.46581692" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.14100185" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.3051643" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.20082815" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.13333334" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.5354839" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="bottom" id="CheckStyle" order="15" weight="0.3274648" />
-      <window_info anchor="bottom" id="Spring" order="16" />
+      <window_info anchor="bottom" id="Spring" order="15" weight="0.070500925" />
+      <window_info anchor="bottom" id="CheckStyle" order="16" weight="0.7536232" />
       <window_info anchor="bottom" id="Docker" order="17" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Tail" order="18" />
-      <window_info anchor="right" id="Palette&#9;" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="1" weight="0.12607296" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Commander" order="5" weight="0.4" />
-      <window_info anchor="right" id="Database" order="6" weight="0.18776824" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.2489895" />
-      <window_info anchor="right" id="SciView" order="8" weight="0.32902184" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.32983023" />
-      <window_info anchor="right" id="Coverage" order="11" side_tool="true" visible="true" weight="0.080472104" />
-      <window_info anchor="right" id="Word Book" order="12" side_tool="true" />
-      <window_info anchor="right" id="Key Promoter X" order="13" />
+      <window_info anchor="bottom" id="SonarLint" order="18" weight="0.4794776" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="19" />
+      <window_info anchor="bottom" id="Sequence" order="20" weight="0.5839552" />
+      <window_info anchor="bottom" id="Tail" order="21" />
+      <window_info active="true" anchor="bottom" id="Thumbnails" order="22" visible="true" weight="0.14669421" />
+      <window_info anchor="right" id="jclasslib" order="0" weight="0.37590945" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="right" id="Maven Projects" order="2" weight="0.12607296" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="right" id="Database" order="7" weight="0.18755053" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.2489895" />
+      <window_info anchor="right" id="SciView" order="9" weight="0.32790887" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.2497979" />
+      <window_info anchor="right" id="Maven" order="11" weight="0.22864117" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" visible="true" weight="0.080472104" />
+      <window_info anchor="right" id="Word Book" order="13" side_tool="true" />
+      <window_info anchor="right" id="Alibaba Function Compute" order="14" />
+      <window_info anchor="right" id="Alibaba Log Console" order="15" />
+      <window_info anchor="right" id="Redis Servers" order="16" />
+      <window_info anchor="right" id="RestServices" order="17" />
+      <window_info anchor="right" id="Alibaba ROS Templates" order="18" />
+      <window_info anchor="right" id="Translation Assistant" order="19" weight="0.32943013" />
+      <window_info anchor="right" id="kafkalytic" order="20" />
     </layout>
     <layout-to-restore>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.30686694" />
-      <window_info id="Structure" order="5" weight="0.25" />
+      <window_info id="Favorites" order="3" sideWeight="0.5019608" side_tool="true" weight="0.33791432" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49803922" visible="true" weight="0.3539463" />
+      <window_info id="Structure" order="5" weight="0.2497979" />
       <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="0" weight="0.32884097" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="1" weight="0.44204852" />
+      <window_info id="Learn" order="7" weight="0.32983023" />
+      <window_info id="Alibaba Cloud Explorer" order="8" weight="0.32983023" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="0" weight="0.16314554" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="1" weight="0.600939" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="3" weight="0.0" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.55751175" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.23719676" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.8309859" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="3" weight="0.593692" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5011013" side_tool="true" weight="0.64669424" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.42236024" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49889868" visible="true" weight="0.15953307" />
       <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.46581692" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.2100939" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.3059096" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.20082815" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.13333334" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.5354839" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="bottom" id="CheckStyle" order="15" weight="0.3274648" />
-      <window_info anchor="bottom" id="Spring" order="16" />
+      <window_info anchor="bottom" id="Spring" order="15" weight="0.070500925" />
+      <window_info anchor="bottom" id="CheckStyle" order="16" weight="0.7536232" />
       <window_info anchor="bottom" id="Docker" order="17" show_stripe_button="false" />
-      <window_info anchor="right" id="Palette&#9;" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="1" weight="0.12607296" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Commander" order="5" weight="0.4" />
-      <window_info anchor="right" id="Database" order="6" weight="0.18776824" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.24964234" />
-      <window_info anchor="right" id="SciView" order="8" weight="0.3297568" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.3299356" />
+      <window_info anchor="bottom" id="SonarLint" order="18" weight="0.4794776" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="19" />
+      <window_info anchor="bottom" id="Sequence" order="20" weight="0.5839552" />
+      <window_info anchor="bottom" id="Tail" order="21" />
+      <window_info active="true" anchor="bottom" id="Thumbnails" order="22" visible="true" weight="0.14669421" />
+      <window_info anchor="right" id="jclasslib" order="0" weight="0.37590945" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="right" id="Maven Projects" order="2" weight="0.12607296" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="right" id="Database" order="7" weight="0.18755053" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.2489895" />
+      <window_info anchor="right" id="SciView" order="9" weight="0.32790887" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.2497979" />
+      <window_info anchor="right" id="Maven" order="11" weight="0.22864117" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" visible="true" weight="0.080472104" />
+      <window_info anchor="right" id="Word Book" order="13" side_tool="true" />
+      <window_info anchor="right" id="Alibaba Function Compute" order="14" />
+      <window_info anchor="right" id="Alibaba Log Console" order="15" />
+      <window_info anchor="right" id="Redis Servers" order="16" />
+      <window_info anchor="right" id="RestServices" order="17" />
+      <window_info anchor="right" id="Alibaba ROS Templates" order="18" />
+      <window_info anchor="right" id="Translation Assistant" order="19" weight="0.32943013" />
+      <window_info anchor="right" id="kafkalytic" order="20" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1240,7 +1336,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="merge" />
+    <MESSAGE value="ref" />
+    <option name="LAST_COMMIT_MESSAGE" value="ref" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1252,7 +1350,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/java8/qrcode/QrcodeUtilsTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/feature/qrcode/QrcodeUtilsTest.java</url>
           <line>23</line>
           <properties />
           <option name="timeStamp" value="5" />
@@ -1264,12 +1362,6 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/java8/sort/Demo.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/utils/CacheUtil.java</url>
           <line>17</line>
           <properties />
@@ -1277,9 +1369,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/utils/CacheUtil.java</url>
-          <line>21</line>
+          <line>20</line>
           <properties />
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/patterns/factory/FactoryTest.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.1.RELEASE/spring-context-4.3.1.RELEASE.jar!/org/springframework/context/support/AbstractXmlApplicationContext.class</url>
@@ -1299,7 +1397,108 @@
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/arithmetic/alibaba/ReverseLinkedList.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/arithmetic/sort/common/QuickSort.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadPool.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadPool.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadPool.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/concurrent/thread/ThreadPool.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/concurrent/ThreadPoolExecutor.java</url>
+          <line>1318</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/concurrent/ThreadPoolExecutor.java</url>
+          <line>621</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/concurrent/AbstractExecutorService.java</url>
+          <line>137</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/feature/feature/FeatureOne.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/feature/feature/FeatureOne.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/feature/feature/FeatureOne.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/patterns/proxy/jdk/DynamicProxy.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/patterns/proxy/jdk/Client.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/feature/apache/Demo.java</url>
+          <line>162</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/feature/feature/FeatureOne.java</url>
+          <line>42</line>
+          <properties class="feature.feature.FeatureOne" method="demo01">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
       </breakpoints>
+      <breakpoints-defaults>
+        <breakpoint suspend="THREAD" type="java-line" />
+      </breakpoints-defaults>
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1307,273 +1506,418 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/entity/Phone.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/ParserDataUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="76">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/entity/SubBook.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar!/org/apache/http/impl/client/HttpClients.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        <state relative-caret-position="133">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/image/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/image/ImageHepler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar!/org/apache/commons/io/IOUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/net/HttpURLConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="678" column="28" selection-start-line="678" selection-start-column="28" selection-end-line="678" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/HttpRequester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+          <folding>
+            <element signature="docComment;method#downloadBytes#0;class#HttpRequester#0" expanded="true" />
+            <element signature="docComment;method#downloadString#0;class#HttpRequester#0" expanded="true" />
+            <element signature="docComment;method#execute#0;class#HttpRequester#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/concurrent/Callable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="120" column="24" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+          <folding>
+            <element signature="docComment;method#uploadLocalImg#0;class#FileUtil#0" expanded="true" />
+            <element signature="docComment;method#imgBase64#0;class#FileUtil#0" expanded="true" />
+            <element signature="e#3442#3443#0" expanded="true" />
+            <element signature="e#3498#3499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/cache/CacheBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/CacheUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/reflect/Reflection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/cache/LoadingCache.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/cache/Cache.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="214" column="21" selection-start-line="214" selection-start-column="21" selection-end-line="214" selection-end-column="21" />
+          <folding>
+            <element signature="e#6283#6284#0" expanded="true" />
+            <element signature="e#6340#6341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/feature/entity/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#zoomImage#0;class#ImageUtil#0" expanded="true" />
+            <element signature="docComment;method#shopImageCut#0;class#ImageUtil#0" expanded="true" />
+            <element signature="docComment;method#setClip#0;class#ImageUtil#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/Linux/Linux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/tool/docker/docker安装常用软件.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="380">
+            <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/chain/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding>
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/chain/President.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/chain/RequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/chain/RequestType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/chain/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/chain/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/Linux/systemctl.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="266">
+            <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/tool/docker/Docker常用命令.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="232">
+            <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/feature/feature/FeatureOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="70" column="12" lean-forward="true" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/proxy/jdk/RealInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/proxy/jdk/ProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/CglibProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/Run.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/CglibProxy.java">
+    <entry file="file://$PROJECT_DIR$/MD/Linux/linux基础命令.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3268">
+            <caret line="172" column="30" selection-start-line="172" selection-start-column="30" selection-end-line="172" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/feature/apache/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="2052">
+          <caret line="132" column="39" selection-start-line="132" selection-start-column="39" selection-end-line="132" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/proxy/cglib/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="147" column="80" selection-start-line="147" selection-start-column="80" selection-end-line="147" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/Linux/查看配置命令.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="266">
+            <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/Idea配置相关.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/软件的安装和破解.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/开源项目.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/十大排序算法.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/java基础.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/tool/Git.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="361">
+            <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MD/JVM/JVM调优工具.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="115">
+            <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/function/ToDoubleFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="27" />
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/singleton/AppTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/stream/Collectors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="-6223">
+          <caret line="830" column="32" selection-start-line="830" selection-start-column="32" selection-end-line="830" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Throwable.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Exception.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/RuntimeException.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/IllegalStateException.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/singleton/HungrySingleton.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/singleton/LazySingleton.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/singleton/DoubleCheckLazySingleton.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/singleton/StaticInnerSingleton.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/strategy/App.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/strategy/ByOneGetTwo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/strategy/DefaultActivity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/strategy/IEum.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/strategy/Promotion.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/strategy/PromotionEnum.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/strategy/PromotionStrategyFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/strategy/ReturnCash.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/builder/BuilderTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/adapter/Action.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/feature/StreamApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="121">
+          <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/adapter/Airplane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+    <entry file="file://$PROJECT_DIR$/MD/Linux/find命令.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-158">
+            <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/adapter/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/java8/StreamApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="-1406">
+          <caret line="63" column="149" selection-start-line="63" selection-start-column="149" selection-end-line="63" selection-end-column="149" />
           <folding>
-            <element signature="e#134#135#0" expanded="true" />
-            <element signature="e#170#171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/redis/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#createStream#0;class#StreamApp#0" expanded="true" />
+            <element signature="docComment;method#distinct#0;class#StreamApp#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state>
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MD/Git.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1140">
-            <caret line="60" selection-start-line="60" selection-end-line="60" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-application.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/deepcopy/Address.java">
+    <entry file="file://$PROJECT_DIR$/javaInterview.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/deepcopy/DeepCopy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/deepcopy/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/builder/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/builder/Phone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#1326#1327#0" expanded="true" />
-            <element signature="e#1371#1372#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/adapter/AirplaneAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/adapter/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/decorator/CommonMan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/decorator/FlyWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/decorator/Man.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/decorator/Wrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/decorator/PowerWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-          <folding>
-            <element signature="e#106#107#0" expanded="true" />
-            <element signature="e#132#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/decorator/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/observer/XiaoLi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/observer/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/observer/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/observer/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/observer/XiaoBai.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/template/Callback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/template/Templet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/patterns/template/TempletApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
+        <state relative-caret-position="-135" />
       </provider>
     </entry>
   </component>
@@ -1605,7 +1949,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Python 3.6 interpreter library</last-edited>
+          <last-edited>jdk1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1617,7 +1961,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>13</last-edited>
+          <last-edited>14</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1629,7 +1973,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>javaInterview</last-edited>
+          <last-edited>java-tech</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1642,18 +1986,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
+          <last-edited>Maven: cglib:cglib-nodep:3.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
