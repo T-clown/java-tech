@@ -1,9 +1,35 @@
 package basics;
 
+import java.io.Closeable;
+import java.io.IOException;
+
 public class TryCatchFinally {
     public static void main(String[] args) {
 
-        System.out.println(test09());
+        //System.out.println(test09());
+        try (CloseAble able = new TryCatchFinally().new CloseAble()) {
+            able.test();
+        } catch (Exception e) {
+            System.out.println("异常" + e.getMessage());
+        } finally {
+            System.out.println("finally方法执行");
+        }
+    }
+
+    /**
+     * 实现Closeable或者AutoCloseable都能用try-with-resources语法关闭资源
+     */
+    class CloseAble implements Closeable {
+
+        public void test() {
+            System.out.println("test执行");
+            int a=1/0;
+        }
+
+        @Override
+        public void close() throws IOException {
+            System.out.println("Closeable关闭资源");
+        }
     }
 
     //try
