@@ -3,7 +3,6 @@ package concurrent;
 public class DeadLock {
 
     public static void main(String[] args) {
-        System.out.println(" start the example ----- ");
         final Object obj_1 = new Object(), obj_2 = new Object();
 
         Thread t1 = new Thread("t1") {

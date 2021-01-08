@@ -51,7 +51,6 @@ public class ThreadDemo {
 
         //启动线程
         threadA.start();
-        ;
         threadB.start();
         //等待两个线程执行结束
         threadA.join();

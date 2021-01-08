@@ -20,17 +20,12 @@ public class ThreadLocalDemo {
     @Setter
     public String threadName;
 
-
-
     public static void main(String[] args) {
-        System.out.println(new Object().hashCode());
-        System.out.println(new Object().hashCode());
-        System.out.println(new Object().hashCode());
-        // threadDemo();
-        //threadLocalDemo();
+        //threadDemo();
+        threadLocalDemo();
     }
 
-    private static void threadLocalDemo(){
+    private static void threadLocalDemo() {
         int threads = 9;
         ThreadLocalDemo demo = new ThreadLocalDemo();
         CountDownLatch countDownLatch = new CountDownLatch(threads);
@@ -44,7 +39,7 @@ public class ThreadLocalDemo {
         }
     }
 
-    private static void threadDemo(){
+    private static void threadDemo() {
         ThreadLocalDemo demo = new ThreadLocalDemo();
         int threads = 200;
         CountDownLatch countDownLatch = new CountDownLatch(threads);

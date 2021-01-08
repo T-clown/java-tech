@@ -1,7 +1,6 @@
 package concurrent.thread;
 
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadFactory;
@@ -49,11 +48,12 @@ public class ThreadPool {
 
     public static void main(String[] args) {
 
-        int cpu = Runtime.getRuntime().availableProcessors();
+        //int cpu = Runtime.getRuntime().availableProcessors();
+        //System.out.println(cpu);
 
         EXECUTOR.execute(() -> execute("clown"));
 
-        Future<String> future = EXECUTOR.submit(() -> task("clown"));
+        Future<String> future = EXECUTOR.submit(() -> submit("clown"));
 
         try {
             System.out.println(future.get());
@@ -65,7 +65,7 @@ public class ThreadPool {
 
     }
 
-    private static String task(String str) {
+    private static String submit(String str) {
         int a = 1 / 0;
         return "submit执行：" + str;
     }

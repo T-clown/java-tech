@@ -11,7 +11,7 @@ public class CreateThread {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         //创建并启动第一个线程
-        new ThreadOane().start();
+        new ThreadOne().start();
         //创建并启动第二个线程
         new Thread(new ThreadTwo(), "线程一").start();
         //创建并启动第三个线程
@@ -28,7 +28,7 @@ public class CreateThread {
         System.out.println(task.get());
     }
 
-    public static class ThreadOane extends Thread {
+    public static class ThreadOne extends Thread {
         @Override
         public void run() {
             System.out.println("创建线程方式一：继承Thread");

@@ -9,8 +9,11 @@ import java.util.concurrent.Semaphore;
  */
 public class ConcurrentDemo {
     public static void main(String[] args) {
-       // countDownLatch();
-        cyclicBarrier();
+        //countDownLatch();
+        //cyclicBarrier();
+        int c=-536870912;
+        int COUNT_MASK = (1 << 29) - 1;
+        System.out.println(c&COUNT_MASK);
     }
 
     private static void countDownLatch(){
