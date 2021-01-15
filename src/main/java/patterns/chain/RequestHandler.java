@@ -23,13 +23,15 @@
 
 package patterns.chain;
 
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * RequestHandler.
  */
 public abstract class RequestHandler {
 
+  protected Logger logger = LoggerFactory.getLogger(RequestHandler.class);
 
   private RequestHandler next;
 
@@ -47,6 +49,7 @@ public abstract class RequestHandler {
   }
 
   protected void printHandling(Request req) {
+    logger.info("测试");
     System.out.println(this.toString()+":"+req.getRequestDesc());
     //log.info("{} handling request \"{}\"", this, req);
   }

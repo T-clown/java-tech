@@ -33,7 +33,6 @@ public class FunctionApp {
         //supplier();
         //factory();
         binaryOperator();
-        ;
     }
 
     /**
