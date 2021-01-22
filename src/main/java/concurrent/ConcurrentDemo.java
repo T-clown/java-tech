@@ -4,31 +4,34 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import util.ImageUtil;
+
 /**
  * https://segmentfault.com/a/1190000022601190
  */
 public class ConcurrentDemo {
+
+    private static final Logger logger = LoggerFactory.getLogger(ConcurrentDemo.class);
+
     public static void main(String[] args) {
-        //countDownLatch();
-        //cyclicBarrier();
-        int c=-536870912;
-        int COUNT_MASK = (1 << 29) - 1;
-        System.out.println(c&COUNT_MASK);
+        countDownLatch();
     }
 
     private static void countDownLatch(){
-        CountDownLatch countDownLatch = new CountDownLatch(3);
+        CountDownLatch countDownLatch = new CountDownLatch(5);
         for (int i = 0 ; i < 3 ; i++) {
             int count = i;
             new Thread(() -> {
-                System.out.println("Count down thread id : " + count);
+                logger.info("Count down thread id : " + count);
                 countDownLatch.countDown();
             }).start();
         }
         try {
-            System.out.println("Main thread await!");
+            logger.info("Main thread await!");
             countDownLatch.await();
-            System.out.println("Main thread finish!");
+            logger.info("Main thread finish!");
         } catch (Exception e) {
             e.printStackTrace();
         }
