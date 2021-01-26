@@ -2,6 +2,7 @@ package feature.lang3;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;
+import java.util.Date;
 
 import org.junit.Test;
 
@@ -17,6 +18,7 @@ public class DateUtilsTest {
         NumberFormat numberFormat = NumberFormat.getPercentInstance();
         numberFormat.setMaximumFractionDigits(2);
         System.out.println(numberFormat.format(divide));
+        System.out.println(new Date().getTime());
     }
 
     @Test
