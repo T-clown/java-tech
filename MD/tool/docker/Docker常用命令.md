@@ -111,3 +111,7 @@ host：容器不会虚拟自己的网卡，配置自己的IP，而是使用宿�
 none：无网络
 
 https://www.imooc.com/article/details/id/20872
+
+### 容器设置开机启动
+    1.启动时加--restart=always
+    2.若容器已经启动：docker update --restart=always container-name
