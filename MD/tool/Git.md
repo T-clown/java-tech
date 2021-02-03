@@ -36,9 +36,14 @@ git branch -d test //删除本地test分支（d大写为强制删除）
 git push origin --delete test //删除远程分支
 git merge master //假设当前在test分支上面，把master分支上的修改同步到test分支上
 git merge tool //调用merge工具
+
 git stash //把未完成的修改缓存到栈容器中
 git stash list //查看所有的缓存
 git stash pop //恢复本地分支到缓存状态
+git stash pop stash@{0}    //选择栈中的第0个版本
+git stash clear   //删除所有的版本
+git stash drop stash@{0}  //删除第一个队列的版本
+
 git blame someFile //查看某个文件的每一行的修改记录（）谁在什么时候修改的）
 git status //查看当前分支有哪些修改
 git log //查看当前分支上面的日志信息
