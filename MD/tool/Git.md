@@ -43,6 +43,7 @@ git stash pop //恢复本地分支到缓存状态
 git stash pop stash@{0}    //选择栈中的第0个版本
 git stash clear   //删除所有的版本
 git stash drop stash@{0}  //删除第一个队列的版本
+git stash show -p stash@{0}
 
 git blame someFile //查看某个文件的每一行的修改记录（）谁在什么时候修改的）
 git status //查看当前分支有哪些修改
