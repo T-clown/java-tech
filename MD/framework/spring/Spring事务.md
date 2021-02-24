@@ -1,4 +1,4 @@
-原文出处：https://mp.weixin.qq.com/s/PCcEXPfLxKGqmAobrHfggQ
+[](https://mp.weixin.qq.com/s/PCcEXPfLxKGqmAobrHfggQ)
 Spring中的事务是通过代理实现的，代理分为JDK动态代理和CGLIB，两者的区别
 1.JDK动态代理是默认的，而且代理对象必须实现接口
 2.CGLIB代理则带不带接口都行，其通过子类继承方式实现
@@ -11,8 +11,8 @@ Spring中的事务是通过代理实现的，代理分为JDK动态代理和CGLIB
 只要是以代理方式实现的声明式事务，无论是JDK动态代理，还是CGLIB直接写字节码生成代理，都只有public方法上的事务注解才起作用。
 而且必须在代理类外部调用才行，如果直接在目标类里面调用，事务照样不起作用。
 
-https://mp.weixin.qq.com/s/6EpeHAF5UmFzEuaQPWjdTw
-事务失效原因
+
+[事务失效原因](https://mp.weixin.qq.com/s/6EpeHAF5UmFzEuaQPWjdTw)
 1.数据库引擎不支持事务，MyISAM引擎不支持事务，InnoDB支持事务
 2.当前类没有被 Spring 管理
 3.事务方法不是 public 的，如果要用在非 public 方法上，可以开启 AspectJ 代理模式

@@ -1,4 +1,4 @@
-https://mp.weixin.qq.com/s/hGTxPHabIPZBrjg_Yww3ug
+[](https://mp.weixin.qq.com/s/hGTxPHabIPZBrjg_Yww3ug)
 1.Spring为什么默认把bean设计成单例
 为了提高性能：
 (1)减少了新生成实例的消耗

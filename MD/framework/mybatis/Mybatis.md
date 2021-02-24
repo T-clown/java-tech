@@ -1,3 +1,4 @@
+[MyBatis 的执行流程，写得也太全了吧！](https://mp.weixin.qq.com/s/4qB7mWOHhZURunORkuGYZg)
 Mybatis执行流程
 Configuration.xml：该配置文件是MyBatis的全局配置文件，在这个文件中可以配置诸多项目，但是一般项目中，并不会配置太多内容，常用的内容是别名设置，拦截器设置等，至于环境设置与Mapper映射文件的注册会转移到Spring配置文件中（SSM整合之后），而其余大部分的配置项都采用默认的配置。
 

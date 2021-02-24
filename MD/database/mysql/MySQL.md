@@ -2,7 +2,7 @@ https://mp.weixin.qq.com/s/P0tS939HwDs6bUHcFrMUOQ
 
 https://mp.weixin.qq.com/s/wG9snKSrXWDcFpmll8WtQg
 
-
+[高性能 Mysql 主从架构的复制原理及配置详解](https://mp.weixin.qq.com/s/uBzPyqPv_xuWoFOIsVlyig)
 总目录
 http://w.itcodemonkey.com/article/21.html?v=1
 

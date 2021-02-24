@@ -1,3 +1,5 @@
+[美团面试官：你说你们公司的Mybatis分页插件是你写的，给我说说它的设计原理\
+](https://mp.weixin.qq.com/s/kB_WAhh-3wlItgxtLLGEvA)
 1.物理分页
 物理分页就是数据库本身提供了分页方式，如MySQL的limit，Oracle的rownum ，好处是效率高，不好的地方就是不同数据库有不同的搞法。
 2.逻辑分页
@@ -10,4 +12,3 @@
 Mybatis的物理分页插件：
 常见的两种： Mybatis-Paginator 和Mybatis-PageHelper
 
-https://mp.weixin.qq.com/s/kB_WAhh-3wlItgxtLLGEvA
