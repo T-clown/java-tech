@@ -29,7 +29,6 @@ public class ReverseLinkedList {
      * @param head
      * @param n
      */
-
     public static Node deleteNode(Node head, int n) {
         Node dummy = new Node(0);
         dummy.next = head;

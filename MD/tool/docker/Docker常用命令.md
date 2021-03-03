@@ -1,9 +1,7 @@
-https://mp.weixin.qq.com/s/yfxq9fvfmi1jFddYUQ3rMQ
-https://mp.weixin.qq.com/s?__biz=MzI4NDY5Mjc1Mg==&mid=2247489297&idx=2&sn=29a11986ac2a33f4ccd7c55cb986d43a&chksm=ebf6cf6edc81467897695730dd370e261b1d647e3bfdcf1ff4bf0f5b1685c0d30ce190631e14&mpshare=1&scene=24&srcid=&sharer_sharetime=1569380317275&sharer_shareid=c39308937f2815a44c41054898432d19&key=9e572a9d17d70f7cec456153e39979f86c58526ba7dda9c23608543ce6be85aaa31066111dfc7a72544262b91ba7e39eb3b7451055b7f22fc499eb2ec0f31e7815d0142e710a9d3b9ba66856e878267f&ascene=14&uin=MTIwNzg3MDIyOQ%3D%3D&devicetype=Windows+10+x64&version=62090070&lang=zh_CN&exportkey=ATWT9d7ZuCeSzi9lye9BOJU%3D&pass_ticket=nQBHpyPlpFvTbFFf8uNfyuoL%2B7g3pvPlTg%2FdJ4GAmsI%2FXVKGH7GJAwkRJL2lptnu
-
-
+[Docker常用命令](https://mp.weixin.qq.com/s/_jtWRGP35ZFURqMrtfEwYg)
+[]()
+[]()
 Docker安装ElasticSearch并运行
-https://www.cnblogs.com/jianxuanbing/p/9410800.html
 拉取ElasticSearch
 docker pull docker.elastic.co/elasticsearch/elasticsearch:tag
 创建用户定义的网络(用于连接到同一网络的其他服务)
@@ -109,8 +107,6 @@ Docker有三种网络模式，bridge、host、none，在你创建容器的时候
 bridge：为每一个容器分配IP，并将容器连接到一个docker0虚拟网桥，通过docker0网桥与宿主机通信。也就是说，此模式下，你不能用宿主机的IP+容器映射端口来进行Docker容器之间的通信。
 host：容器不会虚拟自己的网卡，配置自己的IP，而是使用宿主机的IP和端口。这样一来，Docker容器之间的通信就可以用宿主机的IP+容器映射端口
 none：无网络
-
-https://www.imooc.com/article/details/id/20872
 
 ### 容器设置开机启动
     1.启动时加--restart=always

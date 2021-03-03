@@ -1,6 +1,4 @@
-package arithmetic;
-
-import com.alibaba.fastjson.JSON;
+package arithmetic.top100;
 
 /**
  * 输入一个整型数组，数组里有正数也有负数。数组中一个或连续的多个整数组成一个子数组。
@@ -12,10 +10,12 @@ public class GreatestSumOfSubArray {
         //int[] arr = {1, -2, 3, 10, -4, 7, 2, -5};
         int[] arr = {-1, -2, -3, -10, -4, 0, -2, -5};
         //System.out.println(solution1(arr));
-
+        int[] nums = {-2, 1, -3, 4, -1, 2, 1, 0, 2 - 5, 4};
         System.out.println(solution2(arr));
 
         System.out.println(solution3(arr));
+
+        System.out.println(solution1(nums));
     }
 
     private static int solution1(int[] arr) {
