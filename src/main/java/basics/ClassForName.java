@@ -1,8 +1,5 @@
 package basics;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 public class ClassForName {
     static {
         System.out.println("执行静态代码块");

@@ -45,7 +45,9 @@ public class Exam {
                 count++;
                 if (count == 3) {
                     //跳出所有循环
-                    break retry;
+                    //break retry;
+                    ////跳出当前循环(跳到外部循环)
+                    continue retry;
                 }
                 System.out.print(count + " ");
             }
