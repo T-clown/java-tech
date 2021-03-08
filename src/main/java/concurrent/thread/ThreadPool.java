@@ -1,15 +1,14 @@
 package concurrent.thread;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.ThreadPoolExecutor.AbortPolicy;
 import java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ThreadPool {
 
@@ -56,7 +55,6 @@ public class ThreadPool {
             EXECUTOR.execute(() -> execute(1));
         }
 
-        EXECUTOR.allowCoreThreadTimeOut(true);
 
         //Future<String> future = EXECUTOR.submit(() -> submit("clown"));
         //
