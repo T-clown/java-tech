@@ -1,5 +1,5 @@
 [](https://www.cnblogs.com/fanguangdexiaoyuer/p/12332082.html#_label3_0)
-
+[线程池中多余的线程是如何回收的？](https://mp.weixin.qq.com/s/CyOv2e0hTxzKG6yAgVtbcw)
 ###1.ThreadPoolExecutor线程池参数介绍
     corePoolSize：核心线程数，即线程池允许存活空闲的线程数量，设置了allowCoreThreadTimeOut后核心线程也会被回收
     maximumPoolSize：线程池中允许创建的最大线程数

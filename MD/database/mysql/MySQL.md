@@ -1,8 +1,9 @@
 [SQL 优化指南](https://mp.weixin.qq.com/s/P0tS939HwDs6bUHcFrMUOQ)
 [高性能 Mysql 主从架构的复制原理及配置详解](https://mp.weixin.qq.com/s/uBzPyqPv_xuWoFOIsVlyig)
 [总目录](http://w.itcodemonkey.com/article/21.html?v=1)
-
-
+[Mysql 中主库跑太快，从库追不上怎么整？](https://mp.weixin.qq.com/s/2Y1H8zx3cygGQPKBRocpdw)
+[线上出现死锁怎么解决？](https://mp.weixin.qq.com/s/LRTYSQiVuWeN2J-vhnVOeg)
+[说说MySQL的锁有那些类型，以及加锁的原理？](https://mp.weixin.qq.com/s/rtSdXR9GxPn39bFmmZVrnA)
 Mybatis 中$与#的区别
  1 #是将传入的值当做字符串的形式，select id,name,age from student where id =#{id},当前端把id值1，传入到后台的时候，就相当于 select id,name,age from student where id ='1'.
  2 $是将传入的数据直接显示生成sql语句，select id,name,age from student where id =${id},当前端把id值1，传入到后台的时候，就相当于 select id,name,age from student where id = 1.
