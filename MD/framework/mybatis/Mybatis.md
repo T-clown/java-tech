@@ -1,4 +1,5 @@
 [MyBatis 的执行流程，写得也太全了吧！](https://mp.weixin.qq.com/s/4qB7mWOHhZURunORkuGYZg)
+[MyBatis 的执行流程，写得太好了](https://mp.weixin.qq.com/s/JwFw8Yi-5Miap83i99LX2A)
 Mybatis执行流程
 Configuration.xml：该配置文件是MyBatis的全局配置文件，在这个文件中可以配置诸多项目，但是一般项目中，并不会配置太多内容，常用的内容是别名设置，拦截器设置等，至于环境设置与Mapper映射文件的注册会转移到Spring配置文件中（SSM整合之后），而其余大部分的配置项都采用默认的配置。
 
@@ -19,3 +20,5 @@ Executor：执行器接口，SqlSession会话是面向程序员的，而内部�
 StatementHandler：该类是Statement处理器，封装了Statement的各种数据库操作方法execute()，可见MyBatis其实就是将操作数据库的JDBC操作封装起来的一个框架，同时还实现了ORM罢了。
 
 ResultSetHandler：结果集处理器，如果是查询操作，必定会有返回结果，针对返回结果的操作，就要使用ResultSetHandler来进行处理，这个是由StatementHandler来进行调用的。这个处理器的作用就是对返回结果进行处理。
+
+
