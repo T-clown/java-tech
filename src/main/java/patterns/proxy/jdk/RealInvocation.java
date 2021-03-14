@@ -1,13 +1,16 @@
 package patterns.proxy.jdk;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class RealInvocation implements Invocation {
     @Override
     public void run(String name) {
-        System.out.println("you must keep running，"+name);
+        log.info("you must keep running，" + name);
     }
 
     @Override
-    public void sayHello(String str) {
-        System.out.println("hello:" + str);
+    public String sayHello(String str) {
+        return "hello:" + str;
     }
 }

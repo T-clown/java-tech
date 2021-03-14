@@ -2,4 +2,12 @@
 
 ###Kafka存在丢消息的问题，消息丢失会发生在Broker，Producer和Consumer三种
 
-###
+###Producer
+###Broker
+###Consumer
+
+
+
+
+
+

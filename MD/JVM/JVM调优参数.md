@@ -37,7 +37,7 @@
     在新生代直接分配的对象最大值，0表示没有最大值，大于这个值的对象直接在老年代分配
     设置该参数，可以使大于这个值的对象直接在老年代分配，避免在Eden区和Survivor区发生大量的内存复制，该参数只对Serial和ParNew收集器有效，Parallel Scavenge并不认识该参数
     
-     -XX:MaxTenuringThreshold=10
+     -XX:MaxTenuringThreshold=15
     年轻代最大年龄，每个对象在坚持过一次Minor GC之后，年龄就增加1，当超过这个参数值时就进入老年代，最大支持15
     
     开启 -XX:+UseSerialGC

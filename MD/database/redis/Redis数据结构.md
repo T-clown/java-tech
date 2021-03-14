@@ -45,7 +45,7 @@
 
 ###6.bitmap
     数据结构：本质上是String数据结构，只不过操作的粒度变成了位，即bit。因为String类型最大长度为512MB，所以bitmap最多可以存储2^32个bit
-    使用场景：布隆过滤器BloomFilter
+    使用场景：判断某个元素存不存在，布隆过滤器BloomFilter
 
 ###7.GeoHash
     数据结构：Geo本身不是一种数据结构，它本质上还是借助于Sorted Set（ZSET），并且使用GeoHash技术进行填充
@@ -53,6 +53,7 @@
 ###8.HyperLogLog
     数据结构：
     编码：raw
+    使用场景：提供不精确的去重统计方案，比如统计uv等，pfadd，pfcount
 
 ###9.Streams(5.0版本增加的数据结构)
     Streams就是Redis实现的内存版kafka
