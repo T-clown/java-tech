@@ -91,3 +91,7 @@ git reflog
 查找到你要的 操作id，依旧使用 上文说的 git reset --hard id。又回退到当初一模一样的版本
 
 
+远程分支覆盖本地分支
+git fetch --all
+git reset --hard origin/master (这里master要修改为对应的分支名)
+git pull
