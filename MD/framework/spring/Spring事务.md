@@ -21,3 +21,9 @@ Spring中的事务是通过代理实现的，代理分为JDK动态代理和CGLIB
 6.不支持事务(事务传播行为是Propagation.NOT_SUPPORTED)
 7.事务方法内异常被吃了，无法回滚
 8.异常类型错误(事务方法抛出的异常和@Transactional(rollbackFor = Exception.class)上的异常不对应)
+
+
+###@Transactional注解事务自调用不生效解决办法
+    1.直接用@Autowired注入自身，this调用改为注入的自身调用
+    2.用AopContext.currentProxy()获取自身代理对象进行调用，当前类或者启动类上需加上@EnableAspectJAutoProxy(exposeProxy = true,proxyTargetClass = true)
+    3.通过ApplicationContext获取自身代理对象，applicationContext.getBean(this.getClass())
