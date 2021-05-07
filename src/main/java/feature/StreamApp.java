@@ -75,35 +75,34 @@ public class StreamApp {
         }
 
 
-/**
- *         返回 对象集合以类属性一升序排序
- */
-
+        /**
+         * 返回 对象集合以类属性一升序排序
+         */
         productList2.stream().sorted(Comparator.comparing(Product::getId));
 
-//返回 对象集合以类属性一降序排序 注意两种写法
+        //返回 对象集合以类属性一降序排序 注意两种写法
 
         productList2.stream().sorted(Comparator.comparing(Product::getId).reversed());//先以属性一升序,结果进行属性一降序
 
         productList2.stream().sorted(Comparator.comparing(Product::getId, Comparator.reverseOrder()));//以属性一降序
 
-//返回 对象集合以类属性一升序 属性二升序
+        //返回 对象集合以类属性一升序 属性二升序
 
         productList2.stream().sorted(Comparator.comparing(Product::getId).thenComparing(Product::getStock));
 
-//返回 对象集合以类属性一降序 属性二升序 注意两种写法
+        //返回 对象集合以类属性一降序 属性二升序 注意两种写法
 
         productList2.stream().sorted(Comparator.comparing(Product::getId).reversed().thenComparing(Product::getStock));//先以属性一升序,升序结果进行属性一降序,再进行属性二升序
 
         productList2.stream().sorted(Comparator.comparing(Product::getId, Comparator.reverseOrder()).thenComparing(Product::getStock));//先以属性一降序,再进行属性二升序
 
-//返回 对象集合以类属性一降序 属性二降序 注意两种写法
+        //返回 对象集合以类属性一降序 属性二降序 注意两种写法
 
         productList2.stream().sorted(Comparator.comparing(Product::getId).reversed().thenComparing(Product::getStock, Comparator.reverseOrder()));//先以属性一升序,升序结果进行属性一降序,再进行属性二降序
 
         productList2.stream().sorted(Comparator.comparing(Product::getId, Comparator.reverseOrder()).thenComparing(Product::getStock, Comparator.reverseOrder()));//先以属性一降序,再进行属性二降序
 
-//返回 对象集合以类属性一升序 属性二降序 注意两种写法
+        //返回 对象集合以类属性一升序 属性二降序 注意两种写法
 
         productList2.stream().sorted(Comparator.comparing(Product::getId).reversed().thenComparing(Product::getStock).reversed());//先以属性一升序,升序结果进行属性一降序,再进行属性二升序,结果进行属性一降序属性二降序
 
