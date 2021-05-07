@@ -1,6 +1,7 @@
 package feature;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -33,6 +34,7 @@ import static java.util.stream.Collectors.toList;
 
 public class StreamApp {
     public static List<Product> productList;
+    public static List<Product> productList2;
 
     static {
         productList = Lists.newArrayList();
@@ -44,10 +46,71 @@ public class StreamApp {
         productList.add(new Product(6, null, 10, 1));
     }
 
+    static {
+        productList2 = Lists.newArrayList();
+        productList2.add(new Product(1, "a", 1, 1));
+        productList2.add(new Product(2, "b", 2, 1));
+        productList2.add(new Product(3, "c", 11, 1));
+        productList2.add(new Product(3, "d", 12, 1));
+        productList2.add(new Product(5, "e", 10, 1));
+        productList2.add(new Product(1, "f", 10, 1));
+    }
+
     public static void main(String[] args) {
-        listToMap();
+        sort();
+    }
+
+    public static void sort() {
+        /**
+         * 优先级越高放在越后面
+         */
+        List<Product> collect = productList2.stream().sorted(Comparator.comparing(Product::getName)).sorted(Comparator.comparingInt(Product::getId)).collect(toList());
+        for (Product product : collect) {
+            System.out.println(product.getId() + "\t" + product.getName());
+        }
+        System.out.println();
+        productList2.sort(Comparator.comparing(Product::getId).thenComparing(Product::getName).thenComparing(x -> x.getPrice()));
+        for (Product product : productList2) {
+            System.out.println(product.getId() + "\t" + product.getName());
+        }
+
+
+/**
+ *         返回 对象集合以类属性一升序排序
+ */
+
+        productList2.stream().sorted(Comparator.comparing(Product::getId));
+
+//返回 对象集合以类属性一降序排序 注意两种写法
+
+        productList2.stream().sorted(Comparator.comparing(Product::getId).reversed());//先以属性一升序,结果进行属性一降序
+
+        productList2.stream().sorted(Comparator.comparing(Product::getId, Comparator.reverseOrder()));//以属性一降序
+
+//返回 对象集合以类属性一升序 属性二升序
+
+        productList2.stream().sorted(Comparator.comparing(Product::getId).thenComparing(Product::getStock));
+
+//返回 对象集合以类属性一降序 属性二升序 注意两种写法
+
+        productList2.stream().sorted(Comparator.comparing(Product::getId).reversed().thenComparing(Product::getStock));//先以属性一升序,升序结果进行属性一降序,再进行属性二升序
+
+        productList2.stream().sorted(Comparator.comparing(Product::getId, Comparator.reverseOrder()).thenComparing(Product::getStock));//先以属性一降序,再进行属性二升序
+
+//返回 对象集合以类属性一降序 属性二降序 注意两种写法
+
+        productList2.stream().sorted(Comparator.comparing(Product::getId).reversed().thenComparing(Product::getStock, Comparator.reverseOrder()));//先以属性一升序,升序结果进行属性一降序,再进行属性二降序
+
+        productList2.stream().sorted(Comparator.comparing(Product::getId, Comparator.reverseOrder()).thenComparing(Product::getStock, Comparator.reverseOrder()));//先以属性一降序,再进行属性二降序
+
+//返回 对象集合以类属性一升序 属性二降序 注意两种写法
+
+        productList2.stream().sorted(Comparator.comparing(Product::getId).reversed().thenComparing(Product::getStock).reversed());//先以属性一升序,升序结果进行属性一降序,再进行属性二升序,结果进行属性一降序属性二降序
+
+        productList2.stream().sorted(Comparator.comparing(Product::getId).thenComparing(Product::getStock, Comparator.reverseOrder()));//先以属性一升序,再进行属性二降序
 
     }
+
 
     /**
      * 转map时值为空报npe解决方式
@@ -274,7 +337,7 @@ public class StreamApp {
          */
         System.out.println(Stream.of(1, 2, 3).reduce((a, b) -> a + b).get());
         System.out.println(Stream.of(1, 2, 3).reduce((a, b) -> a > b ? a : b).get());
-        System.out.println(Arrays.asList(1, 2, 3).stream().reduce(0, (a, b) -> a + b));
+        System.out.println(Stream.of(1, 2, 3).reduce(0, (a, b) -> a + b));
         /**
          * 把数据分成两部分
          */
