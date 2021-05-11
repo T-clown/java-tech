@@ -25,6 +25,7 @@ import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
 import com.google.common.primitives.Ints;
 import entity.Product;
+import org.apache.commons.collections4.CollectionUtils;
 
 import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.groupingBy;
@@ -57,7 +58,16 @@ public class StreamApp {
     }
 
     public static void main(String[] args) {
-        sort();
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(1, 6);
+        map.put(2, 5);
+        map.put(3, 6);
+        map.put(4, 5);
+        map.put(5, 6);
+        map.put(6, 3);
+        Map<Integer, List<Product>> collect = productList.stream().collect(groupingBy(x -> map.get(x.getId())));
+        System.out.println();
+
     }
 
     public static void sort() {
@@ -88,7 +98,7 @@ public class StreamApp {
 
         //返回 对象集合以类属性一升序 属性二升序
 
-        productList2.stream().sorted(Comparator.comparing(Product::getId).thenComparing(Product::getStock));
+        productList2.stream().sorted(Comparator.comparing(Product::getName).thenComparing(Product::getStock));
 
         //返回 对象集合以类属性一降序 属性二升序 注意两种写法
 
@@ -303,7 +313,7 @@ public class StreamApp {
         /**
          * flatMap：将最底层元素抽出来放到一起
          */
-        Stream.of(Arrays.asList(1, 2, 3), Arrays.asList(2, 3, 6)).flatMap(x -> x.stream()).collect(Collectors.toList())
+        Stream.of(Arrays.asList(1, 2, 3), Arrays.asList(2, 3, 6)).flatMap(Collection::stream).collect(Collectors.toList())
                 .forEach(System.out::print);
 
         Stream<List<Integer>> listStream = Stream.of(Arrays.asList(1, 2, 3), Arrays.asList(2, 3, 6));
