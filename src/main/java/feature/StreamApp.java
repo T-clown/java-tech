@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.TreeSet;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -281,7 +282,14 @@ public class StreamApp {
     private static void distinct() {
         List<Product> list = productList.stream().collect(collectingAndThen(
                 toCollection(() -> new TreeSet<>(Comparator.comparingInt(Product::getId))), ArrayList::new));
+        productList.stream().filter(distinctByKey(Product::getId)).collect(Collectors.toList());
+        productList.stream().filter(distinctByKey(Product::getName)).collect(Collectors.toList());
         list.forEach(System.out::println);
+    }
+
+    public static <T> Predicate<T> distinctByKey(Function<? super T, Object> keyExtractor) {
+        Map<Object, Boolean> seen = new ConcurrentHashMap<>();
+        return t -> seen.putIfAbsent(keyExtractor.apply(t), Boolean.TRUE) == null;
     }
 
     private static void intStream() {
