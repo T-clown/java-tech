@@ -1,5 +1,7 @@
 package concurrent;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionException;
@@ -7,6 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -29,7 +32,9 @@ public class CompletableFutureDemo {
     });
 
     public static void main(String[] args) {
-       exception();
+        //thenCompose();
+       // thenCombine();
+        thenAcceptBoth();
     }
 
     private static void async() {
@@ -59,7 +64,10 @@ public class CompletableFutureDemo {
         System.out.println(f3.join());
     }
 
-    private static void demo() {
+    /**
+     * 异步有返回值
+     */
+    private static void supplyAsync() {
         CompletableFuture<String> f1 = CompletableFuture.supplyAsync(() -> {
             int t = getRandom();
             System.out.println("f1 need " + t);
@@ -74,10 +82,32 @@ public class CompletableFutureDemo {
             sleep(t, TimeUnit.SECONDS);
             System.out.println("f2 done");
             return "f2 takes " + t;
-        });
+        },executor);
 
         CompletableFuture<String> f3 = f1.applyToEither(f2, s -> s);
         f3.join();
+    }
+
+    /**
+     * 异步无返回值
+     */
+    private static void runAsync() {
+        CompletableFuture<Void> f1 = CompletableFuture.runAsync(() -> {
+            int t = getRandom();
+            System.out.println("f1 need " + t);
+            sleep(t, TimeUnit.SECONDS);
+            System.out.println("f1 done");
+        });
+
+        CompletableFuture<Void> f2 = CompletableFuture.runAsync(() -> {
+            int t = getRandom();
+            System.out.println("f2 need " + t);
+            sleep(t, TimeUnit.SECONDS);
+            System.out.println("f2 done");
+        });
+
+       f1.complete(null);
+       f2.complete(null);
     }
 
     private static int getRandom() {
@@ -114,30 +144,30 @@ public class CompletableFutureDemo {
         assertTrue("Result was empty", result.length() > 0);
     }
 
-    //private static void completeExceptionally() {
-    //    CompletableFuture cf = CompletableFuture.completedFuture("message").thenApplyAsync(String::toUpperCase,
-    //        CompletableFuture.delayedExecutor(1, TimeUnit.SECONDS));
-    //    CompletableFuture exceptionHandler = cf.handle((s, th) -> (th != null) ? "message upon cancel" : "");
-    //    cf.completeExceptionally(new RuntimeException("completed exceptionally"));
-    //    log.info("Was not completed exceptionally:{}", cf.isCompletedExceptionally());
-    //    try {
-    //        cf.join();
-    //        fail("Should have thrown an exception");
-    //    } catch (CompletionException ex) {
-    //        log.error("completed exceptionally:{}", ex.getCause().getMessage());
-    //    }
-    //    exceptionHandler.join();
-    //}
+    private static void completeExceptionally() {
+        CompletableFuture cf = CompletableFuture.completedFuture("message").thenApplyAsync(String::toUpperCase,
+            CompletableFuture.delayedExecutor(1, TimeUnit.SECONDS));
+        CompletableFuture exceptionHandler = cf.handle((s, th) -> (th != null) ? "message upon cancel" : "");
+        cf.completeExceptionally(new RuntimeException("completed exceptionally"));
+        log.info("Was not completed exceptionally:{}", cf.isCompletedExceptionally());
+        try {
+            cf.join();
+            fail("Should have thrown an exception");
+        } catch (CompletionException ex) {
+            log.error("completed exceptionally:{}", ex.getCause().getMessage());
+        }
+        exceptionHandler.join();
+    }
 
-    //static void cancel() {
-    //    CompletableFuture cf = CompletableFuture.completedFuture("message").thenApplyAsync(String::toUpperCase,
-    //        CompletableFuture.delayedExecutor(1, TimeUnit.SECONDS));
-    //    CompletableFuture cf2 = cf.exceptionally(throwable -> "canceled message");
-    //    log.info("Was not canceled:{}", cf.cancel(true));
-    //    log.info("Was not completed exceptionally:{}", cf.isCompletedExceptionally());
-    //    log.info("canceled message:{}", cf2.join());
-    //
-    //}
+    static void cancel() {
+        CompletableFuture cf = CompletableFuture.completedFuture("message").thenApplyAsync(String::toUpperCase,
+            CompletableFuture.delayedExecutor(1, TimeUnit.SECONDS));
+        CompletableFuture cf2 = cf.exceptionally(throwable -> "canceled message");
+        log.info("Was not canceled:{}", cf.cancel(true));
+        log.info("Was not completed exceptionally:{}", cf.isCompletedExceptionally());
+        log.info("canceled message:{}", cf2.join());
+
+    }
 
     static void applyToEither() {
         String original = "Message";
@@ -175,7 +205,7 @@ public class CompletableFutureDemo {
         StringBuilder result = new StringBuilder();
         CompletableFuture.completedFuture(original).thenApply(String::toUpperCase).thenAcceptBoth(
             CompletableFuture.completedFuture(original).thenApply(String::toLowerCase),
-            (s1, s2) -> result.append(s1 + s2));
+            (s1, s2) -> result.append(s1).append(s2));
         log.info("MESSAGEmessage:{}", result.toString());
 
     }
@@ -205,115 +235,116 @@ public class CompletableFutureDemo {
         log.info("MESSAGEmessage:{}", cf.join());
     }
 
-    //static void anyOfExample() {
-    //
-    //    StringBuilder result = new StringBuilder();
-    //
-    //    List messages = Arrays.asList("a", "b", "c");
-    //
-    //    List<CompletableFuture> futures = messages.stream()
-    //        .map(msg -> CompletableFuture.completedFuture(msg).thenApply(x->delayedUpperCase(x)))
-    //        .collect(Collectors.toList());
-    //
-    //    CompletableFuture.anyOf(futures.toArray(new CompletableFuture[futures.size()])).whenComplete((res, th) -> {
-    //        if(th == null) {
-    //            result.append(res);
-    //        }
-    //    });
-    //
-    //    log.info("Result was empty:{}", result.length() > 0);
-    //
-    //}
+    static void anyOfExample() {
+
+        StringBuilder result = new StringBuilder();
+
+        List messages = Arrays.asList("a", "b", "c");
+
+        List<CompletableFuture> futures = (List<CompletableFuture>) messages.stream()
+            .map(msg -> CompletableFuture.completedFuture(msg).thenApply(x->delayedUpperCase((String) x)))
+            .collect(Collectors.toList());
+
+        CompletableFuture.anyOf(futures.toArray(new CompletableFuture[futures.size()])).whenComplete((res, th) -> {
+            if(th == null) {
+                result.append(res);
+            }
+        });
+
+        log.info("Result was empty:{}", result.length() > 0);
+
+    }
 
 
-    //static void allOfExample() {
-    //
-    //    StringBuilder result = new StringBuilder();
-    //
-    //    List messages = Arrays.asList("a", "b", "c");
-    //
-    //    List<CompletableFuture> futures = messages.stream()
-    //
-    //        .map(msg -> CompletableFuture.completedFuture(msg).thenApply(s -> delayedUpperCase(s)))
-    //
-    //        .collect(Collectors.toList());
-    //
-    //    CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()])).whenComplete((v, th) -> {
-    //
-    //        futures.forEach(cf -> log.info(""+cf.getNow(null));
-    //
-    //        result.append("done");
-    //
-    //    });
-    //
-    //}
+    static void allOfExample() {
+
+        StringBuilder result = new StringBuilder();
+
+        List messages = Arrays.asList("a", "b", "c");
+
+        List<CompletableFuture> futures = (List<CompletableFuture>) messages.stream()
+
+            .map(msg -> CompletableFuture.completedFuture(msg).thenApply(s -> delayedUpperCase((String) s)))
+
+            .collect(Collectors.toList());
+
+        CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()])).whenComplete((v, th) -> {
+
+            futures.forEach(cf -> log.info(""+cf.getNow(null)));
+
+            result.append("done");
+
+        });
+
+    }
 
 
-    //static void allOfAsyncExample() {
-    //
-    //    StringBuilder result = new StringBuilder();
-    //
-    //    List messages = Arrays.asList("a", "b", "c");
-    //
-    //    List<CompletableFuture> futures = messages.stream()
-    //
-    //        .map(msg -> CompletableFuture.completedFuture(msg).thenApplyAsync(s -> delayedUpperCase(s)))
-    //
-    //        .collect(Collectors.toList());
-    //
-    //    CompletableFuture allOf = CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()]))
-    //
-    //        .whenComplete((v, th) -> {
-    //
-    //            futures.forEach(cf -> assertTrue(isUpperCase(cf.getNow(null))));
-    //
-    //            result.append("done");
-    //
-    //        });
-    //
-    //    allOf.join();
-    //
-    //    assertTrue("Result was empty", result.length() > 0);
-    //
-    //}
-    //
+    static void allOfAsyncExample() {
+
+        StringBuilder result = new StringBuilder();
+
+        List messages = Arrays.asList("a", "b", "c");
+
+        List<CompletableFuture> futures = (List<CompletableFuture>) messages.stream()
+
+            .map(msg -> CompletableFuture.completedFuture(msg).thenApplyAsync(s -> delayedUpperCase((String) s)))
+
+            .collect(Collectors.toList());
+
+        CompletableFuture allOf = CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()]))
+
+            .whenComplete((v, th) -> {
+                System.out.println(futures.size());
+
+                result.append("done");
+
+            });
+
+        allOf.join();
+
+        assertTrue("Result was empty", result.length() > 0);
+
+    }
 
 
-    //cars().thenCompose(cars -> {
-    //
-    //    List<CompletionStage> updatedCars = cars.stream()
-    //
-    //        .map(car -> rating(car.manufacturerId).thenApply(r -> {
-    //
-    //            car.setRating(r);
-    //
-    //            return car;
-    //
-    //        })).collect(Collectors.toList());
-    //
-    //
-    //
-    //    CompletableFuture done = CompletableFuture
-    //
-    //        .allOf(updatedCars.toArray(new CompletableFuture[updatedCars.size()]));
-    //
-    //    return done.thenApply(v -> updatedCars.stream().map(CompletionStage::toCompletableFuture)
-    //
-    //        .map(CompletableFuture::join).collect(Collectors.toList()));
-    //
-    //}).whenComplete((cars, th) -> {
-    //
-    //    if (th == null) {
-    //
-    //        cars.forEach(System.out::println);
-    //
-    //    } else {
-    //
-    //        throw new RuntimeException(th);
-    //
-    //    }
-    //
-    //}).toCompletableFuture().join();
+    private static void tt(){
+
+//        cars().thenCompose(cars -> {
+//
+//            List<CompletionStage> updatedCars = cars.stream()
+//
+//                    .map(car -> rating(car.manufacturerId).thenApply(r -> {
+//
+//                        car.setRating(r);
+//
+//                        return car;
+//
+//                    })).collect(Collectors.toList());
+//
+//
+//
+//            CompletableFuture done = CompletableFuture
+//
+//                    .allOf(updatedCars.toArray(new CompletableFuture[updatedCars.size()]));
+//
+//            return done.thenApply(v -> updatedCars.stream().map(CompletionStage::toCompletableFuture)
+//
+//                    .map(CompletableFuture::join).collect(Collectors.toList()));
+//
+//        }).whenComplete((cars, th) -> {
+//
+//            if (th == null) {
+//
+//                cars.forEach(System.out::println);
+//
+//            } else {
+//
+//                throw new RuntimeException(th);
+//
+//            }
+//
+//        }).toCompletableFuture().join();
+    }
 
     private static void sleep(long value, TimeUnit tu) {
         try {
@@ -323,9 +354,9 @@ public class CompletableFutureDemo {
         }
     }
 
-    private static void delayedUpperCase(String s){
+    private static String delayedUpperCase(String s){
         sleep(10,TimeUnit.SECONDS);
-        s.toString().toUpperCase();
+      return   s.toString().toUpperCase();
     }
 
     CompletableFuture cf = CompletableFuture.completedFuture("message").thenApply(s -> {
