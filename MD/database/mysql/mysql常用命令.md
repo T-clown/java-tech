@@ -1,12 +1,15 @@
-查看最大连接数
-show variables like 'max_connections';
+show databases;     查看数据库
+show tables(show tables from databaseName);       查看表
+show columns from tableName;        查看表字段
+show index from tableName;          查看表索引
 
-查看已使用连接数
-show status like 'max%connections';
+
+show variables like 'max_connections';  查看最大连接数
+show status like 'max%connections';     查看已使用连接数
 
 更改最大连接数
-全局set(临时):set GLOBAL max_connections=1000;(这种方式重启mysql后会失效)
-配置文件修改(全局):修改/etc/my.cnf配置文件 在[mysqld]块中修改或添加：max_connections=1000，重启mysql。
+1.set GLOBAL max_connections=1000;   全局set(临时)(这种方式重启mysql后会失效)
+2.配置文件修改(全局):修改/etc/my.cnf配置文件 在[mysqld]块中修改或添加：max_connections=1000，重启mysql。
 
 查看连接IP列表及数量
 select SUBSTRING_INDEX(host,':',1) as ip , count(*) from information_schema.processlist group by ip;
@@ -15,8 +18,8 @@ select SUBSTRING_INDEX(host,':',1) as ip , count(*) from information_schema.proc
 select count(*) from information_schema.processlist;
 
 查看进程列表
-列出前100条show processlist;
-列出所有show full processlist;
+show processlist;        列出前100条
+show full processlist;   列出所有
 各列的含义:
 Id：该进程程序登录mysql时，系统分配的连接id，即为connection_id。
 User：该进程程序连接mysql的用户。
