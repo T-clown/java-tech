@@ -17,6 +17,7 @@ import org.apache.commons.lang3.time.DateFormatUtils;
 
 public class DateUtil {
     private static final String YYYY_MM_DD_HH_MM_SS = "yyyy-MM-dd HH:mm:ss";
+    private static final String YYYY_MM = "yyyy-MM";
     /**
      * 格式化日期工具
      */
@@ -123,6 +124,8 @@ public class DateUtil {
         LocalDateTime localDateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(date.getTime()),
             ZoneId.systemDefault());
         LocalDateTime endOfDay = localDateTime.with(LocalTime.MAX);
+//        LocalDateTime start = LocalDateTime.of(LocalDate.now(), LocalTime.MIN);
+//        LocalDateTime end = LocalDateTime.of(LocalDate.now(), LocalTime.MAX);
         return Date.from(endOfDay.atZone(ZoneId.systemDefault()).toInstant());
     }
 
@@ -145,6 +148,7 @@ public class DateUtil {
         //System.out.println(FAST_DATE_FORMAT.format(date));
         //System.out.println(formatter(YYYY_MM_DD_HH_MM_SS).format(dateTime));
         //System.out.println(DateFormatUtils.format(date, YYYY_MM_DD_HH_MM_SS));
+        LocalDate parse = LocalDate.parse("2021-06", DateTimeFormatter.ofPattern(YYYY_MM));
         System.out.println(getStartOfDay(getFirstDayOfMon(new Date())).getTime());
     }
 
