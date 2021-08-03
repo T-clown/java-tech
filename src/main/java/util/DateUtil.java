@@ -1,5 +1,6 @@
 package util;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -14,6 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.commons.lang.time.FastDateFormat;
 import org.apache.commons.lang3.time.DateFormatUtils;
+import org.apache.commons.lang3.time.DateUtils;
 
 public class DateUtil {
     private static final String YYYY_MM_DD_HH_MM_SS = "yyyy-MM-dd HH:mm:ss";
@@ -142,13 +144,19 @@ public class DateUtil {
         return Date.from(startOfDay.atZone(ZoneId.systemDefault()).toInstant());
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         //LocalDateTime dateTime = LocalDateTime.now();
         //Date date = new Date();
         //System.out.println(FAST_DATE_FORMAT.format(date));
         //System.out.println(formatter(YYYY_MM_DD_HH_MM_SS).format(dateTime));
         //System.out.println(DateFormatUtils.format(date, YYYY_MM_DD_HH_MM_SS));
-        LocalDate parse = LocalDate.parse("2021-06", DateTimeFormatter.ofPattern(YYYY_MM));
+       // LocalDate parse = LocalDate.parse("2021-06", DateTimeFormatter.ofPattern(YYYY_MM));
+        SimpleDateFormat simpleDateFormat = simpleDateFormat(YYYY_MM);
+        Date parse = simpleDateFormat.parse("2021-06");
+        Date date = DateUtils.parseDate("2021-06", YYYY_MM);
+
+        System.out.println(date);
+        System.out.println(parse);
         System.out.println(getStartOfDay(getFirstDayOfMon(new Date())).getTime());
     }
 

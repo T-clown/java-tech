@@ -1,17 +1,19 @@
 package deepcopy;
 
-import java.io.Serializable;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User implements Cloneable, Serializable {
+public class User2 implements Cloneable, Serializable {
     private String name;
     private Address address;
+    private String aBbb;
+    private String aaBbbb;
 
     /**
      * 需要注意的是，super.clone()其实是浅拷贝，所以在重写User类的clone()方法时，
@@ -20,8 +22,8 @@ public class User implements Cloneable, Serializable {
      * @throws CloneNotSupportedException
      */
     @Override
-    public User clone() throws CloneNotSupportedException {
-        User user = (User) super.clone();
+    public User2 clone() throws CloneNotSupportedException {
+        User2 user = (User2) super.clone();
         user.setAddress(this.address.clone());
         return user;
     }
