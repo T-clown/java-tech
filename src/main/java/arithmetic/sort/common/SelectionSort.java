@@ -14,6 +14,7 @@ public class SelectionSort {
             int min = i;
 
             // 每轮需要比较的次数 N-i
+            //循环找到最小的数，然后替换，跟冒泡有点像
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[j] < arr[min]) {
                     // 记录目前能找到的最小值元素的下标

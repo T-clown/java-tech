@@ -15,6 +15,12 @@ public class CountSort {
         return countingSort(arr, maxValue);
     }
 
+    /**
+     * 原理是利用数组的索引天然有序
+     * @param arr
+     * @param maxValue
+     * @return
+     */
     private static int[] countingSort(int[] arr, int maxValue) {
         int bucketLen = maxValue + 1;
         int[] bucket = new int[bucketLen];
