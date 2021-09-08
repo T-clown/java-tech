@@ -24,3 +24,6 @@ mysql -uroot -proot -P3306 log_20190421 < log_db_table_new
 Program => 填入javap.exe的绝对路径
 Arguments => -c $FileNameWithoutExtension$.class
 Working directory => $OutputPath$/$FileDirRelativeToSourcepath$
+
+
+token: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
