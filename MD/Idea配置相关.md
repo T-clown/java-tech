@@ -26,6 +26,4 @@ Arguments => -c $FileNameWithoutExtension$.class
 Working directory => $OutputPath$/$FileDirRelativeToSourcepath$
 
 
-token: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
-
-git remote set-url origin https://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@github.com/414162330@qq.com/java-tech.git
+git remote set-url origin https://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@github.com/T-clown/java-tech.git
