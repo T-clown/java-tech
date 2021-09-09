@@ -26,4 +26,5 @@ Arguments => -c $FileNameWithoutExtension$.class
 Working directory => $OutputPath$/$FileDirRelativeToSourcepath$
 
 
-git remote set-url origin https://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@github.com/T-clown/java-tech.git
+
+git remote set-url origin https://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@github.com/T-clown/python.git
