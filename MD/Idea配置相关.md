@@ -27,6 +27,6 @@ Working directory => $OutputPath$/$FileDirRelativeToSourcepath$
 
 
 
-git remote set-url origin https://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@github.com/T-clown/python.git
-git remote set-url origin https://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@github.com/T-clown/java-tech.git
+git remote set-url origin https://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@github.com/T-clown/python.git
+git remote set-url origin https://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@github.com/T-clown/java-tech.git
 
