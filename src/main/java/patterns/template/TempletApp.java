@@ -1,25 +1,20 @@
 package patterns.template;
 
 public class TempletApp {
+
     public static void main(String[] args) {
         String a="a";
 
         String c= TemplateUtil.call(()->a(a),a);
-
-        useTemplet("1", new Callback<Integer, String>() {
-            @Override
-            public Integer doSomething(String t) {
-                int a= Integer.parseInt(t);
-                return a+1;
-            }
-        });
+        System.out.println(c);
+//        useTemplet("1", t -> {
+//            int a1 = Integer.parseInt(t);
+//            return a1 + 1;
+//        });
     }
 
     public static String a(String a){
         return a+"1";
-    }
-    public static String b(String a,String b){
-        return a+b;
     }
 
 
