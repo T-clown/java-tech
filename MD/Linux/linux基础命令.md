@@ -201,7 +201,7 @@ uname -a 显示本机详细信息。 依次为：内核名称(类别)，主机�
 用户的管理
 useradd 添加一个用户
 useradd test 添加test用户
-useradd test -d /home/t1  指定用户home目录 
+useradd jiangnan -d /home/jiangnan  指定用户home目录 
 passwd  设置、修改密码
 passwd test  为test用户设置密码
 

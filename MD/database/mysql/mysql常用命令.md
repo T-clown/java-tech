@@ -6,6 +6,7 @@ show index from tableName;          查看表索引
 
 show variables like 'max_connections';  查看最大连接数
 show status like 'max%connections';     查看已使用连接数
+show global status like 'Max_used_connections';查看过去的最大连接数
 
 更改最大连接数
 1.set GLOBAL max_connections=1000;   全局set(临时)(这种方式重启mysql后会失效)
@@ -13,7 +14,6 @@ show status like 'max%connections';     查看已使用连接数
 
 查看连接IP列表及数量
 select SUBSTRING_INDEX(host,':',1) as ip , count(*) from information_schema.processlist group by ip;
-
 查看数据库连接数
 select count(*) from information_schema.processlist;
 
@@ -32,9 +32,7 @@ Info：显示sql语句，如当前执行了show full processlist。
 
 查看连接数据库的java进程
 数据库端口为3306，查看连接该端口的java程序进程netstat -anp | grep 3306 | grep java
-
 查看进程对应的程序
 ps -ef | grep 进程号
-
 统计某个进程连接数
 netstat -anp | grep 3306 | grep 进程号 | wc -l

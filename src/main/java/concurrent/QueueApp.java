@@ -1,4 +1,4 @@
-package basics;
+package concurrent;
 
 import java.util.Date;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -15,8 +15,8 @@ import util.DateUtil;
 public class QueueApp {
 
     public static void main(String[] args) throws InterruptedException {
-        //delayQueue();
-        priorityBlockingQueue();
+        delayQueue();
+        //priorityBlockingQueue();
     }
 
     private static void arrayBlockingQueue() throws InterruptedException {
@@ -92,10 +92,10 @@ public class QueueApp {
 
         @Override
         public String toString() {
-            return "DelayeTask{" +
+            return "DelayeTask[ " +
                     "name='" + name + '\'' +
-                    ", delayTime=" + delayTime +"执行时间"+DateUtil.format(new Date())+
-                    '}';
+                    ", delayTime=" + delayTime +"s,任务加入时间:"+DateUtil.format(new Date(start))+",执行时间"+DateUtil.format(new Date())+
+                    ']';
         }
     }
 

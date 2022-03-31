@@ -1,7 +1,11 @@
 package patterns.bridge;
 
 public abstract class Shape {
-    Color color;
+    protected Color color;
+
+    public Shape(Color color){
+        this.color=color;
+    }
 
     public void setColor(Color color) {
         this.color = color;

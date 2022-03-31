@@ -60,6 +60,7 @@ public class StreamApp {
 
     public static void main(String[] args) {
         Map<Integer, Optional<Integer>> collect1 = productList.stream().collect(groupingBy(Product::getId, mapping(Product::getPrice, Collectors.reducing((x, y) -> x + y))));
+        Map<Integer, Integer> collect2 = productList.stream().collect(groupingBy(Product::getId, mapping(Product::getPrice, Collectors.reducing(0, (x, y) -> x + y))));
         productList.stream().collect(Collectors.groupingBy(Product::getId, Collectors.mapping(Product::getPrice, Collectors.maxBy(Comparator.comparingInt(x -> x)))));
         productList.stream().collect(Collectors.groupingBy(Product::getId, Collectors.maxBy(Comparator.comparingInt(Product::getPrice))));
         Map<Integer, Integer> map = new HashMap<>();

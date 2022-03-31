@@ -8,7 +8,8 @@ import spring.entity.SubBook;
 
 public class LifecycleApp {
     public static void main(String[] args) {
-        lifecycle();
+       // lifecycle();
+        conpleteLifecycle();
     }
 
     private static void lifecycle(){

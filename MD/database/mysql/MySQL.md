@@ -1,4 +1,3 @@
-[SQL 优化指南](https://mp.weixin.qq.com/s/P0tS939HwDs6bUHcFrMUOQ)
 [高性能 Mysql 主从架构的复制原理及配置详解](https://mp.weixin.qq.com/s/uBzPyqPv_xuWoFOIsVlyig)
 [总目录](http://w.itcodemonkey.com/article/21.html?v=1)
 [Mysql 中主库跑太快，从库追不上怎么整？](https://mp.weixin.qq.com/s/2Y1H8zx3cygGQPKBRocpdw)

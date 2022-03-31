@@ -5,6 +5,19 @@ public class ThreadDemo {
     private static volatile Object resourceB = new Object();
 
     public static void main(String[] args) throws InterruptedException {
+        ThreadGroup threadGroup = Thread.currentThread().getThreadGroup();
+
+        ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
+        ClassLoader appClassLoader = ThreadDemo.class.getClassLoader();
+        ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
+
+        System.out.println(appClassLoader.getName());
+        System.out.println(appClassLoader.getParent().getName());
+        System.out.println(appClassLoader.getParent().getParent());
+       // System.out.println(classLoader.getClass().getClassLoader());
+
+    }
+    public static void interupt(){
         Thread t = new Thread(() -> {
             try {
                 Thread.sleep(100);
@@ -23,7 +36,6 @@ public class ThreadDemo {
         t.interrupt();
         //判断t线程是否被中断
         System.out.println(t.isInterrupted());
-
     }
 
 

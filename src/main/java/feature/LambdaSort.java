@@ -1,5 +1,6 @@
 package feature;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
@@ -32,5 +33,10 @@ public class LambdaSort {
         List<String> names3 = null;
         Optional.ofNullable(names3).ifPresent(list -> list.sort(Comparator.naturalOrder()));
         System.out.println(names3);
+
+        List<BigDecimal> bigDecimals = Arrays.asList(BigDecimal.ONE, BigDecimal.ZERO, BigDecimal.TEN);
+        bigDecimals.sort((x,y)->y.compareTo(x));
+        bigDecimals.sort((x,y)->x.compareTo(y));
+
     }
 }

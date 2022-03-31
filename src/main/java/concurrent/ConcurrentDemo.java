@@ -11,9 +11,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import util.ImageUtil;
 
-/**
- * https://segmentfault.com/a/1190000022601190
- */
 public class ConcurrentDemo {
 
     private static final Logger logger = LoggerFactory.getLogger(ConcurrentDemo.class);

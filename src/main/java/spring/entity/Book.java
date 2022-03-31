@@ -14,24 +14,25 @@ public class Book  implements BeanNameAware, BeanFactoryAware,
     private String bookName;
 
     public Book(){
-        System.out.println( "第一步：Book Initializing ");
+        System.out.println( "第一步：Book对象初始化，执行构造方法,Book Initializing ");
     }
 
     public void setBookName(String bookName) {
         this.bookName = bookName;
-        System.out.println("第二步：setBookName: Book name has set.");
+        System.out.println("第二步：执行set方法给Book赋值，setsetBookName: Book name has set.");
     }
 
+    @Override
     public void setBeanName(String name) {
         System.out.println("第三步：Book.setBeanName invoke");
     }
 
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("第四步：Book.setBeanFactory invoke");
+        System.out.println("第四步：设置BeanFactory容器属性，Book.setBeanFactory invoke");
     }
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("第五步：Book.setApplicationContext invoke");
+        System.out.println("第五步：设置ApplicationContext容器属性，Book.setApplicationContext invoke");
     }
 
     // 自定义初始化方法
