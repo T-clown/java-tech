@@ -2,6 +2,9 @@ package arithmetic.sort.common;
 
 import java.util.Arrays;
 
+/**
+ * 插入排序
+ */
 public class InsertSort {
     public static int[] sort(int[] sourceArray) throws Exception {
         // 对 arr 进行拷贝，不改变参数内容
@@ -16,6 +19,7 @@ public class InsertSort {
             // 从已经排序的序列最右边的开始比较，找到比其小的数
             int j = i;
             while (j > 0 && tmp < arr[j - 1]) {
+                //把数往后移动
                 arr[j] = arr[j - 1];
                 j--;
             }

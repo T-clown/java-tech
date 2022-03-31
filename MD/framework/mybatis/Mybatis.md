@@ -1,0 +1,24 @@
+[MyBatis 的执行流程，写得也太全了吧！](https://mp.weixin.qq.com/s/4qB7mWOHhZURunORkuGYZg)
+[MyBatis 的执行流程，写得太好了](https://mp.weixin.qq.com/s/JwFw8Yi-5Miap83i99LX2A)
+Mybatis执行流程
+Configuration.xml：该配置文件是MyBatis的全局配置文件，在这个文件中可以配置诸多项目，但是一般项目中，并不会配置太多内容，常用的内容是别名设置，拦截器设置等，至于环境设置与Mapper映射文件的注册会转移到Spring配置文件中（SSM整合之后），而其余大部分的配置项都采用默认的配置。
+
+XMLConfigBuilder：该类是XML配置构建者类，是用来通过XML配置文件来构建Configuration对象实例，构建的过程就是解析Configuration.xml配置文件的过程，期间会将从配置文件中获取到的指定标签的值逐个添加到之前创建好的默认Configuration对象实例中。
+
+Configuration：该类是MyBatis的配置类，创建这个类的目的就是为了使用其对象作为项目全局配置对象，这样通过配置文件配置的信息可以保存在这个配置对象中，而这个配置对象在创建好之后是保存在JVM的Heap内存中的，方便随时读取。不然每次需要配置信息的时候都要临时从磁盘配置文件中获取，代码复用性差的同时，也不利于开发。
+
+SqlSessionFactoryBuilder：该类是SqlSessionFactory（会话工厂）的构建者类，之前描述的操作其实全是从这里面开启的，首先就是调用XMLConfigBuilder类的构造器来创建一个XML配置构建器对象，利用这个构建器对象来调用其解析方法parse()来完成Configuration对象的创建，之后以这个配置对象为参数调用会话工厂构建者类中的build(Configuration config)方法来完成会话工厂对象的构建。
+
+SqlsessionFactory：该接口是会话工厂，是用来生产会话的工厂接口，DefaultSqlSessionFactory是其实现类，是真正生产会话的工厂类，这个类的实例的生命周期是全局的，它只会在首次调用时生成一个实例（单例模式），就一直存在直到服务器关闭。
+
+openSession()：在最后的build(Configuration config)方法中会返回一个DefaultSqlSessionFactory类的实例，这个类是MyBatis提供的默认会话工厂类，而我们使用的也正是这个类中的来openSession()方法来完成SqlSession对象的创建。
+
+SqlSession：该接口是会话，是项目与数据库之间的会话，类似于客户端与服务器之间的会话（session），这个SqlSession的生命周期是方法级的，因为他是非线程安全的，针对每一次数据库访问都要创建一个SqlSession，获取到返回结果之后，这个SqlSession就会被废弃。这区别于SqlSessionFactory的生命周期。
+
+Executor：执行器接口，SqlSession会话是面向程序员的，而内部真正执行数据库操作的却是Executor执行器，可以将Executor看作是面向MyBatis执行环境的，SqlSession就是门面货，Executor才是实干家。通过SqlSession产生的数据库操作，全部是通过调用Executor执行器来完成的。
+
+StatementHandler：该类是Statement处理器，封装了Statement的各种数据库操作方法execute()，可见MyBatis其实就是将操作数据库的JDBC操作封装起来的一个框架，同时还实现了ORM罢了。
+
+ResultSetHandler：结果集处理器，如果是查询操作，必定会有返回结果，针对返回结果的操作，就要使用ResultSetHandler来进行处理，这个是由StatementHandler来进行调用的。这个处理器的作用就是对返回结果进行处理。
+
+

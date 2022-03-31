@@ -18,9 +18,9 @@
     </bean>
 
 
-       <!--<bean id="subBook" class="spring.entity.SubBook" init-method="myPostConstruct" destroy-method="myPreDestory">-->
-    <!--<property name="bookSystem" value="Java System" />-->
-    <!--</bean>-->
+       <bean id="subBook" class="spring.entity.SubBook" init-method="myPostConstruct" destroy-method="myPreDestory">
+    <property name="bookSystem" value="Java System" />
+    </bean>
 
 
     <!--引入自定义的BeanPostProcessor-->

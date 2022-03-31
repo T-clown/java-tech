@@ -6,7 +6,6 @@ import java.util.BitSet;
 public class BitSetDemo {
     /**
      * 求一个字符串包含的char
-     *
      */
     public static void containChars(String str) {
         BitSet used = new BitSet();
@@ -20,7 +19,7 @@ public class BitSetDemo {
         System.out.println(size);
         for (int i = 0; i < size; i++) {
             if (used.get(i)) {
-                sb.append((char) i);
+                sb.append((char)i);
             }
         }
         sb.append("]");
@@ -33,21 +32,22 @@ public class BitSetDemo {
     public static void computePrime() {
         BitSet sieve = new BitSet(1024);
         int size = sieve.size();
-        for (int i = 2; i < size; i++)
-            sieve.set(i);
-        int finalBit = (int) Math.sqrt(sieve.size());
+        for (int i = 2; i < size; i++) { sieve.set(i); }
+        int finalBit = (int)Math.sqrt(sieve.size());
 
-        for (int i = 2; i < finalBit; i++)
-            if (sieve.get(i))
-                for (int j = 2 * i; j < size; j += i)
+        for (int i = 2; i < finalBit; i++) {
+            if (sieve.get(i)) {
+                for (int j = 2 * i; j < size; j += i) {
                     sieve.clear(j);
+                }
+            }
+        }
 
         int counter = 0;
         for (int i = 1; i < size; i++) {
             if (sieve.get(i)) {
                 System.out.printf("%5d", i);
-                if (++counter % 15 == 0)
-                    System.out.println();
+                if (++counter % 15 == 0) { System.out.println(); }
             }
         }
         System.out.println();
@@ -57,7 +57,7 @@ public class BitSetDemo {
      * 进行数字排序
      */
     public static void sortArray() {
-        int[] array = new int[] { 423, 700, 9999, 2323, 356, 6400, 1,2,3,2,2,2,2 };
+        int[] array = new int[] {423, 700, 9999, 2323, 356, 6400, 1, 2, 3, 2, 2, 2, 2};
         BitSet bitSet = new BitSet(2 << 13);
         // 虽然可以自动扩容，但尽量在构造时指定估算大小,默认为64
         System.out.println("BitSet size: " + bitSet.size());
@@ -66,7 +66,7 @@ public class BitSetDemo {
             bitSet.set(array[i]);
         }
         //剔除重复数字后的元素个数
-        int bitLen=bitSet.cardinality();
+        int bitLen = bitSet.cardinality();
 
         //进行排序，即把bit为true的元素复制到另一个数组
         int[] orderedArray = new int[bitLen];
@@ -83,13 +83,14 @@ public class BitSetDemo {
         System.out.println("iterate over the true bits in a BitSet");
         //或直接迭代BitSet中bit为true的元素iterate over the true bits in a BitSet
         for (int i = bitSet.nextSetBit(0); i >= 0; i = bitSet.nextSetBit(i + 1)) {
-            System.out.print(i+"\t");
+            System.out.print(i + "\t");
         }
         System.out.println("---------------------------");
     }
 
     /**
      * 将BitSet对象转化为ByteArray
+     *
      * @param bitSet
      * @return
      */
@@ -105,6 +106,7 @@ public class BitSetDemo {
 
     /**
      * 将ByteArray对象转化为BitSet
+     *
      * @param bytes
      * @return
      */
@@ -123,7 +125,7 @@ public class BitSetDemo {
      * 简单使用示例
      */
     public static void simpleExample() {
-        String names[] = { "Java", "Source", "and", "Support" };
+        String names[] = {"Java", "Source", "and", "Support"};
         BitSet bits = new BitSet();
         for (int i = 0, n = names.length; i < n; i++) {
             if ((names[i].length() % 2) == 0) {
@@ -155,23 +157,22 @@ public class BitSetDemo {
         BitSetDemo.sortArray();
         BitSetDemo.simpleExample();
 
-
         //BitSet与Byte数组互转示例
         BitSet bitSet = new BitSet();
         bitSet.set(3, true);
         bitSet.set(98, true);
-        System.out.println(bitSet.size()+","+bitSet.cardinality());
+        System.out.println(bitSet.size() + "," + bitSet.cardinality());
         //将BitSet对象转成byte数组
         byte[] bytes = BitSetDemo.bitSet2ByteArray(bitSet);
         System.out.println(Arrays.toString(bytes));
 
         //在将byte数组转回来
         bitSet = BitSetDemo.byteArray2BitSet(bytes);
-        System.out.println(bitSet.size()+","+bitSet.cardinality());
+        System.out.println(bitSet.size() + "," + bitSet.cardinality());
         System.out.println(bitSet.get(3));
         System.out.println(bitSet.get(98));
         for (int i = bitSet.nextSetBit(0); i >= 0; i = bitSet.nextSetBit(i + 1)) {
-            System.out.print(i+"\t");
+            System.out.print(i + "\t");
         }
     }
 }

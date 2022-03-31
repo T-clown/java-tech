@@ -43,11 +43,7 @@ public enum FruitType {
         return Arrays.asList(FruitType.values());
     }
 
-    public String getDesc(Short value, Date startTime, Date endTime) {
-        if (APPLE.isEquals(value)) {
-            Date now = new Date();
-            return now.before(startTime) ? "未开始" : (now.after(endTime) ? "已结束" : "进行中");
-        }
+    public String getDesc(Short value) {
         return this.desc;
     }
 

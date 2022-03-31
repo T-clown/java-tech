@@ -13,16 +13,16 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
     // 这次只关注book(bean)的生命周期
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        if(bean instanceof Book){
-            System.out.println("MyBeanPostProcessor.postProcessBeforeInitialization");
+        if (bean instanceof Book) {
+            System.out.println("MyBeanPostProcessor.postProcessBeforeInitialization  " + bean.getClass());
         }
         return bean;
     }
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        if(bean instanceof Book){
-            System.out.println("MyBeanPostProcessor.postProcessAfterInitialization");
+        if (bean instanceof Book) {
+            System.out.println("MyBeanPostProcessor.postProcessAfterInitialization  " + beanName);
         }
         return bean;
     }

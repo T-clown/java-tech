@@ -1,7 +1,5 @@
 package patterns.observer;
 
-import javax.security.auth.Subject;
-
 import lombok.Data;
 
 @Data

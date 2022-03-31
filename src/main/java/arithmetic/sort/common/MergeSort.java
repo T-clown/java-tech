@@ -2,15 +2,18 @@ package arithmetic.sort.common;
 
 import java.util.Arrays;
 
+/**
+ * 归并排序
+ */
 public class MergeSort {
-    public int[] sort(int[] sourceArray) throws Exception {
+    public static int[] sort(int[] sourceArray) {
         // 对 arr 进行拷贝，不改变参数内容
         int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
 
         if (arr.length < 2) {
             return arr;
         }
-        int middle = (int) Math.floor(arr.length / 2);
+        int middle = (int) Math.floor(arr.length >> 1);
 
         int[] left = Arrays.copyOfRange(arr, 0, middle);
         int[] right = Arrays.copyOfRange(arr, middle, arr.length);
@@ -18,7 +21,7 @@ public class MergeSort {
         return merge(sort(left), sort(right));
     }
 
-    protected int[] merge(int[] left, int[] right) {
+    protected static int[] merge(int[] left, int[] right) {
         int[] result = new int[left.length + right.length];
         int i = 0;
         while (left.length > 0 && right.length > 0) {

@@ -42,7 +42,7 @@ public class ImageUtil3 {
             //Stroke s = new BasicStroke(4.5F, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND);
             //graphics.setStroke(s);
             //graphics.setColor(Color.WHITE);
-            //graphics.drawOval(border, border, width - border * 2, width - border * 2);
+            //graphics.drawO                ·val(border, border, width - border * 2, width - border * 2);
             //graphics.dispose();
         }
         try (OutputStream os = new FileOutputStream("/Users/ti93/tmp/temp-avatar.png")) {
@@ -81,7 +81,7 @@ public class ImageUtil3 {
             bufferedImage.getWidth(), bufferedImage.getHeight(), Transparency.TRANSLUCENT);
         g2 = image.createGraphics();
 
-        g2.setPaint(new Color (255,255,255));
+        g2.setPaint(new Color (144, 254, 109));
         g2.fill(new Rectangle(image.getWidth(), image.getHeight()));
         g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.8f));
         g2.setClip(shape);

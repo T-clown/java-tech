@@ -1,5 +1,6 @@
 package util;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -9,6 +10,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class FileUtil {
 
@@ -71,8 +74,8 @@ public class FileUtil {
             URL url = new URL(imgUrl);
             // 创建链接
             HttpURLConnection conn = (HttpURLConnection)url.openConnection();
-            //conn.setRequestMethod("GET");
-            //conn.setConnectTimeout(10 * 1000);
+            conn.setRequestMethod("GET");
+            conn.setConnectTimeout(10 * 1000);
 
             if (conn.getResponseCode() != HttpURLConnection.HTTP_OK) {
 
@@ -90,4 +93,47 @@ public class FileUtil {
         // 对字节数组Base64编码
         return Base64.encodeBase64String(outPut.toByteArray());
     }
+
+    public static String getBase64File(String base64) {
+        String[] content = base64.split(",");
+        if (content.length == 2) {
+            base64 = content[content.length - 1];
+            return base64;
+        }
+        return base64;
+    }
+
+    public static InputStream base64ToInputStream(String base64) {
+        try {
+            if (StringUtils.isNotEmpty(base64)) {
+                return new ByteArrayInputStream(Base64.decodeBase64(getBase64File(base64)));
+            }
+        } catch (Exception e) {
+            return null;
+        }
+        return null;
+    }
+
+    public static String inputStream2base64(InputStream is) {
+        try {
+            byte[] bs = IOUtils.toByteArray(is);
+            return Base64.encodeBase64String(bs);
+        } catch (IOException e) {
+            return null;
+        }
+    }
+
+    public static String url2base64(String url) {
+        return inputStream2base64(download(url));
+    }
+
+    public static InputStream download(String url) {
+        try {
+            URL u = new URL(url);
+            return u.openStream();
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
 }

@@ -25,4 +25,5 @@ public class User implements Cloneable, Serializable {
         user.setAddress(this.address.clone());
         return user;
     }
+
 }
