@@ -1,5 +1,6 @@
 package basics;
 
+import java.util.Date;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.DelayQueue;
@@ -9,11 +10,13 @@ import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 import lombok.Data;
+import util.DateUtil;
 
 public class QueueApp {
 
     public static void main(String[] args) throws InterruptedException {
-        arrayBlockingQueue();
+        //delayQueue();
+        priorityBlockingQueue();
     }
 
     private static void arrayBlockingQueue() throws InterruptedException {
@@ -45,31 +48,54 @@ public class QueueApp {
     }
 
     private static void delayQueue() throws InterruptedException {
-        DelayQueue<A> queue = new DelayQueue<>();
-        queue.add(new A());
-        queue.put(new A());
-        boolean add = queue.offer(new A());
-        System.out.println(add);
-        System.out.println(queue.remove());
-        queue.poll();
-        queue.take();
-        queue.element();
-        queue.peek();
-        queue.forEach(System.out::println);
+        DelayQueue<DelayTask> delayQueue = new DelayQueue<>();
+        System.out.println(DateUtil.format(new Date()));
+        new Thread(() -> {
+
+            delayQueue.offer(new DelayTask("task1",5));
+            delayQueue.offer(new DelayTask("task2",11));
+            delayQueue.offer(new DelayTask("task3",11));
+            delayQueue.offer(new DelayTask("task4",20));
+            delayQueue.offer(new DelayTask("task5",26));
+            delayQueue.offer(new DelayTask("task6",33));
+            delayQueue.offer(new DelayTask("task7",55));
+
+        }).start();
+
+        while (true) {
+            Delayed take = delayQueue.take();
+            System.out.println(take);
+        }
     }
 
     @Data
-    static class A implements Delayed {
-        private int i;
+    static class DelayTask implements Delayed {
+        private String name ;
+        private long start = System.currentTimeMillis();
+        //second
+        private long delayTime;
 
-        @Override
-        public long getDelay(TimeUnit unit) {
-            return 1000;
+        public DelayTask(String name, long delayTime) {
+            this.name = name;
+            this.delayTime = delayTime;
         }
 
         @Override
-        public int compareTo(Delayed o) {
-            return 0;
+        public long getDelay(TimeUnit unit) {
+            return unit.convert((start+TimeUnit.SECONDS.toMillis(delayTime)) - System.currentTimeMillis(),TimeUnit.MILLISECONDS);
+        }
+
+        @Override
+        public int compareTo(Delayed delayed) {
+            return (int) (this.getDelay(TimeUnit.SECONDS) - delayed.getDelay(TimeUnit.SECONDS));
+        }
+
+        @Override
+        public String toString() {
+            return "DelayeTask{" +
+                    "name='" + name + '\'' +
+                    ", delayTime=" + delayTime +"执行时间"+DateUtil.format(new Date())+
+                    '}';
         }
     }
 
