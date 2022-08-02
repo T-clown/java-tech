@@ -6,8 +6,7 @@ public class StringBasic {
     public static void main(String[] args) {
         //calculate();
         //str();
-        //strConcat();
-        demo();
+        strConcat();
     }
 
     private static void calculate(){
@@ -43,14 +42,5 @@ public class StringBasic {
         System.out.println(str3 == str4);//false
         System.out.println(str3 == str5);//true
         System.out.println(str4 == str5);//false
-    }
-
-    private  static void demo(){
-        String s1 = new String("abc");
-        String s2 = "abc";
-        String s3=s1.intern();
-        System.out.println(s1==s3);
-        System.out.println(s2==s3);
-
     }
 }

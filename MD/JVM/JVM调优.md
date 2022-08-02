@@ -1,6 +1,5 @@
 [可能是把Java内存区域讲的最清楚的一篇文章](https://mp.weixin.qq.com/s/YfcRjHhbStm2T7Yheif7ug)
 [一篇文章总结Java虚拟机内存区域模型](https://mp.weixin.qq.com/s/RaD3SqZ9ytYTwCgz3HpEsg)
-
 [一份 Tomcat 和 JVM 的性能调优经验总结](https://mp.weixin.qq.com/s/Km9rpES2pc6K_I5lyiYT2w)
 
 ##目前针对JVM的调优主要有两个方面：内存调优和垃圾回收策略调优

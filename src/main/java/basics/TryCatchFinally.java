@@ -6,8 +6,8 @@ import java.io.IOException;
 public class TryCatchFinally {
     public static void main(String[] args) {
 
-        //System.out.println(test09());
-        try (CloseAble able = new TryCatchFinally().new CloseAble()) {
+        System.out.println(test02());
+        try (CloseAble able = new CloseAble()) {
             able.test();
         } catch (Exception e) {
             System.out.println("异常" + e.getMessage());
@@ -19,13 +19,11 @@ public class TryCatchFinally {
     /**
      * 实现Closeable或者AutoCloseable都能用try-with-resources语法关闭资源
      */
-    class CloseAble implements Closeable {
-
+    static class CloseAble implements Closeable {
         public void test() {
             System.out.println("test执行");
             int a=1/0;
         }
-
         @Override
         public void close() throws IOException {
             System.out.println("Closeable关闭资源");
@@ -33,7 +31,7 @@ public class TryCatchFinally {
     }
 
     //try
-    public static final String test01() {
+    public static String test01() {
         String t = "";
         try {
             t = "try";
@@ -47,9 +45,8 @@ public class TryCatchFinally {
     }
 
     //finally
-    public static final String test02() {
+    public static String test02() {
         String t = "";
-
         try {
             t = "try";
             return t;
@@ -99,7 +96,6 @@ public class TryCatchFinally {
     //NumberFormatException
     public static final String test05() {
         String t = "";
-
         try {
             t = "try";
             Integer.parseInt(null);
@@ -135,7 +131,6 @@ public class TryCatchFinally {
     //NumberFormatException
     public static final String test07() {
         String t = "";
-
         try {
             t = "try";
             Integer.parseInt(null);
@@ -151,7 +146,6 @@ public class TryCatchFinally {
     //finally
     public static final String test08() {
         String t = "";
-
         try {
             t = "try";
             Integer.parseInt(null);

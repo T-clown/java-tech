@@ -17,6 +17,7 @@ import java.util.TreeSet;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -27,6 +28,7 @@ import com.google.common.collect.Lists;
 import com.google.common.primitives.Ints;
 import entity.Product;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.poi.ss.formula.functions.T;
 
 import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.groupingBy;
@@ -59,6 +61,7 @@ public class StreamApp {
     }
 
     public static void main(String[] args) {
+        groupBy();
         Map<Integer, Optional<Integer>> collect1 = productList.stream().collect(groupingBy(Product::getId, mapping(Product::getPrice, Collectors.reducing((x, y) -> x + y))));
         Map<Integer, Integer> collect2 = productList.stream().collect(groupingBy(Product::getId, mapping(Product::getPrice, Collectors.reducing(0, (x, y) -> x + y))));
         productList.stream().collect(Collectors.groupingBy(Product::getId, Collectors.mapping(Product::getPrice, Collectors.maxBy(Comparator.comparingInt(x -> x)))));
@@ -75,7 +78,13 @@ public class StreamApp {
 
     }
 
+    public static <T> Collector<T, ?, List<T>> toSortedList(Comparator<? super T> c) {
+        return Collectors.collectingAndThen(Collectors.toCollection(() -> new TreeSet<>(c)), ArrayList::new);
+    }
+
     public static void sort() {
+        //收集器
+
         /**
          * 优先级越高放在越后面
          */
@@ -147,10 +156,21 @@ public class StreamApp {
      */
     private static void groupBy() {
         /**
+         * 分组
+         */
+        Map<Integer, List<Product>> collect = productList2.stream()
+                .collect(groupingBy(Product::getId));
+        /**
          * 分组后求和
          */
         Map<Integer, Long> sumMap = productList.stream().collect(
                 groupingBy(x -> x.id, Collectors.mapping(x -> x.stock, Collectors.summingLong(Integer::longValue))));
+        /**
+         * 分组后排序
+         */
+        Map<Integer, List<Product>> sortUsers = productList2.stream()
+                .collect(Collectors.groupingBy(Product::getId, toSortedList(
+                        Comparator.comparing(Product::getStock).reversed())));
         Map<Integer, Long> countMap = productList.stream().collect(groupingBy(x -> x.id, Collectors.counting()));
         System.out.println(JSON.toJSONString(sumMap));
         System.out.println(JSON.toJSONString(countMap));
@@ -178,8 +198,8 @@ public class StreamApp {
         HashMap<String, String> hashMap = new LinkedHashMap<>(50);
         int max = Math.max(as.size(), bs.size());
         IntStream.range(0, max).forEach(i -> hashMap.put(
-                String.valueOf(i >= as.size() ? "defaultA" : as.get(i)),
-                String.valueOf(i >= as.size() ? "defaultB" : bs.get(i))
+                        String.valueOf(i >= as.size() ? "defaultA" : as.get(i)),
+                        String.valueOf(i >= as.size() ? "defaultB" : bs.get(i))
                 )
         );
 

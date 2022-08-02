@@ -1,5 +1,6 @@
 package feature.apache;
 
+import com.google.common.collect.Lists;
 import feature.entity.Student;
 import org.apache.commons.lang3.time.DateUtils;
 import org.joda.time.DateTime;
@@ -18,6 +19,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Base64;
 import java.util.Calendar;
 import java.util.Date;
@@ -29,10 +31,14 @@ import com.alibaba.fastjson.JSON;
 public class Demo {
     @Test
     public void demo01() {
-        ArrayList a = new ArrayList();
 
         System.out.println(2 << 3);//2*8
         System.out.println(8 >> 2);//8/4
+
+        List<Integer> a= Arrays.asList(1,2,3);
+        List<Integer> b= Arrays.asList(1,2,2);
+        System.out.println(a.containsAll(b));
+        System.out.println(b.containsAll(a));
     }
 
     @Test

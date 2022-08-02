@@ -1,12 +1,27 @@
-package concurrent.thread;
+package basics;
 
-public class Exam {
+import java.io.Serializable;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
+
+public class ForBreak implements Serializable {
+
     public static void main(String[] args) {
-        breakFun();
-        System.out.println();
-        continueFun();
-        System.out.println();
-        retryFun();
+//        new HashMap();
+//        new ConcurrentHashMap<>();
+//        breakFun();
+//        System.out.println();
+//        continueFun();
+//        System.out.println();
+//        retryFun();
+        Arrays.asList(1,2,3,4,5).forEach(x-> {
+            if(x==4){
+                return;
+            }
+            System.out.println(x);;
+        });
+        System.out.println(11111111);
     }
 
     private static void breakFun() {
@@ -45,9 +60,9 @@ public class Exam {
                 count++;
                 if (count == 3) {
                     //跳出所有循环
-                    break retry;
+                    //break retry;
                     //跳出当前循环(跳到外部循环)
-                    //continue retry;
+                    continue retry;
                 }
                 System.out.print(count + " ");
             }

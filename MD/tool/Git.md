@@ -4,7 +4,7 @@
 
 查看所有分支
 git branch -vv
-Git branch -a
+git branch -a
 
 更新master主线上的东西到该分支上：git rebase master
 更新mybranch分支上的东西到master上：git rebase a
@@ -59,8 +59,8 @@ export $HOME=/c/gitconfig //配置git config的HOME路径
 
 
 本地项目推送到github步骤
-Git init
-Git add .
+git init
+git add .
 git commit -m "提交文件"
 关联github仓库
 git remote add origin https://github.com/T-clown/python.git
