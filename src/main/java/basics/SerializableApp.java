@@ -1,5 +1,6 @@
 package basics;
 
+import entity.Product;
 import entity.Student;
 import lombok.SneakyThrows;
 import patterns.singleton.StaticInnerSingleton;
@@ -13,19 +14,22 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public class SerializableApp {
+
     @SneakyThrows
     public static void main(String[] args) {
+        Product.staticMethod(2);
 //        serialize();
 //        deserialize();
-        singleton();
+       // singleton();
     }
 
     public static void serialize() throws IOException {
         Student student = new Student();
         student.setName("serialize");
         student.setAge(18);
-        student.setScore(1000);
+        student.setScore(100);
         student.setPassword("123");
+        student.setProduct(new Product(1,"aa",2,3));
 
         ObjectOutputStream objectOutputStream =
                 new ObjectOutputStream(new FileOutputStream(new File("student.txt")));

@@ -14,6 +14,9 @@ public class Student implements Serializable {
     private transient String password;
     private static Integer sex = 1;
 
+    private Product product;
+
+
     /**
      * 反序列化检测函数
      * @param objectInputStream
@@ -70,6 +73,14 @@ public class Student implements Serializable {
         Student.sex = sex;
     }
 
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -77,6 +88,9 @@ public class Student implements Serializable {
                 ", age=" + age +
                 ", score=" + score +
                 ", password='" + password + '\'' +
+                ", product=" + product +
                 '}';
     }
+
+
 }

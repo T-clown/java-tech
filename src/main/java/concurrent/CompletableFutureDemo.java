@@ -24,6 +24,7 @@ import static org.springframework.test.util.AssertionErrors.fail;
 /**
  * 异步执行通过ForkJoinPool实现， 它使用守护线程去执行任务
  * https://mp.weixin.qq.com/s/PfYh5x1JuU1SSKI3x0_L0Q
+ * https://mp.weixin.qq.com/s/3mcg5V6hSFDefJuD_mgDqw
  */
 @Slf4j
 public class CompletableFutureDemo {
@@ -232,7 +233,6 @@ public class CompletableFutureDemo {
             sleepRandomSecond(t, TimeUnit.SECONDS);
             System.out.println("f2 done");
         });
-
         f1.complete(null);
         f2.complete(null);
     }

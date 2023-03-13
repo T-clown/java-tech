@@ -1,12 +1,15 @@
 package basics;
 
 import lombok.ToString;
+import org.apache.commons.codec.digest.Md5Crypt;
 
 public class StringBasic {
     public static void main(String[] args) {
         //calculate();
         //str();
-        strConcat();
+        //strConcat();
+        System.out.println('a'+1);
+        System.out.println('A'+1);
     }
 
     private static void calculate(){

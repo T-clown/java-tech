@@ -14,9 +14,9 @@ public enum PromotionEnum implements IEum {
      */
     RETURN_CASH("RETURN_CASH", "返现活动");
 
-    private String code;
+    private final String code;
 
-    private String desc;
+    private final String desc;
 
     PromotionEnum(String code, String desc) {
         this.code = code;

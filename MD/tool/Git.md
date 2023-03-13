@@ -95,3 +95,6 @@ git reflog
 git fetch --all
 git reset --hard origin/master (这里master要修改为对应的分支名)
 git pull
+
+查看分支创建人
+git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4n

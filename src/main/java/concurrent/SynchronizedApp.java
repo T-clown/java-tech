@@ -10,7 +10,8 @@ public class SynchronizedApp {
     private static final Logger logger = LoggerFactory.getLogger(SynchronizedApp.class);
 
     public static void main(String[] args) throws InterruptedException {
-        volatileTest();
+        //volatileTest();
+        lockPark();
     }
 
     /**
@@ -64,23 +65,24 @@ public class SynchronizedApp {
         }, "Updater").start();
     }
 
-    public static void lockpark() {
+    public static void lockPark() {
         Thread t = new Thread(() -> {
             logger.info("[{}]阻塞。。。", Thread.currentThread().getName());
+            //LockSupport.unpark(Thread.currentThread());
             LockSupport.park();
+            LockSupport.park(null);
             logger.info("[{}]执行。。。", Thread.currentThread().getName());
-            LockSupport.park();
             logger.info("[{}]执行完毕。。。", Thread.currentThread().getName());
         }, "线程t");
         t.start();
+        LockSupport.unpark(t);
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         logger.info("主线程执行");
-        LockSupport.unpark(t);
-        LockSupport.unpark(t);
+        //LockSupport.unpark(t);
     }
 
     public synchronized void lockInstance() throws InterruptedException {
@@ -101,10 +103,10 @@ public class SynchronizedApp {
         }
     }
 
-    public void lockblockWithClassLock() throws InterruptedException {
+    public void lockBlockWithClassLock() throws InterruptedException {
         synchronized (SynchronizedApp.class) {
             Thread.sleep(3000);
-            System.out.println("类锁：docblockWithClassLock");
+            System.out.println("类锁：lockBlockWithClassLock");
         }
     }
 

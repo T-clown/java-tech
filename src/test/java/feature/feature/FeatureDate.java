@@ -11,6 +11,8 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.Date;
 
 import org.junit.Test;
+import util.DateTImeUtil;
+import util.DateUtil;
 
 public class FeatureDate {
 
@@ -125,13 +127,5 @@ public class FeatureDate {
 
     }
 
-    @Test
-    public void localDateTest(){
-        LocalDateTime localDateTime = LocalDateTime.of(LocalDate.now().getYear(),LocalDate.now().getMonth(),1,0,0,0);
-        ZoneId zone = ZoneId.systemDefault();
-        Instant instant = localDateTime.atZone(zone).toInstant();
-        Date date = Date.from(instant);
-        System.out.println(date);
-    }
 
 }

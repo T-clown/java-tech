@@ -5,6 +5,10 @@ import java.io.IOException;
 
 public class TryCatchFinally {
     public static void main(String[] args) {
+        try (CloseAble able = new CloseAble()) {
+            int a=1/0;
+            able.test();
+        }
 
         System.out.println(test02());
         try (CloseAble able = new CloseAble()) {
@@ -25,7 +29,7 @@ public class TryCatchFinally {
             int a=1/0;
         }
         @Override
-        public void close() throws IOException {
+        public void close() {
             System.out.println("Closeable关闭资源");
         }
     }

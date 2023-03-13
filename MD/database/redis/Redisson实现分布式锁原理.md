@@ -1,4 +1,3 @@
-[Redlock：Redis分布式锁最牛逼的实现](https://mp.weixin.qq.com/s/JLEzNqQsx-Lec03eAsXFOQ)
 [](https://www.yht7.com/news/2473)
 
 ###高效分布式锁需要满足的一些条件

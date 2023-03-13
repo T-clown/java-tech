@@ -13,20 +13,7 @@ import org.apache.commons.lang3.StringUtils;
 
 public class ParserDataUtil {
 
-    private static ObjectMapper mapper = new ObjectMapper();
-
-    public static <T> List<T> convert(Object data, Class<T> clazz) {
-        if (data instanceof List) {
-            String jsonData = null;
-            try {
-                jsonData = mapper.writeValueAsString(data);
-            } catch (JsonProcessingException e) {
-            }
-            // return parseDataArray(jsonData, clazz);
-            return JSON.parseArray(jsonData, clazz);
-        }
-        return null;
-    }
+    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     public static <T> T parseData(String jsonData, Class<T> clazz) {
         if (StringUtils.isBlank(jsonData)) {
@@ -34,7 +21,7 @@ public class ParserDataUtil {
         }
         T result = null;
         try {
-            result = mapper.readValue(jsonData, clazz);
+            result = OBJECT_MAPPER.readValue(jsonData, clazz);
         } catch (IOException e) {
         }
         return result;
@@ -46,20 +33,11 @@ public class ParserDataUtil {
         }
         List<T> result = null;
         try {
-            CollectionType type = mapper.getTypeFactory().constructCollectionType(List.class, clazz);
-            result = mapper.readValue(jsonData, type);
+            CollectionType type = OBJECT_MAPPER.getTypeFactory().constructCollectionType(List.class, clazz);
+            result = OBJECT_MAPPER.readValue(jsonData, type);
         } catch (IOException e) {
         }
         return result;
-    }
-
-    public static <T> T parseObject(String data, Class<T> clazz) {
-        return StringUtils.isBlank(data) ? null : JSON.parseObject(data, clazz);
-    }
-
-    public static <T> List<T> parseArray(String data, Class<T> clazz) {
-        return StringUtils.isBlank(data) ?
-            Collections.emptyList() : JSON.parseArray(data, clazz);
     }
     
 

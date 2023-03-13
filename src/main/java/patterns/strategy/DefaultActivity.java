@@ -1,8 +1,9 @@
 package patterns.strategy;
 
-public class DefaultActivity implements Promotion {
+public class DefaultActivity implements Promotion<String, Boolean> {
     @Override
-    public void execute() {
+    public Boolean execute(String type) {
         System.out.println("无任何优惠");
+        return true;
     }
 }

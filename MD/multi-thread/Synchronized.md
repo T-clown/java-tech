@@ -19,6 +19,7 @@
 
     synchronized锁有四种状态，无锁、偏向锁、轻量级锁、重量级锁。这几个状态会随着竞争状态逐渐升级，锁可以升级但不能降级，但是偏向锁状态可以被重置为无锁状态
     
+### synchronized 和 ReentrantLock的区别
 1. Lock是一个接口，而synchronized是Java中的关键字，synchronized是内置的语言实现；
 2. synchronized在发生异常时，会自动释放线程占有的锁，因此不会导致死锁现象发生；
         而Lock在发生异常时，如果没有主动通过unLock()去释放锁，则很可能造成死锁现象，因此使用Lock时需要在finally块中释放锁；

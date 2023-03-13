@@ -1,8 +1,12 @@
 package entity;
 
 import com.google.common.collect.Maps;
+import org.apache.commons.collections4.CollectionUtils;
+import patterns.proxy.jdk.proxy.MapUtil;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -32,10 +36,10 @@ public class TreeNode {
         List<List<TreeNode>> lists = bfsTree(root);
         List<List<TreeNode>> list2 = dfsTree(root);
         List<TreeNode> treeNodes = dfsGetTreeLeaf(root);
-        System.out.printf("");
+        Map<String, String> leafPathMap = getLeafPathMap(Collections.singletonList(root));
     }
 
-    public static TreeNode buildTree(){
+    public static TreeNode buildTree() {
         // 建立一棵树
         TreeNode root = new TreeNode("A");
         // 第二层
@@ -55,12 +59,12 @@ public class TreeNode {
     /**
      * 深度优先遍历（递归方式） --- 树（Tree）
      */
-    public static  List<List<String>>  recurTree(TreeNode root) {
+    public static List<List<String>> recurTree(TreeNode root) {
         List<List<String>> result = new ArrayList<>();
         List<String> path = new ArrayList<>();
         path.add(root.value);
         findPath(result, root, path);
-       return result;
+        return result;
     }
 
     private static void findPath(List<List<String>> result, TreeNode node, List<String> path) {
@@ -81,15 +85,14 @@ public class TreeNode {
     /**
      * 深度优先遍历（非递归方式） ----- 查找树的全部叶子路径
      *
-     * @param root
-     *            根节点
+     * @param root 根节点
      * @return 叶子路径的集合
      */
     public static List<List<TreeNode>> dfsTree(TreeNode root) {
         Stack<TreeNode> nodeStack = new Stack<>();
         Stack<List<TreeNode>> pathStack = new Stack<>();
         Stack<String> pathStack2 = new Stack<>();
-        Map<String,String> pathMap= Maps.newHashMap();
+        Map<String, String> pathMap = Maps.newHashMap();
         List<List<TreeNode>> result = new ArrayList<>();
         nodeStack.push(root);
         ArrayList<TreeNode> arrayList = new ArrayList<>();
@@ -103,7 +106,7 @@ public class TreeNode {
             String pop = pathStack2.pop();
             if (curNode.children == null || curNode.children.size() <= 0) {
                 result.add(curPath);
-                pathMap.put(curNode.value,pop);
+                pathMap.put(curNode.value, pop);
             } else {
                 int childSize = curNode.children.size();
                 for (int i = childSize - 1; i >= 0; i--) {
@@ -112,7 +115,7 @@ public class TreeNode {
                     List<TreeNode> list = new ArrayList<>(curPath);
                     list.add(node);
                     pathStack.push(list);
-                    pathStack2.push(pop+node.value);
+                    pathStack2.push(pop + node.value);
                 }
             }
         }
@@ -143,11 +146,40 @@ public class TreeNode {
         return result;
     }
 
+    public static Map<String, String> getLeafPathMap(List<TreeNode> roots) {
+        if (CollectionUtils.isEmpty(roots)) {
+            return Maps.newHashMap();
+        }
+        Stack<TreeNode> nodeStack = new Stack<>();
+        Stack<String> leafPathStack = new Stack<>();
+        Map<String, String> leafPathMap = new HashMap<>();
+        //1.把根节点压栈
+        roots.forEach(x -> {
+            nodeStack.push(x);
+            leafPathStack.push(x.value);
+        });
+
+        while (!nodeStack.isEmpty()) {
+            TreeNode curNode = nodeStack.pop();
+            String curPath = leafPathStack.pop();
+            if (CollectionUtils.isEmpty(curNode.children)) {
+                leafPathMap.put(curNode.value, curPath);
+            } else {
+                int childSize = curNode.children.size();
+                for (int i = childSize - 1; i >= 0; i--) {
+                    TreeNode node = curNode.children.get(i);
+                    nodeStack.push(node);
+                    leafPathStack.push(curPath + "-" + node.value);
+                }
+            }
+        }
+        return leafPathMap;
+    }
+
     /**
      * 广度优先遍历 ---- 查找树的全部叶子路径
      *
-     * @param root
-     *            根节点
+     * @param root 根节点
      * @return 叶子路径的集合
      */
     public static List<List<TreeNode>> bfsTree(TreeNode root) {
