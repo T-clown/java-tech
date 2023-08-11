@@ -1,1 +1,0 @@
-[硬核！15张图解Redis为什么这么快](https://mp.weixin.qq.com/s/CUyk2TFpBfggpm65WmCSCQ)

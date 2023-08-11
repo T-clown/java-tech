@@ -12,6 +12,7 @@ import java.util.Map;
 
 @Component
 public class LoginHandlerFactory implements InitializingBean, ApplicationContextAware {
+
     private static final Map<LoginType, LoginHandler<Serializable>> LOGIN_HANDLER_MAP = new EnumMap<>(LoginType.class);
     private ApplicationContext appContext;
 

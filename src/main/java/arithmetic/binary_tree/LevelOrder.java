@@ -5,7 +5,6 @@ import com.alibaba.fastjson.JSON;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Queue;
-import java.util.Stack;
 
 /**
  * 给定一个二叉树，返回该二叉树层序遍历的结果，（从左到右，一层一层地遍历）
@@ -99,12 +98,41 @@ public class LevelOrder {
         ArrayList<Integer> levelList = list.size() < level ? new ArrayList<>() : list.remove(level - 1);
         levelList.add(node.val);
         list.add(level - 1, levelList);
-        if (node.left != null) {
-            recursiveTraversal(list, level + 1, node.left);
+        recursiveTraversal(list, level + 1, node.left);
+        recursiveTraversal(list, level + 1, node.right);
+    }
+
+
+    //记录输出
+    static ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+
+    static void traverse(TreeNode root, int depth) {
+        if (root == null) {
+            return;
         }
-        if (node.right != null) {
-            recursiveTraversal(list, level + 1, node.right);
+        //新的一层
+        ArrayList<Integer> row;
+        if (res.size() < depth) {
+            row = new ArrayList<>();
+            res.add(row);
+        } else {
+            //读取该层的一维数组，将元素加入末尾
+            row = res.get(depth - 1);
         }
+        row.add(root.val);
+        //递归左右时深度记得加1
+        traverse(root.left, depth + 1);
+        traverse(root.right, depth + 1);
+    }
+
+    public static ArrayList<ArrayList<Integer>> levelOrder(TreeNode root) {
+        if (root == null) {
+            //如果是空，则直接返回
+            return res;
+        }
+        //递归层次遍历
+        traverse(root, 1);
+        return res;
     }
 
 }

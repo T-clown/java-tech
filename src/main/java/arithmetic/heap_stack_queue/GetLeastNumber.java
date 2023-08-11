@@ -2,7 +2,6 @@ package arithmetic.heap_stack_queue;
 
 import java.util.ArrayList;
 import java.util.PriorityQueue;
-import java.util.Stack;
 
 /**
  * 给定一个长度为 n 的可能有重复值的数组，找出其中不去重的最小的 k 个数。

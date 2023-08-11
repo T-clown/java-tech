@@ -26,10 +26,30 @@ public class Node {
         this.next = next;
     }
 
+    public static Node create(int start, int end) {
+        Node head = new Node(-1);
+        Node next = head;
+        while (start <= end) {
+            next.next = new Node(start++);
+            next = next.next;
+        }
+        return head.next;
+    }
+
     public static Node create() {
         Node head = new Node(1);
         Node next = head;
         for (int i = 2; i < 10; i++) {
+            next.setNext(new Node(i));
+            next = next.getNext();
+        }
+        return head;
+    }
+
+    public static Node create(int val) {
+        Node head = new Node(1);
+        Node next = head;
+        for (int i = 2; i <= val; i++) {
             next.setNext(new Node(i));
             next = next.getNext();
         }

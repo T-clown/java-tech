@@ -60,6 +60,7 @@ public class SynchronizedVsLockVsAtomicInteger {
     @State(Scope.Group)
     public static class AtomicIntegerMonitor {
         private AtomicInteger x = new AtomicInteger();
+
         public void inc() {
             x.incrementAndGet();
         }

@@ -72,7 +72,7 @@ public class StudentServiceTest {
         // 验证模拟对象的fetchPerson(1)方法是否被调用了一次
         verify(personDao).fetchPerson(1);
         // 验证模拟对象是否没有发生任何交互
-        verifyZeroInteractions(personDao);
+        verifyNoInteractions(personDao);
         // 检查模拟对象上是否还有未验证的交互
         verifyNoMoreInteractions(personDao);
 

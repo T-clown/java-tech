@@ -5,34 +5,9 @@ import java.io.IOException;
 
 public class TryCatchFinally {
     public static void main(String[] args) {
-        try (CloseAble able = new CloseAble()) {
-            int a=1/0;
-            able.test();
-        }
 
-        System.out.println(test02());
-        try (CloseAble able = new CloseAble()) {
-            able.test();
-        } catch (Exception e) {
-            System.out.println("异常" + e.getMessage());
-        } finally {
-            System.out.println("finally方法执行");
-        }
     }
 
-    /**
-     * 实现Closeable或者AutoCloseable都能用try-with-resources语法关闭资源
-     */
-    static class CloseAble implements Closeable {
-        public void test() {
-            System.out.println("test执行");
-            int a=1/0;
-        }
-        @Override
-        public void close() {
-            System.out.println("Closeable关闭资源");
-        }
-    }
 
     //try
     public static String test01() {

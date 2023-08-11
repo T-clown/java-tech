@@ -21,19 +21,20 @@ public class InvocationProxyFactory<T> implements InvocationHandler {
         return invocationInterface;
     }
 
+    @SuppressWarnings("unchecked")
     public T newInstance() {
-        return (T)Proxy.newProxyInstance(invocationInterface.getClassLoader(), new Class[] {invocationInterface},
-            this);
+        return (T) Proxy.newProxyInstance(invocationInterface.getClassLoader(), new Class[]{invocationInterface},
+                this);
     }
 
+    @SuppressWarnings("unchecked")
     public T newInstance(InvocationProxy<T> invocationProxy) {
-        return (T) Proxy.newProxyInstance(invocationInterface.getClassLoader(), new Class[] { invocationInterface }, invocationProxy);
+        return (T) Proxy.newProxyInstance(invocationProxy.getClass().getClassLoader(), new Class[]{invocationProxy.getInvocationInterface()}, invocationProxy);
     }
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println(method.getName());
-        System.out.println(JSON.toJSONString(args));
+        log.info("method:{},args:{}", method.getName(), JSON.toJSONString(args));
         return null;
     }
 }

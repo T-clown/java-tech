@@ -8,12 +8,53 @@ package arithmetic.linked_list;
  */
 public class ReverseKNode {
     public static void main(String[] args) {
-        Node node = reverseKGroup(Node.create(), 3);
+        Node node = reverseKGroup3(Node.create(14), 3);
         while (node != null) {
             System.out.println(node.getValue());
             node = node.getNext();
         }
     }
+
+    /**
+     *
+     * @param head
+     * @param k
+     * @return
+     */
+    public static Node reverseKGroup3(Node head, int k) {
+        Node dummy = new Node(0);
+        Node res = dummy;
+        Node curNode = head;
+        while (curNode != null) {
+            Node node = curNode;
+            for (int i = 1; i < k; i++) {
+                node = node.next;
+                if (node == null) {
+                    //不足k个不用反转，直接返回
+                    res.next = curNode;
+                    return dummy.next;
+                }
+            }
+            Node next = node.next;
+            res.next = reverse(curNode, k);
+            res = curNode;
+            curNode = next;
+        }
+        return dummy.next;
+    }
+
+    public static Node reverse(Node head, int k) {
+        Node pre = null;
+        while (k > 0) {
+            Node next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
+            k--;
+        }
+        return pre;
+    }
+
 
     public Node reverseKGroup2(Node head, int k) {
         //先创建一个哑节点
@@ -93,55 +134,5 @@ public class ReverseKNode {
         //当前尾指向下一段要翻转的链表
         head.next = reverseKGroup(tail, k);
         return pre;
-    }
-
-
-    private static Node reverseK2(Node head, int k) {
-        Node dummy = new Node(-1, head);
-
-        Node kFirstNode = null;
-        Node kLastNode = null;
-
-
-        Node k1 = null;
-        Node k2 = null;
-
-        Node pre = null;
-        Node curNode = head;
-        int pointer = 1;
-        while (curNode != null) {
-            int mod = pointer % k;
-            if (mod == 1) {
-                //每k一组的最后一个节点
-                k2 = kLastNode;
-                kLastNode = curNode;
-            }
-            if (mod == 0) {
-                //每k一组的第一个节点
-                k1 = kFirstNode;
-                kFirstNode = curNode;
-            }
-
-            Node curNext = curNode.next;
-            curNode.next = pre;
-            pre = curNode;
-            curNode = curNext;
-
-            if (pointer == k) {
-                //第一组的时候保留pre
-                dummy.next = pre;
-            }
-
-            //上一组的最后一个节点连接当前组的头节点
-            if (k2 != null && mod == 0) {
-                k2.next = kFirstNode;
-            }
-            if (mod == 0) {
-                //重置反转的开始节点
-                pre = null;
-            }
-            pointer++;
-        }
-        return dummy.next;
     }
 }

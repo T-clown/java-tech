@@ -1,11 +1,8 @@
 package arithmetic.exercise;
 
-import java.util.Arrays;
-import java.util.PriorityQueue;
-import java.util.concurrent.SynchronousQueue;
-import java.util.concurrent.ThreadLocalRandom;
-
 import org.apache.commons.lang3.StringUtils;
+
+import java.util.Arrays;
 
 /**
  * 以字符串的形式给定两个非负整数 num1 和 num2，返回 num1 和 num2 的乘积。

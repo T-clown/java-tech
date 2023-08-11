@@ -9,15 +9,72 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Date;
+import java.util.List;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
+import com.alibaba.fastjson.util.TypeUtils;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Data;
+import org.apache.poi.ss.formula.functions.T;
 import org.junit.Test;
+import redis.clients.jedis.Response;
 import util.DateTImeUtil;
 import util.DateUtil;
 
 public class FeatureDate {
 
+    @Data
+    static class Obj<T> {
+        private List<T> items;
+    }
+
+    @Data
+    static class Item {
+        private Integer id;
+
+        private String name;
+
+        private List<Integer> industry;
+    }
+
+    /**
+     * 反序列化泛型类
+     * @param json
+     * @param clazz
+     * @param <T>
+     * @return
+     */
+    public <T> Obj<T> parse(String json, Class<T> clazz) {
+       return JSON.parseObject(json, new TypeReference<Obj<T>>(clazz) {});
+    }
+    public <T> Obj<T> parse2(String json, Class<T> clazz) {
+        ObjectMapper mapper = new ObjectMapper();
+        JavaType type = mapper.getTypeFactory().constructParametricType(Obj.class, clazz);
+        Obj<T> deserializedObj = null;
+        try {
+            deserializedObj = mapper.readValue(json, type);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        return deserializedObj;
+    }
+
     @Test
     public void date2() {
+
+        String a = "{\"items\":[{\"id\":1,\"name\":\"client\",\"industry\":[45,58]},{\"id\":2,\"name\":\"test\",\"industry\":[\"56\"]},{\"id\":3,\"name\":\"台积电\",\"industry\":[]},{\"id\":5,\"name\":\"test1\",\"industry\":[\"60\",\"58\"]},{\"id\":6,\"name\":\"李宁\",\"industry\":[\"44\"]}]}";
+        // 反序列化泛型类
+        Obj<Item> parse = parse(a, Item.class);
+        parse.getItems().forEach(x -> System.out.println(x.id));
+        System.out.println();
+        // 反序列化泛型类
+        Obj<Item> parse2 = parse2(a, Item.class);
+        parse2.getItems().forEach(x -> System.out.println(x.id));
+
         ZoneId zoneId = ZoneId.systemDefault();
         LocalDate localDate = LocalDate.now();
         ZonedDateTime zdt = localDate.atStartOfDay(zoneId);
@@ -95,13 +152,13 @@ public class FeatureDate {
     }
 
     @Test
-    public void localDate(){
+    public void localDate() {
         // 取当前日期：
         LocalDate today = LocalDate.now(); // -> 2014-12-24
         System.out.println(today);
         // 根据年月日取日期，12月就是12：
         LocalDate crischristmas = LocalDate.of(2018, 12, 1); // -> 2014-12-25
-        System.out.println(LocalDateTime.of(2018,6,1,0,0,0));
+        System.out.println(LocalDateTime.of(2018, 6, 1, 0, 0, 0));
         System.out.println(crischristmas);
         // 根据字符串取：
         LocalDate endOfFeb = LocalDate.parse("2018-08-28"); // 严格按照ISO yyyy-MM-dd验证，02写成2都不行，当然也有一个重载方法允许自己定义格式
@@ -111,7 +168,7 @@ public class FeatureDate {
         // 取本月第1天：
         LocalDate firstDayOfThisMonth = today.with(TemporalAdjusters.firstDayOfMonth()); // 2014-12-01
         System.out.println(firstDayOfThisMonth);
-        System.out.println("firstDay"+LocalDateTime.now().with(TemporalAdjusters.firstDayOfMonth()));
+        System.out.println("firstDay" + LocalDateTime.now().with(TemporalAdjusters.firstDayOfMonth()));
         // 取本月第2天：
         LocalDate secondDayOfThisMonth = today.withDayOfMonth(2); // 2014-12-02
         System.out.println(secondDayOfThisMonth);

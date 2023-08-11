@@ -27,6 +27,7 @@ import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
 import com.google.common.primitives.Ints;
 import entity.Product;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.poi.ss.formula.functions.T;
 
@@ -36,6 +37,7 @@ import static java.util.stream.Collectors.mapping;
 import static java.util.stream.Collectors.toCollection;
 import static java.util.stream.Collectors.toList;
 
+@Slf4j
 public class StreamApp {
     public static List<Product> productList;
     public static List<Product> productList2;
@@ -61,6 +63,13 @@ public class StreamApp {
     }
 
     public static void main(String[] args) {
+        System.out.println(Runtime.getRuntime().availableProcessors());
+        List<Product> collect5 = productList.parallelStream().filter(x -> {
+            //log.info("当前线程:{}", Thread.currentThread().getName());
+            return x.getId() > 0;
+        }).collect(toList());
+        productList.parallelStream().forEach(x-> System.out.println(Thread.currentThread().getName()));
+
         groupBy();
         Map<Integer, Optional<Integer>> collect1 = productList.stream().collect(groupingBy(Product::getId, mapping(Product::getPrice, Collectors.reducing((x, y) -> x + y))));
         Map<Integer, Integer> collect2 = productList.stream().collect(groupingBy(Product::getId, mapping(Product::getPrice, Collectors.reducing(0, (x, y) -> x + y))));

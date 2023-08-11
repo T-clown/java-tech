@@ -21,7 +21,6 @@ import java.util.stream.Collectors;
 
 import com.google.common.collect.Lists;
 import feature.entity.Student;
-import feature.utils.DateComparator;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -61,9 +60,8 @@ public class FeatureOne {
             groupingBy(Student::getId, Collectors.summingLong(Student::getScore)));
         System.out.println(map2.get(1));
         Collections.sort(list, Comparator.comparing(x->x.id));
-        DateComparator d = new DateComparator();
-        System.out.println("最大值：" + Collections.max(list, d).score);
-        System.out.println("最小值：" + Collections.min(list, d).score);
+        System.out.println("最大值：" + Collections.max(list, Comparator.comparing(x->x.id)).score);
+        System.out.println("最小值：" + Collections.min(list, Comparator.comparing(x->x.id)).score);
     }
 
     @Test

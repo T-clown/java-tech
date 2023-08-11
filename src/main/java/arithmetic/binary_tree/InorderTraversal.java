@@ -103,12 +103,8 @@ public class InorderTraversal {
         if (node == null) {
             return;
         }
-        if (node.left != null) {
-            recursion(node.left);
-        }
+        recursion(node.left);
         list.add(node.val);
-        if (node.right != null) {
-            recursion(node.right);
-        }
+        recursion(node.right);
     }
 }

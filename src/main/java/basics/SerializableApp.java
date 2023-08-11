@@ -17,7 +17,10 @@ public class SerializableApp {
 
     @SneakyThrows
     public static void main(String[] args) {
-        Product.staticMethod(2);
+        System.out.println();
+        StaticInnerSingleton instance = StaticInnerSingleton.getInstance();
+        System.out.println();
+//        Product.staticMethod(2);
 //        serialize();
 //        deserialize();
        // singleton();

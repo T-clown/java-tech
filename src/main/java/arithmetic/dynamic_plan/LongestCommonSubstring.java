@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
+ * 最长公共子串
  * 给定两个字符串str1和str2,输出两个字符串的最长公共子串
  * 题目保证str1和str2的最长公共子串存在且唯一。
  */
@@ -89,20 +90,18 @@ public class LongestCommonSubstring {
         for (int i = 0; i < str1.length(); i++) {
             //遍历s2每个起点
             for (int j = 0; j < str2.length(); j++) {
-                int temp = 0;
-                String temps = "";
+                int count = 0;
                 int x = i, y = j;
                 //比较每个起点为始的子串
                 while (x < str1.length() && y < str2.length() && str1.charAt(x) == str2.charAt(y)) {
-                    temps += str1.charAt(x);
                     x++;
                     y++;
-                    temp++;
+                    count++;
                 }
                 //更新更大的长度子串
-                if (length < temp) {
-                    length = temp;
-                    res = temps;
+                if (length < count) {
+                    length = count;
+                    res = str1.substring(i, x);
                 }
             }
         }
@@ -111,8 +110,9 @@ public class LongestCommonSubstring {
 
     /**
      * 动态规划
-     *时间复杂度O(mn):其中m是str1的长度，n是str2的长度，遍历两个字符串所有字符
+     * 时间复杂度O(mn):其中m是str1的长度，n是str2的长度，遍历两个字符串所有字符
      * 空间复杂度:O(mn),dp数组大小为m*n
+     *
      * @param str1
      * @param str2
      * @return

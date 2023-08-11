@@ -1,7 +1,6 @@
 package patterns.template;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.util.StopWatch;
 
 import java.util.concurrent.Callable;
 @Slf4j
@@ -17,6 +16,7 @@ public class TemplateUtil {
         }
         return null;
     }
+
     public static <T> T call(Callable<T> callable) {
         try {
             T response = callable.call();

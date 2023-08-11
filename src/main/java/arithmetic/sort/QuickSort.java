@@ -4,45 +4,55 @@ import com.alibaba.fastjson.JSON;
 
 /**
  * 6.快速排序
- * 时间复杂度是 O(nlogn)，极端情况下会退化成 O(n2)
+ * 时间复杂度是 O(nlogn),极端情况下会退化成 O(n2)
  * 空间复杂度为 O(1)
  */
 public class QuickSort {
     public static void main(String[] args) {
-        //int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-        int[] arr = {9, 61, 7, 16, 5, 45, 3, 22, 1, 10};
-        sort(arr, 0, arr.length - 1);
-        System.out.println(JSON.toJSONString(arr));
+        int[] arr = {1, 4, 6, 2, 6, 8, 8, 0, 10, 9};
+        int[] arr2 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        // bubbleSortTest(arr);
+        //countSortTest(arr);
+        //MergeSort2.sort(arr2);
+        sort(arr2);
+        System.out.println(JSON.toJSONString(arr2));
     }
 
+    public static void sort(int[] arr) {
+        quickSort(arr, 0, arr.length - 1);
+    }
 
-    private static void sort(int[] arr, int startIndex, int endIndex) {
-        //System.out.println( startIndex+"\t"+endIndex);
-        if (endIndex <= startIndex) {
-            return;
+    public static void quickSort(int[] arr, int startIndex, int endIndex) {
+        if (startIndex < endIndex) {
+            //找出基准
+            int partition = partition(arr, startIndex, endIndex);
+            //分成两边递归进行
+            quickSort(arr, startIndex, partition - 1);
+            quickSort(arr, partition + 1, endIndex);
         }
-        //切分
-        int pivotIndex = partition2(arr, startIndex, endIndex);
-        //System.out.println("基准索引："+pivotIndex);
-        sort(arr, startIndex, pivotIndex - 1);
-        sort(arr, pivotIndex + 1, endIndex);
     }
 
-    private static int partition2(int[] arr, int startIndex, int endIndex) {
+    /**
+     * 单边扫描
+     *
+     * @param arr
+     * @param startIndex
+     * @param endIndex
+     * @return
+     */
+    private static int partition1(int[] arr, int startIndex, int endIndex) {
         //取基准值
         int pivot = arr[startIndex];
         //Mark初始化为起始下标
         int mark = startIndex;
-
         for (int i = startIndex + 1; i <= endIndex; i++) {
             if (arr[i] < pivot) {
-                //小于基准值 则mark+1，并交换位置。
+                //小于基准值 则mark+1,并交换位置。
+                //基准点大于当前i所在的元素，就要让mark标记自动加一，移动下一个位置，并将当前位置的元素与i除的元素进行交换即可。
                 mark++;
                 int p = arr[mark];
                 arr[mark] = arr[i];
                 arr[i] = p;
-                System.out.println(mark+"\t"+i);
-                System.out.println(JSON.toJSONString(arr));
             }
         }
         //基准值与mark对应元素调换位置
@@ -51,73 +61,32 @@ public class QuickSort {
         return mark;
     }
 
-
-    private static int[] quickSort(int[] arr, int left, int right) {
-        if (left < right) {
-            int partitionIndex = partition(arr, left, right);
-            quickSort(arr, left, partitionIndex - 1);
-            quickSort(arr, partitionIndex + 1, right);
-        }
-        return arr;
-    }
-
-    private static int partition(int[] arr, int left, int right) {
-        // 设定基准值（pivot）
-        int index = left + 1;
-        for (int i = index; i <= right; i++) {
-            if (arr[i] < arr[left]) {
-                // swap(arr, i, index);
-                index++;
+    /**
+     * 双边扫描
+     * 第一步只能先从右往左扫描
+     */
+    private static int partition(int[] arr, int startIndex, int endIndex) {
+        //取第一个元素为基准值
+        int pivot = arr[startIndex];
+        int left = startIndex;
+        int right = endIndex;
+        while (left != right) {
+            //从右往左扫描，必须是第一步
+            while (left < right && pivot < arr[right]) {
+                right--;
+            }
+            //从左往右扫描
+            while (left < right && pivot >= arr[left]) {
+                left++;
+            }
+            //找到left比基准大，right比基准小，进行交换
+            if (left < right) {
+                swap(arr, left, right);
             }
         }
-        swap(arr, left, index - 1);
-        System.out.println(JSON.toJSONString(arr));
-        System.out.println(index - 1);
-        return index - 1;
-    }
-
-    /**
-     * 快速排序方法
-     *
-     * @param array
-     * @param start
-     * @param end
-     * @return
-     */
-    public static int[] quickSortb(int[] array, int start, int end) {
-        int smallIndex = partitionB(array, start, end);
-        if (smallIndex > start) {
-            quickSortb(array, start, smallIndex - 1);
-        }
-        if (smallIndex < end) {
-            quickSortb(array, smallIndex + 1, end);
-        }
-        System.out.println(JSON.toJSONString(array));
-        return array;
-    }
-
-    /**
-     * 快速排序算法——partition
-     *
-     * @param array
-     * @param start
-     * @param end
-     * @return
-     */
-    public static int partitionB(int[] array, int start, int end) {
-        int pivot = (int) (start + Math.random() * (end - start + 1));
-        System.out.println(pivot);
-        int smallIndex = start - 1;
-        swap(array, pivot, end);
-        for (int i = start; i <= end; i++) {
-            if (array[i] <= array[end]) {
-                smallIndex++;
-                if (i > smallIndex) {
-                    swap(array, i, smallIndex);
-                }
-            }
-        }
-        return smallIndex;
+        //第一轮完成，让left和right重合的位置和基准交换，返回基准的位置
+        swap(arr, startIndex, left);
+        return left;
     }
 
     private static void swap(int[] arr, int i, int j) {

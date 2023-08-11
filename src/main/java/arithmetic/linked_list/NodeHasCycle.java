@@ -30,4 +30,28 @@ public class NodeHasCycle {
         }
         return false;
     }
+
+
+    public boolean hasCycle2(Node head) {
+        //先判断链表为空的情况
+        if (head == null) {
+            return false;
+        }
+        //快慢双指针
+        Node fast = head;
+        Node slow = head;
+        //如果没环快指针会先到链表尾
+        while (fast != null && fast.next != null) {
+            //快指针移动两步
+            fast = fast.next.next;
+            //慢指针移动一步
+            slow = slow.next;
+            //相遇则有环
+            if (fast == slow) {
+                return true;
+            }
+        }
+        //到末尾则没有环
+        return false;
+    }
 }
