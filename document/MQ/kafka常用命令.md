@@ -1,6 +1,6 @@
 1. kafka启动:  ./kafka-server-start.sh ../config/server.properties &
 
-2. 创建topic:  ./kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic tes
+2. 创建topic:  ./kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic data_sync
 
 3. 查看kafka的topic：./kafka-topics.sh --zookeeper localhost:2181 --list
 

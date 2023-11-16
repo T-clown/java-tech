@@ -40,3 +40,8 @@
 4. 将一张表的查询结果插入另一张表
 
 - INSERT INTO table (field_a, field_b) SELECT field1 AS field_a,field2 AS field_b FROM source_table
+
+查询json数据
+select data->'$.id' id,data->'$.name' name from log where data->'$.id' = 142;
+select * from log2 where JSON_CONTAINS(data,JSON_OBJECT('id', "142"))
+select json_extract(data,'$.name'),json_extract(data,'$.tel') from tab_json;

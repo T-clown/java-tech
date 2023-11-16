@@ -9,6 +9,32 @@ public class LongestPalindrome {
         System.out.println(getLongestPalindrome3(a));
     }
 
+    public static String longest(String s) {
+        if (s == null || s.length() == 1) {
+            return s;
+        }
+        char[] chars = s.toCharArray();
+
+        int maxLen = 0;
+        int start = 0;
+        int end = 0;
+        for (int i = 0; i < chars.length; i++) {
+            int l = chars.length - i;
+            if (l <= maxLen) {
+                return s.substring(start, end + 1);
+            }
+            for (int j = chars.length - 1; j > i; j--) {
+                int len = j - i + 1;
+                if (chars[i] == chars[j] && isPalindrome(chars, i, j) && len > maxLen) {
+                    maxLen = len;
+                    start = i;
+                    end = j;
+                }
+            }
+        }
+        return s.substring(start, end + 1);
+    }
+
     public static int getLongestPalindrome(String A) {
         if (A == null) {
             return 0;

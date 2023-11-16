@@ -1,6 +1,6 @@
 package feature.apache;
 
-import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson2.JSON;
 import feature.entity.Student;
 import org.apache.commons.lang3.time.DateUtils;
 import org.joda.time.DateTime;

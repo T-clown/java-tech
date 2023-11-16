@@ -3,7 +3,7 @@ package feature.entity;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import com.alibaba.fastjson.annotation.JSONField;
+import com.alibaba.fastjson2.annotation.JSONField;
 
 public class Student implements Comparable<Student> {
     public int id;

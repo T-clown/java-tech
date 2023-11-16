@@ -1,6 +1,6 @@
 package arithmetic.sort;
 
-import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson2.JSON;
 
 /**
  * 6.快速排序

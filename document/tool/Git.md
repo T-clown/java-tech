@@ -63,7 +63,7 @@ git init
 git add .
 git commit -m "提交文件"
 关联github仓库
-git remote add origin https://github.com/T-clown/python.git
+git remote add origin https://github.com/T-clown/api-gateway.git
 上传本地代码
 git push -u origin master
 git pull --rebase origin master

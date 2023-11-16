@@ -15,7 +15,9 @@ Working directory => $OutputPath$/$FileDirRelativeToSourcepath$
 
 
 git remote set-url origin https://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@github.com/T-clown/python.git
-git remote set-url origin https://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@github.com/T-clown/java-tech.git
+git remote set-url origin https://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@github.com/T-clown/java-tech.git
+git remote set-url origin https://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@github.com/T-clown/Order.git
+git remote set-url origin https://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@github.com/T-clown/api-gateway.git
 
 
 激活码：

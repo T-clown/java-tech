@@ -170,7 +170,7 @@ ifconfig eth0 down  停用eth0网卡
 ping   探测网络是否通畅。
 ping 192.168.0.1 
 netstat 查看网络端口。
-netstat -an | grep 3306 查询3306端口占用情况
+netstat -an | grep 8035 查询3306端口占用情况
 
 系统管理命令
 date 显示或设置系统时间

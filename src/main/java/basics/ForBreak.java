@@ -10,18 +10,12 @@ public class ForBreak implements Serializable {
     public static void main(String[] args) {
 //        new HashMap();
 //        new ConcurrentHashMap<>();
-//        breakFun();
+        breakFun();
 //        System.out.println();
 //        continueFun();
 //        System.out.println();
-//        retryFun();
-        Arrays.asList(1,2,3,4,5).forEach(x-> {
-            if(x==4){
-                return;
-            }
-            System.out.println(x);;
-        });
-        System.out.println(11111111);
+        retryFun();
+
     }
 
     private static void breakFun() {
@@ -54,18 +48,20 @@ public class ForBreak implements Serializable {
 
     private static void retryFun() {
         int count = 0;
-        retry:
-        for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < 5; j++) {
+        a:
+        for (int i = 1; i <= 2; i++) {
+            for (int j = 1; j <= 5; j++) {
                 count++;
                 if (count == 3) {
                     //跳出所有循环
-                    //break retry;
+                    break a;
                     //跳出当前循环(跳到外部循环)
-                    continue retry;
+                    //continue retry;
                 }
                 System.out.print(count + " ");
             }
         }
+        System.out.println("结束");
+
     }
 }
