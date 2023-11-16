@@ -3,11 +3,10 @@ package util;
 import java.util.Collections;
 
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.params.SetParams;
 
 public class RedisTool {
     private static final String LOCK_SUCCESS = "OK";
-    private static final String SET_IF_NOT_EXIST = "NX";
-    private static final String SET_WITH_EXPIRE_TIME = "PX";
 
     /**
      * 尝试获取分布式锁
@@ -31,8 +30,8 @@ public class RedisTool {
         总的来说，执行上面的set()方法就只会导致两种结果：1. 当前没有锁（key不存在），那么就进行加锁操作，并对锁设置个有效期，同时value表示加锁的客户端。2. 已有锁存在，不做任何操作。
      */
     public static boolean tryGetDistributedLock(Jedis jedis, String lockKey, String requestId, int expireTime) {
-
-        String result = jedis.set(lockKey, requestId, SET_IF_NOT_EXIST, SET_WITH_EXPIRE_TIME, expireTime);
+        SetParams setParams = SetParams.setParams().nx().px(expireTime);
+        String result = jedis.set(lockKey, requestId, setParams);
 
         if (LOCK_SUCCESS.equals(result)) {
             return true;

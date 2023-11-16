@@ -6,18 +6,18 @@ import java.lang.reflect.Proxy;
 
 public class Client {
     public static void main(String[] args) {
-        demo();
-
+        //demo();
+        test();
     }
 
     private static void demo() {
-        InvocationProxyFactory proxyFactory = new InvocationProxyFactory<>(Invocation.class);
-        Invocation proxy = (Invocation) proxyFactory.newInstance();
+        InvocationProxyFactory<Invocation> proxyFactory = new InvocationProxyFactory<>(Invocation.class);
+        Invocation proxy = proxyFactory.newInstance();
         proxy.run("aa");
         proxy.sayHello("aa");
 
 
-        Invocation proxy2 = (Invocation) proxyFactory.newInstance(new InvocationProxy(Invocation.class,null));
+        Invocation proxy2 = proxyFactory.newInstance(new InvocationProxy<>(Invocation.class, null));
 
         proxy2.sayHello("aaa");
     }

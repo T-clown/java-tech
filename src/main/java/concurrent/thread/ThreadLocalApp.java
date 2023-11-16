@@ -1,94 +1,132 @@
 package concurrent.thread;
 
-import lombok.Getter;
-import lombok.Setter;
+import com.alibaba.ttl.TransmittableThreadLocal;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import java.lang.ref.WeakReference;
 import java.lang.reflect.Field;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 
+@SuppressWarnings("AlibabaAvoidManuallyCreateThread")
 public class ThreadLocalApp {
-    private static final ThreadLocal<String> threadLocal = ThreadLocal.withInitial(() -> "初始值");
+    private static final Logger logger = LoggerFactory.getLogger(ThreadLocalApp.class);
 
-    private String getName() {
-        return threadLocal.get();
+    /**
+     * 维护线程私有变量
+     */
+    static class ThreadLocalUtil {
+        private static final ThreadLocal<String> THREAD_LOCAL = ThreadLocal.withInitial(() -> "ThreadLocal初始值");
+
+        private static String getValue() {
+            return THREAD_LOCAL.get();
+        }
+
+        private static void setValue(String key) {
+            THREAD_LOCAL.set(key);
+        }
+
+        private static void clear() {
+            THREAD_LOCAL.remove();
+        }
     }
 
-    private void setName(String name) {
-        threadLocal.set(name);
+    /**
+     * 维护线程私有变量
+     * 子线程可以获取父线程的私有变量
+     * 原理：每个线程都有一个InheritableThreadLocal类型的inheritableThreadLocals变量， 当创建子线程的时候，子线程会创建该类型
+     * 变量，并把父进程的inheritableThreadLocals变量数据拷贝过来
+     * 线程池下使用会有问题：线程会复用，所以多个任务会有相同的变量
+     */
+    static class InheritableThreadLocalUtil {
+        //private static final ThreadLocal<String> INHERITABLE_THREAD_LOCAL = InheritableThreadLocal.withInitial(() -> "InheritableThreadLocal初始值");
+        private static final ThreadLocal<String> INHERITABLE_THREAD_LOCAL = new InheritableThreadLocal<>();
+
+        private static String getValue() {
+            return INHERITABLE_THREAD_LOCAL.get();
+        }
+
+        private static void setValue(String value) {
+            INHERITABLE_THREAD_LOCAL.set(value);
+        }
+
+        private static void clear() {
+            INHERITABLE_THREAD_LOCAL.remove();
+        }
     }
 
-    @Getter
-    @Setter
-    public String threadName;
+    /**
+     * 维护线程私有变量
+     * 子线程可以获取父线程的私有变量
+     * 解决了InheritableThreadLocal线程池下使用的缺陷
+     */
+    static class TransmittableThreadLocalUtil {
+        private static final ThreadLocal<String> TRANSMITTABLE_THREAD_LOCAL = new TransmittableThreadLocal<>();
+
+        private static String getValue() {
+            return TRANSMITTABLE_THREAD_LOCAL.get();
+        }
+
+        private static void setValue(String value) {
+            TRANSMITTABLE_THREAD_LOCAL.set(value);
+        }
+
+        private static void clear() {
+            TRANSMITTABLE_THREAD_LOCAL.remove();
+        }
+    }
 
 
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException, InterruptedException {
-        Thread t = new Thread(() -> test("abc", false));
-        t.start();
-        t.join();
-        System.out.println("--gc后--");
-        Thread t2 = new Thread(() -> test("def", true));
-        t2.start();
-        t2.join();
+//        Thread t = new Thread(() -> test("abc", false));
+//        t.start();
+//        t.join();
+//        System.out.println("--gc后--");
+//        Thread t2 = new Thread(() -> test("def", true));
+//        t2.start();
+//        t2.join();
+        //threadLocal();
+        // inheritableThreadLocal();
     }
 
-    private static void test(String s, boolean isGC) {
-        try {
-            new ThreadLocal<>().set(s);
-            if (isGC) {
-                System.gc();
-            }
-            Thread t = Thread.currentThread();
-            Class<? extends Thread> clz = t.getClass();
-            Field field = clz.getDeclaredField("threadLocals");
-            field.setAccessible(true);
-            Object threadLocalMap = field.get(t);
-            Class<?> tlmClass = threadLocalMap.getClass();
-            Field tableField = tlmClass.getDeclaredField("table");
-            tableField.setAccessible(true);
-            Object[] arr = (Object[]) tableField.get(threadLocalMap);
-            for (Object o : arr) {
-                if (o != null) {
-                    Class<?> entryClass = o.getClass();
-                    Field valueField = entryClass.getDeclaredField("value");
-                    Field referenceField = entryClass.getSuperclass().getSuperclass().getDeclaredField("referent");
-                    valueField.setAccessible(true);
-                    referenceField.setAccessible(true);
-                    System.out.println(String.format("弱引用key:%s,值:%s", referenceField.get(o), valueField.get(o)));
+
+    private static void threadLocal() throws InterruptedException {
+        logger.info("线程[{}]ThreadLocalUtil获取的值:{}", Thread.currentThread().getName(), ThreadLocalUtil.getValue());
+        CountDownLatch countDownLatch = new CountDownLatch(3);
+        for (int i = 0; i < 3; i++) {
+            Thread thread = new Thread(() -> {
+                logger.info("线程[{}]ThreadLocalUtil获取的值:{}", Thread.currentThread().getName(), ThreadLocalUtil.getValue());
+                ThreadLocalUtil.setValue(Thread.currentThread().getName());
+                countDownLatch.countDown();
+                logger.info("线程[{}]ThreadLocalUtil获取的值:{}", Thread.currentThread().getName(), ThreadLocalUtil.getValue());
+            }, "线程 - " + i);
+            thread.start();
+        }
+        countDownLatch.await();
+    }
+
+    private static void inheritableThreadLocal() {
+        logger.info("线程[{}]InheritableThreadLocalUtil获取的值:{}", Thread.currentThread().getName(), InheritableThreadLocalUtil.getValue());
+        InheritableThreadLocalUtil.setValue("父线程初始值");
+        logger.info("线程[{}]InheritableThreadLocalUtil获取的值:{}", Thread.currentThread().getName(), InheritableThreadLocalUtil.getValue());
+        for (int i = 0; i < 2; i++) {
+            Thread thread = new Thread(() -> {
+                //输出：父线程初始值
+                logger.info("线程[{}]InheritableThreadLocalUtil获取的值:{}", Thread.currentThread().getName(), InheritableThreadLocalUtil.getValue());
+                //InheritableThreadLocalUtil.setValue(Thread.currentThread().getName());
+                try {
+                    TimeUnit.SECONDS.sleep(5);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    private static void threadLocalDemo() {
-        int threads = 9;
-        ThreadLocalApp demo = new ThreadLocalApp();
-        CountDownLatch countDownLatch = new CountDownLatch(threads);
-        for (int i = 0; i < threads; i++) {
-            Thread thread = new Thread(() -> {
-                demo.setName(Thread.currentThread().getName());
-                System.out.println(demo.getName());
-                countDownLatch.countDown();
-            }, "thread - " + i);
+                //输出：父线程初始值
+                logger.info("线程[{}]InheritableThreadLocalUtil获取的值:{}", Thread.currentThread().getName(), InheritableThreadLocalUtil.getValue());
+            }, "线程 - " + i);
             thread.start();
         }
-    }
-
-    private static void threadDemo() {
-        ThreadLocalApp demo = new ThreadLocalApp();
-        int threads = 200;
-        CountDownLatch countDownLatch = new CountDownLatch(threads);
-        for (int i = 0; i < threads; i++) {
-            Thread thread = new Thread(() -> {
-                demo.setThreadName(Thread.currentThread().getName());
-                System.out.println(demo.getThreadName());
-                countDownLatch.countDown();
-            }, "thread - " + i);
-            thread.start();
-        }
-
+        InheritableThreadLocalUtil.setValue("主线程重新赋值");
+        //输出：主线程重新赋值
+        logger.info("线程[{}]InheritableThreadLocalUtil获取的值:{}", Thread.currentThread().getName(), InheritableThreadLocalUtil.getValue());
     }
 }

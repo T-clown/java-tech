@@ -4,10 +4,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
+
 @Data
 @Builder
 @Accessors(chain = true)
-public class Product {
+public class Product implements Serializable {
     public int id;
     public String name;
     public int stock;
@@ -18,11 +20,11 @@ public class Product {
         System.out.println("执行了静态代码块");
     }
     //静态变量
-    private static String staticFiled = staticMethod();
+    private static String staticFiled = staticMethod(1);
 
     //赋值静态变量的静态方法
-    public static String staticMethod(){
-        System.out.println("执行了静态方法");
+    public static String staticMethod(int a){
+        System.out.println("执行了静态方法:"+a);
         return "给静态字段赋值了";
     }
 

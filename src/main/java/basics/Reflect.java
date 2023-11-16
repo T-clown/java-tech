@@ -6,8 +6,8 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.util.Set;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson2.JSON;
+import com.alibaba.fastjson2.JSONObject;
 
 import entity.Product;
 import org.apache.commons.lang.StringUtils;
@@ -23,7 +23,7 @@ public class Reflect {
         Class.forName("entity.Product");
         //clazz();
         //constructor();
-        //method();
+        method();
         //field();
         //progress();
 
@@ -78,7 +78,7 @@ public class Reflect {
         //去掉权限验证（暴力反射）
         method.setAccessible(true);
         //执行p的reflect方法,并获得返回值
-        String result = (String) method.invoke(p,"a","b");
+        String result = (String) method.invoke(null,"a","b");
         //输出结果
         System.out.println(result);
         /**

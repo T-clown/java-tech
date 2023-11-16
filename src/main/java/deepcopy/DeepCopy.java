@@ -2,7 +2,7 @@ package deepcopy;
 
 import java.io.IOException;
 
-import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson2.JSON;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.SerializationUtils;
@@ -18,7 +18,6 @@ public class DeepCopy {
         serializableCopy();
         jsonCopy();
         jacksonCopy();
-
     }
 
 

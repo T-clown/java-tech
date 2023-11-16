@@ -140,7 +140,7 @@ public class DateUtil {
     public static Date getStartOfDay(Date date) {
         LocalDateTime localDateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(date.getTime()),
             ZoneId.systemDefault());
-        LocalDateTime startOfDay = localDateTime.with(LocalTime.MIN);
+        LocalDateTime startOfDay = localDateTime.with(LocalTime.MIDNIGHT);
         return Date.from(startOfDay.atZone(ZoneId.systemDefault()).toInstant());
     }
 
@@ -157,7 +157,8 @@ public class DateUtil {
 
         System.out.println(date);
         System.out.println(parse);
-        System.out.println(getStartOfDay(getFirstDayOfMon(new Date())).getTime());
+        System.out.println(getStartOfDay(getFirstDayOfMon(new Date())));
+        System.out.println(getFirstDayOfMon(new Date()));
     }
 
     /**

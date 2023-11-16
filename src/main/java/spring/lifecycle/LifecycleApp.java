@@ -8,8 +8,8 @@ import spring.entity.SubBook;
 
 public class LifecycleApp {
     public static void main(String[] args) {
-       // lifecycle();
-        conpleteLifecycle();
+        lifecycle();
+       // conpleteLifecycle();
     }
 
     private static void lifecycle(){
@@ -18,8 +18,6 @@ public class LifecycleApp {
         //ApplicationContext context =  new FileSystemXmlApplicationContext("classpath:spring-application.xml");
         Book book = (Book)context.getBean("book");
         System.out.println("第九步：Book name = " + book.getBookName());
-        // ((ClassPathXmlApplicationContext) context).destroy();
-        ((ClassPathXmlApplicationContext) context).destroy();
     }
 
     private static void conpleteLifecycle(){

@@ -1,5 +1,6 @@
 package feature.apache;
 
+import com.alibaba.fastjson2.JSON;
 import feature.entity.Student;
 import org.apache.commons.lang3.time.DateUtils;
 import org.joda.time.DateTime;
@@ -7,32 +8,37 @@ import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 import util.DateUtil;
 import util.FileUtil;
-import util.HttpRequester;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.nio.charset.StandardCharsets;
-import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Base64;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.alibaba.fastjson.JSON;
-
 public class Demo {
     @Test
     public void demo01() {
-        ArrayList a = new ArrayList();
+        //2*8
+        System.out.println(2 << 3);
+        //无符号右移
+        System.out.println(-7 >>> 1);
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(2 << 3);
+        //8/4
+        System.out.println(8 >> 2);
 
-        System.out.println(2 << 3);//2*8
-        System.out.println(8 >> 2);//8/4
+        List<Integer> a = Arrays.asList(1, 2, 3);
+        List<Integer> b = Arrays.asList(1, 2, 2);
+        System.out.println(a.containsAll(b));
+        System.out.println(b.containsAll(a));
     }
 
     @Test
@@ -75,7 +81,7 @@ public class Demo {
         System.out.println(Student.class.getName());
         System.out.println(Integer.MAX_VALUE);
         System.out.println(Integer.MIN_VALUE);
-        Student student = new Student(1,"aa",null,2);
+        Student student = new Student(1, "aa", null, 2);
         System.out.println(JSON.toJSONString(student));
         // System.out.println(System.getProperties());
     }
@@ -88,11 +94,11 @@ public class Demo {
         list.add(new Student(3, "1", "1", 1));
         list.add(new Student(1, "1", "1", 1));
         List<Integer> ids = list.stream()
-            .filter(student -> student.id != 0)
-            .mapToInt(student -> student.id)
-            .distinct()
-            .boxed()
-            .collect(Collectors.toList());
+                .filter(student -> student.id != 0)
+                .mapToInt(student -> student.id)
+                .distinct()
+                .boxed()
+                .collect(Collectors.toList());
         ids.forEach(System.out::println);
     }
 
@@ -110,7 +116,7 @@ public class Demo {
         LocalDateTime maxTime1 = localDateTime.with(LocalTime.MAX);
         System.out.println(minTime1.toString());
         System.out.println(maxTime1.toString());
-        BeanUtils.copyProperties(null,new Student());
+        BeanUtils.copyProperties(null, new Student());
     }
 
     @Test
@@ -127,7 +133,6 @@ public class Demo {
     }
 
 
-
     @Test
     public void demo08() {
         Date startOfDay = DateUtil.getStartOfDay(DateUtils.addDays(new Date(), -1));
@@ -136,32 +141,13 @@ public class Demo {
         System.out.println(endOfDay.getTime());
         Calendar calendar = Calendar.getInstance();
 
-        long a=1607529600000L;
-        long b=a-300000;
+        long a = 1607529600000L;
+        long b = a - 300000;
         calendar.setTimeInMillis(b);
         System.out.println(new Date(a));
         System.out.println(new Date(b));
         System.out.println(new Date(calendar.getTimeInMillis()));
     }
 
-    @Test
-    public void demo09() {
-        String replaceUrl
-            = "http://10.128.160.247:80/cwos-portal/portal/fileManager/imgByPath?path=faceEvent_default_387728532949696512";
-        HttpRequester httpRequester = new HttpRequester();
-        httpRequester.setUrl(replaceUrl);
-        httpRequester.setMethod(HttpRequester.Method.GET);
-        byte[] bytes = httpRequester.downloadBytes();
-        String encoded = Base64.getEncoder().encodeToString(bytes);
-
-        String base64 = FileUtil.imgBase64(replaceUrl);
-
-        //System.out.println(encoded);
-        System.out.println();
-        System.out.println(base64);
-        System.out.println();
-        System.out.println(FileUtil.url2base64(replaceUrl));
-
-    }
 
 }

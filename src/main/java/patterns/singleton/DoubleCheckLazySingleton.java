@@ -6,20 +6,20 @@ package patterns.singleton;
 public class DoubleCheckLazySingleton {
     private static volatile DoubleCheckLazySingleton instance;
 
-    private DoubleCheckLazySingleton(){
+    private DoubleCheckLazySingleton() {
         //防止通过反射构造实例
         if (instance != null) {
             throw new IllegalStateException("Already initialized.");
         }
     }
 
-    public static DoubleCheckLazySingleton getInstance(){
-        DoubleCheckLazySingleton result=instance;
-        if(result==null){
-            synchronized (DoubleCheckLazySingleton.class){
-                result=instance;
-                if(result==null){
-                    result=instance=new DoubleCheckLazySingleton();
+    public static DoubleCheckLazySingleton getInstance() {
+        DoubleCheckLazySingleton result = instance;
+        if (result == null) {
+            synchronized (DoubleCheckLazySingleton.class) {
+                result = instance;
+                if (result == null) {
+                    result = instance = new DoubleCheckLazySingleton();
                 }
             }
         }

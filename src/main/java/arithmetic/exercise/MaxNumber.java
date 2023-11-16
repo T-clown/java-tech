@@ -46,7 +46,9 @@ public class MaxNumber {
                         flag=true;
                     }
                 }
-                if(!flag) return false;
+                if(!flag) {
+                    return false;
+                }
             }
         }
         return true;

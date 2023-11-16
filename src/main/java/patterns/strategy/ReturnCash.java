@@ -1,8 +1,11 @@
 package patterns.strategy;
 
-public class ReturnCash implements Promotion {
+import java.math.BigDecimal;
+
+public class ReturnCash implements Promotion<String, BigDecimal> {
     @Override
-    public void execute() {
+    public BigDecimal execute(String param) {
         System.out.println("返现5元");
+        return new BigDecimal("5");
     }
 }
